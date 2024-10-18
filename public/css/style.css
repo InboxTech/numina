@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "GSK", sans-serif;
 }
 :root{
-    --color: #f36633;
+    /* --color: #f36633; */
     --swiper-theme-color: #fff;
+    --primary-color: #19a0e1;
+    --primary-hover: rgb(40, 199, 235);
 }
 .btn-orange{
     background-color: var(--color);
@@ -29,13 +32,22 @@
    -webkit-background-clip: text;
    color: transparent;
 }
+
+       /* navbar css  */
 .navbar .nav-links a{
-    margin-inline: 5px;
+    margin-inline: 15px;
     color: grey;
     transition: all 2s linear;
+    padding: 5px;
 }
-.navbar .nav-links a:hover{  color: black;  font-weight: 400; }
-.navbar .nav-links .link:nth-child(1)::after{
+.navbar .nav-links a:hover{  
+  color: black;
+    font-weight: 400;
+     background-color: var(--primary-hover);
+     /* padding: 10px; */
+     border-radius: 15px;
+   }
+/* .navbar .nav-links .link:nth-child(1)::after{
     content: '';
     width: 1px;
     height: 110px;
@@ -43,14 +55,14 @@
     position: absolute;
     right: 10px;
     bottom: -35px;
-}
-.navbar .logo a:nth-child(2){
+} */
+/* .navbar .logo a:nth-child(2){
     color: grey;
     transition: all 1s linear;
 }
 .navbar .logo a:nth-child(2):hover{  
     color: black; font-weight: 400;
-}
+} */
 .rsv-right{
     width: 100%;
     mask-image: url(../images/pinch-left-mask.svg);
@@ -275,3 +287,55 @@
     top: 38px;
     right: 37%;
   }
+
+  /* ------------------------- product submenu  -------------------------- */
+  .navbar .nav-links a{
+    margin-inline: 15px;
+    color: grey;
+    transition: all 2s linear;
+    padding: 5px;
+}
+.navbar .nav-links a:hover{  
+  color: black;
+    font-weight: 400;
+     background-color: var(--primary-hover);
+     /* padding: 10px; */
+     border-radius: 15px;
+   }
+   .navbar .logo{
+    width: 12%;
+  }
+  
+  .product-main-menu{
+    display: none;
+  }
+  .product-main-menu a{
+        color: black;
+        padding: 8px 0;
+  }
+  .product-main-menu .menu a:nth-child(1):hover{
+    color:var(--primary-hover);
+  }
+  .product-main-menu .menu .right-arrow{
+    color: var(--primary-color);
+  }
+  .product-main-menu .menu .link-hover-animation {
+    background: linear-gradient(to right, var(--primary-hover) 0%, var(--primary-hover) 50%, transparent 50%, transparent 100%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.7s ease;
+}
+.product-main-menu .menu .link-hover-animation:hover {
+    background-position: left bottom;
+}
+
+ .product-main-menu .menu .featured-section .feature-img{
+  overflow: hidden;
+ 
+}
+.product-main-menu .menu .featured-section .feature-img img{
+  transition: all 1s linear;
+}
+.product-main-menu .menu .featured-section .feature-img img:hover{
+  transform: scale(1.1);
+}

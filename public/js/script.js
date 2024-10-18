@@ -1,71 +1,22 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
-    },
-  });
+var submenu_pro = document.getElementById("pro-submenu"); 
+var show_submenu_pro = document.getElementById("show-pro-submenu");
 
-  var swiper = new Swiper(".myMagazineSwiper", {
-    // slidesPerView: 1,
-    spaceBetween: 2,
-    centeredSlides: true,
-    pagination: {
-      // el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 10,
-      },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 5,
-      },
-    },
-  });
+// Variable to keep track of the menu visibility
+var isVisible = false;
 
-  var swiper = new Swiper(".myLifeSwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      type: "progressbar",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      // 640: {
-      //   slidesPerView: 2,
-      //   spaceBetween: 10,
-      // },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 10,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-    },
-  });
+submenu_pro.addEventListener("click", function() {
+    // Toggle between show and hide on a single click
+    if (!isVisible) {
+        show_submenu_pro.style.display = 'flex';
+        isVisible = true;
+    } else {
+        show_submenu_pro.style.display = 'none';
+        isVisible = false;
+    }
+});
+
+// Optional: If you still want to add a double-click event
+submenu_pro.addEventListener("dblclick", function() {
+    show_submenu_pro.style.display = 'none';
+    isVisible = false; // Ensure the visibility state is reset
+});
