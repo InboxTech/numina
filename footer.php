@@ -3,27 +3,28 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <p class="fs-4 fw-medium mb-3 py-2">GSK</p>
+                <p class="fs-4 fw-medium mb-3 py-2">Numina</p>
                 <p class="fs-7 pt-2">
-                    This is our global website, intended for visitors seeking information on GSK's worldwide business.
+                    This is our global website, intended for visitors seeking information on Numina's worldwide business.
                     Our market sites can be reached by visiting our <a href="#" class="text-decoration-none link-dark">Location selector</a>
                 </p>
                 &nbsp;
-                <p class="fs-7">© 2001-2024 GSK plc. All rights reserved. Trade marks are owned by or licensed to the GSK group of companies.</p>
-                <p class="fs-7">GSK plc. Registered in England and Wales No. 3888792.</p>
+                <p class="fs-7">© 2001-2024 Numina plc. All rights reserved. Trade marks are owned by or licensed to the Numina group of companies.</p>
+                <p class="fs-7">Numina plc. Registered in England and Wales No. 3888792.</p>
                 <p class="fs-7">Registered office: 79 New Oxford Street, London. United Kingdom. WC1A 1DG</p>
                 <hr>
                 <a href="#" class="fs-7 text-decoration-none link-dark">> Modern Slavery Act statement 2023 (PDF - 139.1KB)</a>
             </div>
             <div class="col-lg-3">
                 <ul class="list-group">
-                    <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">GSK websites</span></li>
-                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Locations selector</a></li>
-                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Social media directory</a></li>
-                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">GSKPro for healthcare professionals</a></li>
-                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">GSK study register</a></li>
-                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Supplier website</a></li>
+                    <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Numina websites</span></li>
+                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Global website <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Market website selector</a></li>
+                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Global Behind the science magazine</a></li>
+                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Numina Pro for healthcare professionals</a></li>
                     <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">ViiV Healthcare</a></li>
+                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Numina study register</a></li>
+                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Supplier website</a></li>
                 </ul>
             </div>
             <div class="col-lg-3">
@@ -45,7 +46,7 @@
                     <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Contact us</a></li>
                     <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Partnerships</a></li>
                     <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Report a possible side effect</a></li>
-                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">GSK Speak up</a></li>
+                    <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Numina Speak up</a></li>
                     <li class="list-group-item border-0 mt-3">
                         <strong>Follow us on:</strong>
                         <ul class="list-group flex-row">

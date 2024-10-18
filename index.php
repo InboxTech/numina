@@ -1,7 +1,7 @@
 <?php
 include_once('header.php');
 $header = new Header();
-$header->includeHeader('GSK | Home', './'); ?>
+$header->includeHeader('Numina | Home', './'); ?>
 
 <main>
     <div class="container-fluid">
@@ -30,6 +30,9 @@ $header->includeHeader('GSK | Home', './'); ?>
 
         <!------------------------- Section 2 ------------------------->
         <div id="section2">
+            <div class="section2-main">
+                <video src="public/images/respiratory-syncytial-virus-rsv-science-animation-16x9-gskcom-only.mp4" autoplay muted loop></video>
+            </div>
             <div class="section2-head">
                 <div class="bg-test">
                     <div class="row justify-content-center ">
@@ -49,7 +52,7 @@ $header->includeHeader('GSK | Home', './'); ?>
                                 <button class="btn btn-lg btn-orange my-3">Purpose, strategy and culture</button>
                             </div>
                             <div class="">
-                                <a href="#" class=" link-dark">Why invest in GSK?</a>
+                                <a href="#" class=" link-dark">Why invest in Numina?</a>
                             </div>
                         </div>
                     </div>
@@ -99,10 +102,7 @@ $header->includeHeader('GSK | Home', './'); ?>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
-            </div>
-            <div class="section2-main">
-                <video src="public/images/respiratory-syncytial-virus-rsv-science-animation-16x9-gskcom-only.mp4" autoplay muted loop></video>
-            </div>
+            </div>            
         </div>
 
         <!------------------------- Section 3 ------------------------->
@@ -185,51 +185,56 @@ $header->includeHeader('GSK | Home', './'); ?>
         </div>
 
         <!------------------------- Section 4 ------------------------->
-        <div id="section4 " class="py-5">
-            <div class="section4-head py-5 text-center">
-                <p class="fs-4">Life at GSK</p>
-                <h2 class="display-5">How we help people thrive </h2>
+        <div id="section4"> 
+            <div class="section4-main">
+                <video src="public/images/gradient-inverted.mp4" autoplay muted loop></video>
             </div>
+
+            <div class="section4-head py-5">
+                <p class="fs-4">Life at Numina</p>
+                <h2 class="display-5">How we help people thrive</h2>
+            </div>
+
             <div class="section4-body py-5">
                 <div class="swiper section4Swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-dark">
-                                <div class="position-relative">
+                            <a href="#" class="text-decoration-none link-light pos">
+                                <div class="slider-img">
                                     <img src="public/images/section4/slide_1.jpg" alt="">
                                 </div>
-                                <div class="position-absolute bottom-0 z-2">
-                                    <p>Culture</p>
+                                <div class="slider-text">
+                                    <h2>Culture</h2>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-dark">
-                                <div>
+                            <a href="#" class="text-decoration-none link-light">
+                                <div class="slider-img">
                                     <img src="public/images/section4/slide_2.jpg" alt="">
                                 </div>
-                                <div>
-                                    <p>Remission could be possible for people with asthma, giving them a new outlook on life</p>
+                                <div class="slider-text">
+                                    <h2>Growth</h2>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-dark">
-                                <div>
+                            <a href="#" class="text-decoration-none link-light">
+                                <div class="slider-img">
                                     <img src="public/images/section4/slide_3.jpg" alt="">
                                 </div>
-                                <div>
-                                    <p>‘We’ve seen an explosion in computing power’: Using AI, machine learning and data to unlock the mysteries of disease</p>
+                                <div class="slider-text">
+                                    <h2>Diversity, equity and inclusion </h2>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-dark">
-                                <div>
+                            <a href="#" class="text-decoration-none link-light">
+                                <div class="slider-img">
                                     <img src="public/images/section4/slide_4.jpg" alt="">
                                 </div>
-                                <div>
-                                    <p>‘Patients can breathe easier today’: Scientific advances in asthma and COPD care could prevent irreversible lung damage</p>
+                                <div class="slider-text">
+                                    <h2>Wellbeing</h2>
                                 </div>
                             </a>
                         </div>
@@ -237,10 +242,8 @@ $header->includeHeader('GSK | Home', './'); ?>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <div class="section4-main">
-                <video src="public/images/gradient-inverted.mp4" autoplay muted loop></video>
-            </div>
         </div>
+
     </div>
 </main>
 

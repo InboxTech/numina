@@ -70,7 +70,7 @@ var swiper = new Swiper(".section3Swiper", {
 
 var swiper = new Swiper(".section4Swiper", {
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 10,
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar",
@@ -82,21 +82,17 @@ var swiper = new Swiper(".section4Swiper", {
   breakpoints: {
     640: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 1.6,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     1200: {
-      slidesPerView: 1.9,
-      spaceBetween: 20,
-    },
-    1440: {
       slidesPerView: 2.5,
       spaceBetween: 20,
     },
