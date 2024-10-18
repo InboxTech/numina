@@ -7,10 +7,13 @@
   font-style: normal;
 }
 :root {
-  /* --color: #f36633; */
-  --swiper-theme-color: #fff;
   --primary-color: #19a0e1;
   --primary-hover: rgb(40, 199, 235);
+}
+html,
+body {
+  height: 100%;
+  width: auto;
 }
 /* ------------------------- product submenu  -------------------------- */
 .navbar .nav-links a {
@@ -72,22 +75,6 @@
 
 
 /* -------------------------------------------------------------------- Aadil's code-------------------------------------------------- */
-:root{
-  --primary-color: #19a0e1;
-  --primary-hover: #28c7eb;
-}
-html,
-body {
-  height: 100%;
-  width: auto;
-
-}
-
-.navbar-brand img{
-  height: 50px;
-  width: auto;
-}
-
 /* ----------------------------- section 1 ----------------------------- */
 #section1 {
   width: 100%;
