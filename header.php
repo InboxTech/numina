@@ -26,7 +26,9 @@
         <nav class="navbar navbar-expand-lg bg-body-light pt-0 flex-column">
                 <div class="container-fluid bg-black">
                     <div class="navbar-brand">
-                        <a class="text-decoration-none link-light" href="#">Navbar</a>
+                        <a class="text-decoration-none link-light" href="#">
+                            Global | Numina
+                        </a>
                     </div>
                     <button class=" navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="ms-auto navbar-toggler-icon text-light"></span>
@@ -57,7 +59,9 @@
                 </div>
             <div class="container-fluid border-bottom">
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand" href="#">
+                        <img src="./public/images/Numina_Logo.png" alt="logo">
+                    </a>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>

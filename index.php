@@ -5,7 +5,7 @@ $header->includeHeader('Numina | Home', './'); ?>
 
 <main>
     <div class="container-fluid">
-        <div id="page1" class="row p-0 m-0 ps-5">
+        <div id="section1" class="row p-0 m-0 ps-5">
             <div class="col-lg-6 m-lg-auto">
                 <h1 class="h3">Behind the science</h1>
                 <div class="">
@@ -16,7 +16,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                     </p>
                 </div>
                 <div class="">
-                    <button class="btn btn-orange btn-lg">Read our article on meningitis</button>
+                    <button class="btn btn-custom btn-lg">Read our article on meningitis</button>
                 </div>
             </div>
             <div class="col-lg-6 overflow-hidden">
@@ -49,7 +49,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                                 </p>
                             </div>
                             <div class="">
-                                <button class="btn btn-lg btn-orange my-3">Purpose, strategy and culture</button>
+                                <button class="btn btn-lg btn-custom my-3">Purpose, strategy and culture</button>
                             </div>
                             <div class="">
                                 <a href="#" class=" link-dark">Why invest in Numina?</a>
@@ -64,7 +64,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Infectious diseases</div>
-                                <div class="card-title urbanist fs-25 link-orange">1 in 6</div>
+                                <div class="card-title urbanist fs-25 link-custom">1 in 6</div>
                                 <div class="card-text mb-5">deaths globally caused by infectious disease</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to infectious diseases</a></div>
                             </div>
@@ -73,7 +73,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body w-100">
                                 <div class="card-title text-uppercase">HIV</div>
-                                <div class="card-title urbanist fs-25 link-orange">39m</div>
+                                <div class="card-title urbanist fs-25 link-custom">39m</div>
                                 <div class="card-text mb-5">people living with HIV globally</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to HIV</a></div>
                             </div>
@@ -81,7 +81,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Respiratory/Immunology</div>
-                                <div class="card-title urbanist fs-25 link-orange">50yrs</div>
+                                <div class="card-title urbanist fs-25 link-custom">50yrs</div>
                                 <div class="card-text mb-5">of leading research to help people with respiratory and inflammatory conditions</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to respiratory/immunology</a></div>
                             </div>
@@ -89,7 +89,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Oncology</div>
-                                <div class="card-title urbanist fs-25 link-orange">~10m</div>
+                                <div class="card-title urbanist fs-25 link-custom">~10m</div>
                                 <div class="card-text mb-5">people died from cancer in 2020, making it a leading cause of death worldwide</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to oncology</a></div>
                             </div>
@@ -179,7 +179,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                 </div>
             </div>
             <div class="section3-footer text-center">
-                <button class="btn btn-lg btn-orange">Read our magazine</button>
+                <button class="btn btn-lg btn-custom">Read our magazine</button>
             </div>
 
         </div>
@@ -244,6 +244,14 @@ $header->includeHeader('Numina | Home', './'); ?>
             </div>
         </div>
 
+
+        <div id="last-section">
+            <div class="container text-end">
+                <a href="#" class="text-center">
+                    <span>Continue to</span> Company <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </main>
 

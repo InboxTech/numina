@@ -51,22 +51,22 @@
                         <strong>Follow us on:</strong>
                         <ul class="list-group flex-row">
                             <li class="list-group-item border-0 p-2">
-                                <a href="#facebook" class="link-orange"><i class="fa-brands fa-square-facebook fs-2"></i></a>
+                                <a href="#facebook" class="link-custom"><i class="fa-brands fa-square-facebook fs-2"></i></a>
                             </li>
                             <li class="list-group-item border-0 p-2">
-                                <a href="#twitter" class="link-orange"><i class="fa-brands fa-square-x-twitter fs-2"></i></a>
+                                <a href="#twitter" class="link-custom"><i class="fa-brands fa-square-x-twitter fs-2"></i></a>
                             </li>
                             <li class="list-group-item border-0 p-2">
-                                <a href="#youtube" class="link-orange"><i class="fa-brands fa-square-youtube fs-2"></i></a>
+                                <a href="#youtube" class="link-custom"><i class="fa-brands fa-square-youtube fs-2"></i></a>
                             </li>
                             <li class="list-group-item border-0 p-2">
-                                <a href="#linkedin" class="link-orange"><i class="fa-brands fa-linkedin fs-2"></i></a>
+                                <a href="#linkedin" class="link-custom"><i class="fa-brands fa-linkedin fs-2"></i></a>
                             </li>
                             <li class="list-group-item border-0 p-2">
-                                <a href="#instagram" class="link-orange"><i class="fa-brands fa-square-instagram fs-2"></i></a>
+                                <a href="#instagram" class="link-custom"><i class="fa-brands fa-square-instagram fs-2"></i></a>
                             </li>
                             <li class="list-group-item border-0 p-2">
-                                <a href="#rss" class="link-orange"><i class="fa-solid fa-square-rss fs-2"></i></a>
+                                <a href="#rss" class="link-custom"><i class="fa-solid fa-square-rss fs-2"></i></a>
                             </li>
                         </ul>
                     </li>
@@ -98,7 +98,8 @@
         </ul>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/swiper-bundle.min.js"></script>
     <script src="public/js/custom.js"></script>
 </footer>
 

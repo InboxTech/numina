@@ -5,30 +5,33 @@
 }
 :root{
   --primary-color: #19a0e1;
-  --primary-hover: rgb(40, 199, 235);
+  --primary-hover: #28c7eb;
 }
 html,
 body {
   height: 100%;
   width: auto;
-}
-.urbanist {
-  font-family: "Urbanist", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Urbanist", sans-serif;/* font style */
   font-weight: 400;
   font-style: normal;
 }
 
-#page1 {
+.navbar-brand img{
+  height: 50px;
+  width: auto;
+}
+
+/* ----------------------------- section 1 ----------------------------- */
+#section1 {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.btn-orange {
+.btn-custom {
   color: #fff;
   background-color: var(--primary-color);
 }
-.btn-orange:hover {
+.btn-custom:hover {
   color: #fff;
   background-color: var(--primary-hover);
 }
@@ -49,7 +52,8 @@ body {
 .main-img {
   border-radius: 13px;
 }
-/* page 2  */
+
+/* ----------------------------- section 2 ----------------------------- */
 #section2 {
   position: relative;
   width: 100%;
@@ -304,12 +308,29 @@ body {
   margin-top: 0px;
 }
 
+#last-section{
+  padding: 20px 0;
+  margin: 20px 0;
+  font-size: 36px;
+  line-height: 1.25;
+  background: var(--primary-color) linear-gradient(180deg, var(--primary-color) 0%,var(--primary-hover)  100%);
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+}
+#last-section a{
+  text-decoration: none;
+  color: #000;
+}
+#last-section a:hover{
+  text-decoration: underline;
+}
 /* footer */
 .fs-7 {
   font-size: 12.5px;
   line-height: 1.7;
 }
-.link-orange {
+.link-custom {
   color: var(--primary-color);
 }
 footer .link-dark {
