@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "GSK", sans-serif;
+  font-family: "Urbanist", sans-serif;/* font style */
+  font-weight: 400;
+  font-style: normal;
 }
 :root {
   /* --color: #f36633; */
@@ -66,3 +68,342 @@
 .product-main-menu .menu .featured-section .feature-img img:hover {
   transform: scale(1.1);
 }
+
+
+
+/* -------------------------------------------------------------------- Aadil's code-------------------------------------------------- */
+:root{
+  --primary-color: #19a0e1;
+  --primary-hover: #28c7eb;
+}
+html,
+body {
+  height: 100%;
+  width: auto;
+
+}
+
+.navbar-brand img{
+  height: 50px;
+  width: auto;
+}
+
+/* ----------------------------- section 1 ----------------------------- */
+#section1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.btn-custom {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+.btn-custom:hover {
+  color: #fff;
+  background-color: var(--primary-hover);
+}
+.pinch-img {
+  width: 100%; /* Ensure it has a defined initial width */
+  mask-image: url("../images/pinch-left-mask.svg");
+  mask-size: 100%;
+  background-color: #fff;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  transition: width 0.7s cubic-bezier(0.54, 0.09, 0.2, 0.92);
+}
+
+.pinch-img:hover {
+  width: 600vh; /* Adjust for testing */
+}
+
+.main-img {
+  border-radius: 13px;
+}
+
+/* ----------------------------- section 2 ----------------------------- */
+#section2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.section2-head {
+  --webkit-backdrop-filter: blur(25px);
+  -webkit-mask-image: linear-gradient(to bottom, #000 90%, transparent 100%);
+  align-items: center;
+  backdrop-filter: blur(25px);
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+  box-sizing: border-box;
+  display: flex;
+  height: calc(60vh + 100px);
+  left: 0;
+  padding: 20px;
+  position: relative;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 20px;
+  padding: 180px 0 100px;
+}
+
+.bg-test::before {
+  background-color: #fff;
+  background-size: 100%;
+  content: "";
+  height: 169px;
+  left: 0;
+  margin: 0 auto;
+  mask-image: url(../images/fold.svg);
+  position: absolute;
+  right: 0;
+  top: -46px;
+  transform: rotate(90deg);
+  transition: all 0.2s ease;
+  transition-delay: 0.2s;
+  width: 80px;
+  z-index: 2;
+}
+
+.section2-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Keep video behind the content */
+}
+
+.section2-main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire background */
+}
+
+.section2-body {
+  position: relative;
+  left: 0;
+  margin: 0 auto;
+  z-index: 2; /* Keep the swiper above the video */
+}
+
+.section2-body .swiper {
+  width: 100%;
+  height: 100%;
+  /* flex-shrink: 0; */
+  padding: 0 70px;
+  background: transparent;
+}
+.section2-body .swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+.section2-body .swiper-slide {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2-body .swiper-slide img {
+  display: block;
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+}
+
+.section2-body .swiper-horizontal > .swiper-pagination-progressbar {
+  width: 40%;
+  left: 30%;
+  bottom: 0 !important;
+  margin-top: 20px;
+}
+.fs-25 {
+  font-size: 7rem;
+}
+.card {
+  width: 20rem;
+  height: 23rem;
+  position: relative;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+}
+.link-footer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+/* ----------------------------- section 3 ----------------------------- */
+#section3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.section3-body .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.section3-body .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3-body .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  /* height: 100%;
+    left: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; */
+}
+.section3-body .swiper-slide:nth-child(1n) {
+  margin-top: 50px ;
+}
+.section3-body .swiper-slide:nth-child(2n) {
+  margin-top: 0px ;
+}
+.link-dark:hover{
+  text-decoration: underline !important;
+}
+
+/* ----------------------------- section 4 ----------------------------- */
+
+#section4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+.section4-head {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section4-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure the video stays behind */
+}
+.section4-main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire background */
+}
+.section4-body {
+  position: relative;
+  z-index: 2; /* Ensure swiper content is on top */
+}
+.section4-body .swiper {
+  width: 100%;
+  height: 100%;
+}
+.section4-body .swiper-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+.section4-body .swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  border-radius: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  will-change: transform;
+}
+.section4-body .swiper-slide.active-slide {
+  transform: scale(1.1);
+}
+.section4-body .slider-img{
+  -webkit-mask-image: url('../images/twist-mask.svg');
+  -webkit-mask-position: -132px -132px;
+  -webkit-mask-repeat: no-repeat;
+  height: 0;
+  transform: translateZ(0);
+  transition: -webkit-mask-position .5s;
+  padding-top: 80%;
+  position: relative;
+}
+
+.section4-body .swiper-slide img {
+  height: 100%;
+  left: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.section4-body .slider-text{
+  background-image: linear-gradient(to bottom, transparent 0, rgba(21, 21, 21, 0.75) 100%);
+  bottom: 0;
+  box-sizing: border-box;
+  color: #fff;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.section4-body .swiper-slide:nth-child(1n) {
+  margin-top: 50px;
+}
+.section4-body .swiper-slide:nth-child(2n) {
+  margin-top: 0px;
+}
+
+#last-section{
+  padding: 20px 0;
+  margin: 20px 0;
+  font-size: 36px;
+  line-height: 1.25;
+  background: var(--primary-color) linear-gradient(180deg, var(--primary-color) 0%,var(--primary-hover)  100%);
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+}
+#last-section a{
+  text-decoration: none;
+  color: #000;
+}
+#last-section a:hover{
+  text-decoration: underline;
+}
+/* footer */
+.fs-7 {
+  font-size: 12.5px;
+  line-height: 1.7;
+}
+.link-custom {
+  color: var(--primary-color);
+}
+footer .link-dark {
+  font-weight: 500;
+}
+footer .link-dark:hover {
+  color: var(--primary-color) !important;
+}
+
