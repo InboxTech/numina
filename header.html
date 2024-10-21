@@ -25,65 +25,109 @@
 
         <!----------------------------------------------Navbar-------------------------------------------------->
 
-        <nav class="navbar row border-bottom">
-            <div class="logo col-6">
-                <img src="public/images/header/Numina Logo.png" class="w-100 h-inherit" alt="" />
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="#"><img src="public/images/header/Numina Logo.png" class="w-100 h-inherit" alt="" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link fs-5"> Who is Numina </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <!-- <a href="#" class="nav-link fs-5 postion-relative" id="pro-submenu">
+                        Our product
+                    </a> -->
+                    <a class="nav-link dropdown-toggle fs-5 postion-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our product
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                            <a href="#" class="dropdown-item text-decoration-none fw-bold mb-3 fs-3">
+                                Product <span class="fs-2 right-arrow"> &#8594; </span>
+                            </a>
+                        </a>
+                    </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-decoration-none link-hover-animation">
+                                Antacid <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="dropdown-item text-decoration-none link-hover-animation">
+                                Antibiotic <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="#" class="dropdown-item text-decoration-none link-hover-animation">
+                                Analgesic <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="#" class="dropdown-item text-decoration-none link-hover-animation">
+                                Analgesic, Antipyretic and Anti-emetic
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-decoration-none link-hover-animation">
+                                Analgesic & Anti-inflammatory
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-decoration-none link-hover-animation">
+                                Anti-allergic <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-decoration-none link-hover-animation">
+                                Multivitamins and Supplements
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-decoration-none link-hover-animation">
+                                Anti-diabetic <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-decoration-none link-hover-animation">
+                                Cardiovascular Drugs <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-decoration-none link-hover-animation">
+                                Antimicrobials <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item text-decoration-none link-hover-animation">
+                                Antiretrovirals(ARVs) <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link fs-5">
+                        Reasearch and development
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link fs-5"> F & Q </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link fs-5"> Drop us a line </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="nav-links col-6">
-                <a href="#" class="text-decoration-none fs-5"> Who is Numina </a>
-                <a href="#" class="text-decoration-none fs-5" id="pro-submenu">
-                    Our product
-                </a>
-                <a href="#" class="text-decoration-none fs-5">
-                    Reasearch and development
-                </a>
-                <a href="#" class="text-decoration-none fs-5"> F & Q </a>
-                <a href="#" class="text-decoration-none fs-5"> Drop us a line </a>
-            </div>
-        </nav>
-        <div class="product-main-menu border rounded-top-0 rouded-bottom-5 p-5 container mx-auto row justify-content-evenly"
-            id="show-pro-submenu">
-            <div class="menu border-end col-4 row flex-column">
-                <a href="#" class="text-decoration-none fw-bold mb-3 fs-3 link-orange">
-                    Product <span class="fs-2 right-arrow"> &#8594; </span>
-                </a>
-                <a href="#" class="text-decoration-none link-hover-animation">
-                    Antacid <i class="fa-solid fa-angle-right"></i>
-                </a>
-                <a href="#" class="text-decoration-none link-hover-animation">
-                    Antibiotic <i class="fa-solid fa-angle-right"></i>
-                </a>
-                <a href="#" class="text-decoration-none link-hover-animation">
-                    Analgesic <i class="fa-solid fa-angle-right"></i>
-                </a>
-                <a href="#" class="text-decoration-none link-hover-animation">
-                    Analgesic, Antipyretic and Anti-emetic
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
-                <a href="#" class="text-decoration-none link-hover-animation">
-                    Analgesic & Anti-inflammatory
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
-                <a href="#" class="text-decoration-none link-hover-animation">
-                    Anti-allergic <i class="fa-solid fa-angle-right"></i>
-                </a>
-                <a href="#" class="text-decoration-none link-hover-animation">
-                    Multivitamins and Supplements
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
-                <a href="#" class="text-decoration-none link-hover-animation">
-                    Anti-diabetic <i class="fa-solid fa-angle-right"></i>
-                </a>
-                <a href="#" class="text-decoration-none link-hover-animation">
-                    Cardiovascular Drugs <i class="fa-solid fa-angle-right"></i>
-                </a>
-                <a href="#" class="text-decoration-none link-hover-animation">
-                    Antimicrobials <i class="fa-solid fa-angle-right"></i>
-                </a>
-                <a href="#" class="text-decoration-none link-hover-animation">
-                    Antiretrovirals(ARVs) <i class="fa-solid fa-angle-right"></i>
-                </a>
-            </div>
+          </nav>
+
+            
 
             <!-- <div class="menu border-end ps-5 col-4 postion-relative">
                 <div class="d-none row flex-column" id="show-antibiotic-submenu">
@@ -128,7 +172,7 @@
                 </div>
             </div> -->
 
-            <div class="menu col-4">
+            <!-- <div class="menu col-4">
                 <div class="featured-section">
                     <a href="#" class="text-decoration-none">
                         <span class="text-uppercase"> featured section </span>
@@ -151,12 +195,12 @@
                         </div>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </header>
     <!-------------------------------------------header complete ----------------------------------------------------------------->
 
-    <main></main>
+   
 
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/swiper-bundle.min.js"></script>

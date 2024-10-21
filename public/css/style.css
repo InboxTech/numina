@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Urbanist", sans-serif;/* font style */
+  font-family: "Urbanist", sans-serif; /* font style */
   font-weight: 400;
   font-style: normal;
 }
@@ -15,14 +15,15 @@ body {
   height: 100%;
   width: auto;
 }
+
 /* ------------------------- product submenu  -------------------------- */
-.navbar .nav-links a {
+.navbar .navbar-collapse .nav-link {
   margin-inline: 15px;
   color: grey;
   transition: all 2s linear;
   padding: 5px;
 }
-.navbar .nav-links a:hover {
+.navbar .navbar-collapse .nav-link:hover {
   color: black;
   font-weight: 400;
   background-color: var(--primary-hover);
@@ -32,21 +33,8 @@ body {
 .navbar .logo {
   width: 12%;
 }
-
-.product-main-menu {
-  display: none;
-}
-.product-main-menu a {
-  color: black;
-  padding: 8px 0;
-}
-.product-main-menu .menu a:nth-child(1):hover {
-  color: var(--primary-hover);
-}
-.product-main-menu .menu .right-arrow {
-  color: var(--primary-color);
-}
-.product-main-menu .menu .link-hover-animation {
+.dropdown-item {
+  padding: 10px;
   background: linear-gradient(
     to right,
     var(--primary-hover) 0%,
@@ -58,21 +46,9 @@ body {
   background-position: right bottom;
   transition: background-position 0.7s ease;
 }
-.product-main-menu .menu .link-hover-animation:hover {
+.dropdown-item:hover {
   background-position: left bottom;
 }
-
-.product-main-menu .menu .featured-section .feature-img {
-  overflow: hidden;
-}
-.product-main-menu .menu .featured-section .feature-img img {
-  transition: all 1s linear;
-}
-.product-main-menu .menu .featured-section .feature-img img:hover {
-  transform: scale(1.1);
-}
-
-
 
 /* -------------------------------------------------------------------- Aadil's code-------------------------------------------------- */
 /* ----------------------------- section 1 ----------------------------- */
@@ -253,12 +229,12 @@ body {
     width: 100%; */
 }
 .section3-body .swiper-slide:nth-child(1n) {
-  margin-top: 50px ;
+  margin-top: 50px;
 }
 .section3-body .swiper-slide:nth-child(2n) {
-  margin-top: 0px ;
+  margin-top: 0px;
 }
-.link-dark:hover{
+.link-dark:hover {
   text-decoration: underline !important;
 }
 
@@ -300,7 +276,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.section4-body .swiper-wrapper{
+.section4-body .swiper-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
@@ -324,13 +300,13 @@ body {
 .section4-body .swiper-slide.active-slide {
   transform: scale(1.1);
 }
-.section4-body .slider-img{
-  -webkit-mask-image: url('../images/twist-mask.svg');
+.section4-body .slider-img {
+  -webkit-mask-image: url("../images/twist-mask.svg");
   -webkit-mask-position: -132px -132px;
   -webkit-mask-repeat: no-repeat;
   height: 0;
   transform: translateZ(0);
-  transition: -webkit-mask-position .5s;
+  transition: -webkit-mask-position 0.5s;
   padding-top: 80%;
   position: relative;
 }
@@ -344,8 +320,12 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.section4-body .slider-text{
-  background-image: linear-gradient(to bottom, transparent 0, rgba(21, 21, 21, 0.75) 100%);
+.section4-body .slider-text {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    rgba(21, 21, 21, 0.75) 100%
+  );
   bottom: 0;
   box-sizing: border-box;
   color: #fff;
@@ -362,21 +342,22 @@ body {
   margin-top: 0px;
 }
 
-#last-section{
+#last-section {
   padding: 20px 0;
   margin: 20px 0;
   font-size: 36px;
   line-height: 1.25;
-  background: var(--primary-color) linear-gradient(180deg, var(--primary-color) 0%,var(--primary-hover)  100%);
+  background: var(--primary-color)
+    linear-gradient(180deg, var(--primary-color) 0%, var(--primary-hover) 100%);
   overflow: hidden;
   position: relative;
   text-align: left;
 }
-#last-section a{
+#last-section a {
   text-decoration: none;
   color: #000;
 }
-#last-section a:hover{
+#last-section a:hover {
   text-decoration: underline;
 }
 /* footer */
@@ -393,4 +374,3 @@ footer .link-dark {
 footer .link-dark:hover {
   color: var(--primary-color) !important;
 }
-
