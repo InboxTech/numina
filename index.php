@@ -16,7 +16,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                     </p>
                 </div>
                 <div class="">
-                    <button class="btn btn-custom btn-lg">Read our article on meningitis</button>
+                    <button class="btn btn-custom btn-lg">Connect with us today</button>
                 </div>
             </div>
             <div class="col-lg-6 overflow-hidden">
@@ -55,7 +55,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                                 </p>
                             </div>
                             <div class="">
-                                <button class="btn btn-lg btn-custom my-3">Purpose, strategy and culture</button>
+                                <button class="btn btn-lg btn-custom my-3">Reach out for collaboration</button>
                             </div>
                             <div class="">
                                 <a href="#" class=" link-dark">Why invest in Numina?</a>
@@ -70,7 +70,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Antacid</div>
-                                <div class="card-title display-5 link-custom">Fast relief for heartburn & indigestion</div>
+                                <div class="card-title display-6 link-custom">Fast relief for heartburn & indigestion</div>
                                 <div class="card-text mb-5">Relief in 60 Secs</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Antacid</a></div>
                             </div>
@@ -78,7 +78,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Antibiotics</div>
-                                <div class="card-title display-5 link-custom">Targeted treatments for bacterial infections</div>
+                                <div class="card-title display-6 link-custom">Targeted treatments for bacterial infections</div>
                                 <div class="card-text mb-5">1 Solution for Every Infection</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Antibiotics</a></div>
                             </div>
@@ -86,7 +86,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Analgesic</div>
-                                <div class="card-title display-5 link-custom">Fast-acting solutions to manage pain</div>
+                                <div class="card-title display-6 link-custom">Fast-acting solutions to manage pain</div>
                                 <div class="card-text mb-5">Pain Relief in 30 Mins</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Analgesic</a></div>
                             </div>
@@ -94,7 +94,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Analgesic, Antipyretic, and Anti-emetic</div>
-                                <div class="card-title display-5 link-custom">Pain, fever, and nausea relief in one drug</div>
+                                <div class="card-title display-6 link-custom">Pain, fever, and nausea relief in one drug</div>
                                 <div class="card-text mb-5">Triple Action, 1 Pill</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Analgesic, Antipyretic, and Anti-emetic</a></div>
                             </div>
@@ -102,7 +102,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Analgesic & Anti-inflammatory</div>
-                                <div class="card-title display-5 link-custom">Relieves pain and controls inflammation</div>
+                                <div class="card-title display-6 link-custom">Relieves pain and controls inflammation</div>
                                 <div class="card-text mb-5">Dual Action in 45 Minutes</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Analgesic & Anti-inflammatory</a></div>
                             </div>
@@ -110,7 +110,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Anti-allergic</div>
-                                <div class="card-title display-5 link-custom">Rapid relief from allergy symptoms</div>
+                                <div class="card-title display-6 link-custom">Rapid relief from allergy symptoms</div>
                                 <div class="card-text mb-5">Breathe Easy in 5 Minutes</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Anti-allergic</a></div>
                             </div>
@@ -118,7 +118,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Multivitamins and Supplements</div>
-                                <div class="card-title display-5 link-custom">Essential nutrients for overall wellness</div>
+                                <div class="card-title display-6 link-custom">Essential nutrients for overall wellness</div>
                                 <div class="card-text mb-5">Daily Health Boost</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Multivitamins and Supplements</a></div>
                             </div>
@@ -126,7 +126,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Anti-diabetics</div>
-                                <div class="card-title display-5 link-custom">Effective management of blood sugar</div>
+                                <div class="card-title display-6 link-custom">Effective management of blood sugar</div>
                                 <div class="card-text mb-5">1 Dose, Better Control</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Anti-diabetics</a></div>
                             </div>
@@ -134,7 +134,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Cardiovascular Drugs</div>
-                                <div class="card-title display-5 link-custom">Supports cardiovascular health quickly</div>
+                                <div class="card-title display-6 link-custom">Supports cardiovascular health quickly</div>
                                 <div class="card-text mb-5">Heart Health Matters</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Cardiovascular Drugs</a></div>
                             </div>
@@ -142,7 +142,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Antimicrobials</div>
-                                <div class="card-title display-5 link-custom">Protection against harmful microorganisms</div>
+                                <div class="card-title display-6 link-custom">Protection against harmful microorganisms</div>
                                 <div class="card-text mb-5">Defend in 10 Days</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Antimicrobials</a></div>
                             </div>
@@ -150,35 +150,12 @@ $header->includeHeader('Numina | Home', './'); ?>
                         <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Antiretrovirals (ARVs)</div>
-                                <div class="card-title display-5 link-custom">Effective management for healthier living with HIV</div>
+                                <div class="card-title display-6 link-custom">Effective management for healthier living with HIV</div>
                                 <div class="card-text mb-5">1 Solution for Life</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Antiretrovirals</a></div>
                             </div>
                         </div>
-                        <!-- <div class="swiper-slide card border-0">
-                            <div class="card-body w-100">
-                                <div class="card-title text-uppercase">HIV</div>
-                                <div class="card-title fs-25 link-custom">39m</div>
-                                <div class="card-text mb-5">people living with HIV globally</div>
-                                <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to HIV</a></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card border-0">
-                            <div class="card-body">
-                                <div class="card-title text-uppercase">Respiratory/Immunology</div>
-                                <div class="card-title link-custom">50yrs</div>
-                                <div class="card-text mb-5">of leading research to help people with respiratory and inflammatory conditions</div>
-                                <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to respiratory/immunology</a></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card border-0">
-                            <div class="card-body">
-                                <div class="card-title text-uppercase">Oncology</div>
-                                <div class="card-title link-custom">~10m</div>
-                                <div class="card-text mb-5">people died from cancer in 2020, making it a leading cause of death worldwide</div>
-                                <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to oncology</a></div>
-                            </div>
-                        </div> -->
+                        
                     </div>
 
                 </div>
@@ -270,7 +247,7 @@ $header->includeHeader('Numina | Home', './'); ?>
                 </div>
             </div>
             <div class="section3-footer text-center">
-                <button class="btn btn-lg btn-custom">Read our magazine</button>
+                <button class="btn btn-lg btn-custom">Inspired? Let’s Collaborate</button>
             </div>
 
         </div>
@@ -296,6 +273,8 @@ $header->includeHeader('Numina | Home', './'); ?>
                                 </div>
                                 <div class="slider-text">
                                     <h2>Enhancing Global Health</h2>
+                                    <p>We want to reduce serious diseases in low-income countries by focusing on preventing
+                                        and treating infections.</p>
                                 </div>
                             </a>
                         </div>
@@ -306,6 +285,8 @@ $header->includeHeader('Numina | Home', './'); ?>
                                 </div>
                                 <div class="slider-text">
                                     <h2>Supporting Diversity and Inclusion</h2>
+                                    <p>To help our diverse patients, we need different voices in our clinical trials and
+                                        support an inclusive team.</p>
                                 </div>
                             </a>
                         </div>
@@ -316,6 +297,8 @@ $header->includeHeader('Numina | Home', './'); ?>
                                 </div>
                                 <div class="slider-text">
                                     <h2>Upholding Ethical Standards</h2>
+                                    <p>Our culture encourages everyone to do the right thing, voice their opinions, and
+                                        speak up about any concerns.</p>
                                 </div>
                             </a>
                         </div>
@@ -326,6 +309,8 @@ $header->includeHeader('Numina | Home', './'); ?>
                                 </div>
                                 <div class="slider-text">
                                     <h2>Protecting Our Planet</h2>
+                                    <p>We are working toward a healthier planet with goals for 2030 and 2045, focusing on
+                                        being net zero and positive for nature.</p>
                                 </div>
                             </a>
                         </div>
@@ -336,6 +321,8 @@ $header->includeHeader('Numina | Home', './'); ?>
                                 </div>
                                 <div class="slider-text">
                                     <h2>Product Governance</h2>
+                                    <p>We ensure the quality, safety and uninterrupted supply of our mission of combining
+                                        science, talent, and technology.</p>
                                 </div>
                             </a>
                         </div>
@@ -346,6 +333,8 @@ $header->includeHeader('Numina | Home', './'); ?>
                                 </div>
                                 <div class="slider-text">
                                     <h2>Improving Access for All</h2>
+                                    <p>We are making our products affordable and available to more people worldwide through
+                                        fair pricing and collaborations.</p>
                                 </div>
                             </a>
                         </div>

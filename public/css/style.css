@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Urbanist", sans-serif;/* font style */
+  font-family: "Urbanist", sans-serif; /* font style */
   font-weight: 400;
   font-style: normal;
 }
@@ -40,7 +40,7 @@ body {
   top: 9%;
   z-index: 2;
   left: 20%;
-  background-color:white;
+  background-color: white;
 }
 .product-main-menu a {
   color: black;
@@ -77,8 +77,6 @@ body {
 .product-main-menu .menu .featured-section .feature-img img:hover {
   transform: scale(1.1);
 }
-
-
 
 /* -------------------------------------------------------------------- Aadil's code-------------------------------------------------- */
 /* ----------------------------- section 1 ----------------------------- */
@@ -120,7 +118,7 @@ body {
   height: 100%;
   overflow: hidden;
 }
-#section2 .section2-head{
+#section2 .section2-head {
   align-items: flex-start;
   height: auto;
   padding: 180px 0 100px;
@@ -129,7 +127,10 @@ body {
 .section2-head {
   -webkit-mask-image: linear-gradient(to bottom, #000 90%, transparent 100%);
   backdrop-filter: blur(25px);
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5)
+  );
   box-sizing: border-box;
   display: flex;
   height: calc(100vh + 200px);
@@ -208,9 +209,7 @@ body {
   bottom: 0 !important;
   margin-top: 20px;
 }
-.fs-25 {
-  font-size: 7rem;
-}
+
 .card {
   width: 20rem;
   height: 23rem;
@@ -241,7 +240,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.section3-body .swiper-slide .slide-img{
+.section3-body .swiper-slide .slide-img {
   overflow: hidden;
   border-radius: 15px;
 }
@@ -254,7 +253,7 @@ body {
   object-fit: cover;
   transition: transform 0.5s ease-in-out;
 }
-.section3-body .swiper-slide img:hover{
+.section3-body .swiper-slide img:hover {
   transform: scale(1.1);
 }
 /* .section3-body .swiper-slide:nth-child(1n) {
@@ -263,12 +262,11 @@ body {
 .section3-body .swiper-slide:nth-child(2n) {
   margin-top: 0px ;
 } */
-.link-dark:hover{
+.link-dark:hover {
   text-decoration: underline !important;
 }
 
 /* ----------------------------- section 4 ----------------------------- */
-
 #section4 {
   position: relative;
   width: 100%;
@@ -290,22 +288,25 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Ensure the video stays behind */
+  z-index: -1;
+  /* Ensure the video stays behind */
 }
 .section4-main video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire background */
+  object-fit: cover;
+  /* Ensures the video covers the entire background */
 }
 .section4-body {
   position: relative;
-  z-index: 2; /* Ensure swiper content is on top */
+  z-index: 2;
+  /* Ensure swiper content is on top */
 }
 .section4-body .swiper {
   width: 100%;
   height: 100%;
 }
-.section4-body .swiper-wrapper{
+.section4-body .swiper-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
@@ -331,60 +332,48 @@ body {
   transform: scale(1.1);
 }
 .section4-body .slider-img {
-  -webkit-mask-image: url('../images/twist-mask.svg');
+  /* -webkit-mask-image: url('../images/twist-mask.svg'); */
   -webkit-mask-position: -132px -132px;
   -webkit-mask-repeat: no-repeat;
   height: 0;
   transform: translateZ(0);
-  transition: -webkit-mask-position 0.5s, transform 0.5s ease-in-out;
+  /* transition: -webkit-mask-position 0.5s, transform 0.5s ease-in-out; */
   padding-top: 80%;
   position: relative;
 }
-
 .section4-body .swiper-slide img {
   height: 100%;
-  left: 50%;
+  left: 0;
   object-fit: cover;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  /* transform: translate(-50%, -50%); */
   width: 100%;
 }
-.section4-body .slider-img:hover {
-  -webkit-mask-position: 0 0;
-}
-
-.section4-body .swiper-slide img:hover {
-  top: 40%;
-  left: 40%;
-  transform: translate(-40%, -40%) ; 
-}
-
-.section4-body .slider-text{
-  background-image: linear-gradient(to bottom, transparent 0, rgba(21, 21, 21, 0.75) 100%);
-  bottom: 0;
-  box-sizing: border-box;
-  color: #fff;
-  left: 0;
+.section4-body .slider-text {
   position: absolute;
-  right: 0;
+  bottom: -9vh;
+  /* Start with text hidden below the image */
+  left: 0;
   width: 100%;
-  padding: 0 10px;
-  pointer-events: none;
+  background: rgba(19, 191, 235, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  transition: bottom 0.5s ease-in-out;
 }
-/* .section4-body .swiper-slide:nth-child(1n) {
-  margin-top: 50px;
+.section4-body .swiper-slide:hover .slider-text {
+  bottom: 0;
+  /* Bring text up when hovering */
 }
-.section4-body .swiper-slide:nth-child(2n) {
-  margin-top: 0px;
-} */
 
 /* ----------------------------- last-section ----------------------------- */
-#last-section{
+#last-section {
   padding: 20px 0;
 }
-#last-section .custom-card{
-  background: var(--primary-color) linear-gradient(180deg, var(--primary-color) 0%,var(--primary-hover)  100%);
+#last-section .custom-card {
+  background: var(--primary-color)
+    linear-gradient(180deg, var(--primary-color) 0%, var(--primary-hover) 100%);
   text-align: start;
   border: 0;
   width: 100%;
@@ -392,11 +381,11 @@ body {
   padding: 10px;
   border-radius: 15px;
 }
-#last-section a{
+#last-section a {
   text-decoration: none;
   color: #000;
 }
-#last-section a:hover{
+#last-section a:hover {
   text-decoration: underline;
 }
 /* footer */
@@ -415,31 +404,32 @@ footer .link-dark:hover {
 }
 
 /* about us banner swiper css start*/
-.aboutus p{
+.aboutus p {
   font-size: 17px;
   line-height: 24px;
 }
-.banner{
+.banner {
   width: 100%;
   height: 100%;
 }
-.banner .banner-img{
+.banner .banner-img {
   width: 100%;
 }
-.title{
+.title {
   color: var(--primary-color);
 }
-.mission, .dosage-form{
+.mission,
+.dosage-form {
   background-color: var(--primary-color);
 }
-.mission .mission-details .details .icon{
+.mission .mission-details .details .icon {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   color: var(--primary-color);
   transition: all 1s linear;
 }
-.mission .mission-details .details .icon:hover{
+.mission .mission-details .details .icon:hover {
   background-color: var(--primary-hover);
   color: white;
 }
@@ -462,6 +452,5 @@ footer .link-dark:hover {
 /* about us banner swiper css end*/
 
 /* product page css start*/
-
 
 /* product page css end*/
