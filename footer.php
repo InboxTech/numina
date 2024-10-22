@@ -101,6 +101,7 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/swiper-bundle.min.js"></script>
     <script src="public/js/custom.js"></script>
+    <script src="public/js/script.js"></script>
 </footer>
 
 </html>
