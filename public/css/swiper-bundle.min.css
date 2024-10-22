@@ -1,5 +1,5 @@
 /**
- * Swiper 11.1.14
+ * Swiper 11.1.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: September 12, 2024
+ * Released on: May 30, 2024
  */
 
 @font-face {
@@ -17,7 +17,7 @@
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #f36633;
+  --swiper-theme-color: #007aff;
 }
 :host {
   position: relative;
@@ -500,7 +500,7 @@ button.swiper-pagination-bullet {
   width: var(--swiper-pagination-progressbar-size, 4px);
   height: 100%;
   left: 0;
-  /* top: 0; */
+  top: 0;
 }
 .swiper-pagination-lock {
   display: none;
@@ -604,6 +604,7 @@ button.swiper-pagination-bullet {
 .swiper-fade .swiper-slide-active .swiper-slide-active {
   pointer-events: auto;
 }
+
 .swiper.swiper-cube {
   overflow: visible;
 }

@@ -2,8 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Urbanist", sans-serif; /* font style */
+  font-weight: 400;
+  font-style: normal;
 }
-:root{
+:root {
   --primary-color: #19a0e1;
   --primary-hover: rgb(40, 199, 235);
 }
@@ -12,23 +15,91 @@ body {
   height: 100%;
   width: auto;
 }
-.urbanist {
-  font-family: "Urbanist", sans-serif;
-  font-optical-sizing: auto;
+/* ------------------------- product submenu  -------------------------- */
+.navbar .navbar-collapse .nav-link {
+  margin-inline: 15px;
+  color: grey;
+  transition: all 2s linear;
+  padding: 5px;
+}
+.navbar .navbar-collapse .nav-link:hover {
+  color: black;
   font-weight: 400;
-  font-style: normal;
+  background-color: var(--primary-hover);
+  /* padding: 10px; */
+  border-radius: 15px;
+}
+.navbar .logo {
+  width: 12%;
 }
 
-#page1 {
+.product-main-menu {
+  width: 60%;
+  display: none;
+  position: absolute;
+  top: 9%;
+  z-index: 2;
+  left: 20%;
+  background-color: white;
+}
+.product-main-menu a {
+  color: black;
+  padding: 8px 0;
+}
+.product-main-menu .menu a:nth-child(1):hover {
+  color: var(--primary-hover);
+}
+.product-main-menu .menu .right-arrow {
+  color: var(--primary-color);
+}
+.product-main-menu .menu .link-hover-animation {
+  background: linear-gradient(
+    to right,
+    var(--primary-hover) 0%,
+    var(--primary-hover) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.7s ease;
+}
+.product-main-menu .menu .link-hover-animation:hover {
+  background-position: left bottom;
+}
+
+.product-main-menu .menu .featured-section .feature-img {
+  overflow: hidden;
+}
+.product-main-menu .menu .featured-section .feature-img img {
+  transition: all 1s linear;
+}
+.product-main-menu .menu .featured-section .feature-img img:hover {
+  transform: scale(1.1);
+}
+.product-main-menu .menu .details .product-details{
+  display: none;
+}
+
+/*  media query of submenu */
+@media (max-width: 991.98px) { 
+  .product-main-menu .menu .details{
+    display: none;
+  }
+ }
+
+/* -------------------------------------------------------------------- Aadil's code-------------------------------------------------- */
+/* ----------------------------- section 1 ----------------------------- */
+#section1 {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.btn-orange {
+.btn-custom {
   color: #fff;
   background-color: var(--primary-color);
 }
-.btn-orange:hover {
+.btn-custom:hover {
   color: #fff;
   background-color: var(--primary-hover);
 }
@@ -36,7 +107,6 @@ body {
   width: 100%; /* Ensure it has a defined initial width */
   mask-image: url("../images/pinch-left-mask.svg");
   mask-size: 100%;
-  background-color: #fff;
   mask-repeat: no-repeat;
   mask-position: center;
   transition: width 0.7s cubic-bezier(0.54, 0.09, 0.2, 0.92);
@@ -47,33 +117,35 @@ body {
 }
 
 .main-img {
-  border-radius: 13px;
+  object-fit: contain;
 }
-/* page 2  */
+
+/* ----------------------------- section 2 ----------------------------- */
 #section2 {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-
+#section2 .section2-head {
+  align-items: flex-start;
+  height: auto;
+  padding: 180px 0 100px;
+  position: relative;
+}
 .section2-head {
-  --webkit-backdrop-filter: blur(25px);
   -webkit-mask-image: linear-gradient(to bottom, #000 90%, transparent 100%);
-  align-items: center;
   backdrop-filter: blur(25px);
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5)
+  );
   box-sizing: border-box;
   display: flex;
-  height: calc(60vh + 100px);
+  height: calc(100vh + 200px);
   left: 0;
-  padding: 20px;
-  position: relative;
-  right: 0;
   text-align: center;
   z-index: 1;
-  margin-bottom: 20px;
-  padding: 180px 0 100px;
 }
 
 .bg-test::before {
@@ -146,9 +218,7 @@ body {
   bottom: 0 !important;
   margin-top: 20px;
 }
-.fs-25 {
-  font-size: 7rem;
-}
+
 .card {
   width: 20rem;
   height: 23rem;
@@ -179,33 +249,33 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.section3-body .swiper-slide .slide-img {
+  overflow: hidden;
+  border-radius: 15px;
+}
 .section3-body .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
-  /* height: 100%;
-    left: 50%;
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%; */
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
 }
-.section3-body .swiper-slide:nth-child(1n) {
+.section3-body .swiper-slide img:hover {
+  transform: scale(1.1);
+}
+/* .section3-body .swiper-slide:nth-child(1n) {
   margin-top: 50px ;
 }
 .section3-body .swiper-slide:nth-child(2n) {
   margin-top: 0px ;
-}
-.link-dark:hover{
+} */
+.link-dark:hover {
   text-decoration: underline !important;
 }
 
 /* ----------------------------- section 4 ----------------------------- */
-
 #section4 {
   position: relative;
   width: 100%;
@@ -227,22 +297,25 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Ensure the video stays behind */
+  z-index: -1;
+  /* Ensure the video stays behind */
 }
 .section4-main video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire background */
+  object-fit: cover;
+  /* Ensures the video covers the entire background */
 }
 .section4-body {
   position: relative;
-  z-index: 2; /* Ensure swiper content is on top */
+  z-index: 2;
+  /* Ensure swiper content is on top */
 }
 .section4-body .swiper {
   width: 100%;
   height: 100%;
 }
-.section4-body .swiper-wrapper{
+.section4-body .swiper-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
@@ -250,6 +323,7 @@ body {
   display: flex;
   transition-property: transform;
   box-sizing: content-box;
+  margin-left: 10vh;
 }
 .section4-body .swiper-slide {
   flex-shrink: 0;
@@ -266,50 +340,69 @@ body {
 .section4-body .swiper-slide.active-slide {
   transform: scale(1.1);
 }
-.section4-body .slider-img{
-  -webkit-mask-image: url('../images/twist-mask.svg');
+.section4-body .slider-img {
+  /* -webkit-mask-image: url('../images/twist-mask.svg'); */
   -webkit-mask-position: -132px -132px;
   -webkit-mask-repeat: no-repeat;
   height: 0;
   transform: translateZ(0);
-  transition: -webkit-mask-position .5s;
+  /* transition: -webkit-mask-position 0.5s, transform 0.5s ease-in-out; */
   padding-top: 80%;
   position: relative;
 }
-
 .section4-body .swiper-slide img {
   height: 100%;
-  left: 50%;
+  left: 0;
   object-fit: cover;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  /* transform: translate(-50%, -50%); */
   width: 100%;
 }
-.section4-body .slider-text{
-  background-image: linear-gradient(to bottom, transparent 0, rgba(21, 21, 21, 0.75) 100%);
-  bottom: 0;
-  box-sizing: border-box;
-  color: #fff;
-  left: 0;
+.section4-body .slider-text {
   position: absolute;
-  right: 0;
+  bottom: -9vh;
+  /* Start with text hidden below the image */
+  left: 0;
   width: 100%;
-  pointer-events: none;
+  background: rgba(19, 191, 235, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  transition: bottom 0.5s ease-in-out;
 }
-.section4-body .swiper-slide:nth-child(1n) {
-  margin-top: 50px;
-}
-.section4-body .swiper-slide:nth-child(2n) {
-  margin-top: 0px;
+.section4-body .swiper-slide:hover .slider-text {
+  bottom: 0;
+  /* Bring text up when hovering */
 }
 
+/* ----------------------------- last-section ----------------------------- */
+#last-section {
+  padding: 20px 0;
+}
+#last-section .custom-card {
+  background: var(--primary-color)
+    linear-gradient(180deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+  text-align: start;
+  border: 0;
+  width: 100%;
+  height: 20vh;
+  padding: 10px;
+  border-radius: 15px;
+}
+#last-section a {
+  text-decoration: none;
+  color: #000;
+}
+#last-section a:hover {
+  text-decoration: underline;
+}
 /* footer */
 .fs-7 {
   font-size: 12.5px;
   line-height: 1.7;
 }
-.link-orange {
+.link-custom {
   color: var(--primary-color);
 }
 footer .link-dark {
@@ -318,3 +411,64 @@ footer .link-dark {
 footer .link-dark:hover {
   color: var(--primary-color) !important;
 }
+
+/* about us banner swiper css start*/
+.aboutus p {
+  font-size: 17px;
+  line-height: 24px;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+}
+.banner .banner-img {
+  width: 100%;
+}
+.title {
+  color: var(--primary-color);
+}
+.mission,
+.dosage-form {
+  background-color: var(--primary-color);
+}
+.mission .mission-details .details .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  transition: all 1s linear;
+}
+.mission .mission-details .details .icon:hover {
+  background-color: var(--primary-hover);
+  color: white;
+}
+/* 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+
+/* about us banner swiper css end*/
+
+/* product page css start*/
+ .dosage-form .dosage .img{
+  width: 80px;
+  height: 80px;
+  /* border-radius: 100%; */
+ }
+ .dosage-form .dosage .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+/* product page css end*/
