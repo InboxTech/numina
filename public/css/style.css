@@ -77,6 +77,16 @@ body {
 .product-main-menu .menu .featured-section .feature-img img:hover {
   transform: scale(1.1);
 }
+.product-main-menu .menu .details .product-details{
+  display: none;
+}
+
+/*  media query of submenu */
+@media (max-width: 991.98px) { 
+  .product-main-menu .menu .details{
+    display: none;
+  }
+ }
 
 /* -------------------------------------------------------------------- Aadil's code-------------------------------------------------- */
 /* ----------------------------- section 1 ----------------------------- */
@@ -452,5 +462,14 @@ footer .link-dark:hover {
 /* about us banner swiper css end*/
 
 /* product page css start*/
-
+ .dosage-form .dosage .img{
+  width: 80px;
+  height: 80px;
+  /* border-radius: 100%; */
+ }
+ .dosage-form .dosage .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
 /* product page css end*/
