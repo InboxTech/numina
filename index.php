@@ -1,7 +1,8 @@
 <?php
-include_once('header.php');
-$header = new Header();
-$header->includeHeader('Numina | Home', './'); ?>
+    include_once('header.php');
+    $header = new Header();
+    $header->includeHeader('Numina | Home', './'); 
+?>
 
 <main>
     <div class="container-fluid">
@@ -19,10 +20,11 @@ $header->includeHeader('Numina | Home', './'); ?>
                     <button class="btn btn-custom btn-lg">Connect with us today</button>
                 </div>
             </div>
-            <div class="col-lg-6 overflow-hidden">
-                <div class="pinch-img">
-                    <img src="public/images/home-1.jpg" class="main-img" />
-                    <!-- <img src="public/images/pinch-left-mask.svg" class="main-img"/>  -->
+            <div class="col-lg-6">
+                <div class="rounded-4 overflow-hidden">
+                    <div class="pinch-img">
+                        <img src="public/images/home-1.jpg" class="main-img" />
+                    </div>
                 </div>
             </div>
 

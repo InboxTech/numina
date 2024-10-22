@@ -107,7 +107,6 @@ body {
   width: 100%; /* Ensure it has a defined initial width */
   mask-image: url("../images/pinch-left-mask.svg");
   mask-size: 100%;
-  background-color: #fff;
   mask-repeat: no-repeat;
   mask-position: center;
   transition: width 0.7s cubic-bezier(0.54, 0.09, 0.2, 0.92);
@@ -118,7 +117,7 @@ body {
 }
 
 .main-img {
-  border-radius: 13px;
+  object-fit: contain;
 }
 
 /* ----------------------------- section 2 ----------------------------- */

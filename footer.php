@@ -5,15 +5,16 @@
             <div class="col-lg-3">
                 <p class="fs-4 fw-medium mb-3 py-2">Numina</p>
                 <p class="fs-7 pt-2">
-                    This is our global website, intended for visitors seeking information on Numina's worldwide business.
-                    Our market sites can be reached by visiting our <a href="#" class="text-decoration-none link-dark">Location selector</a>
+                    We are a top pharmaceutical company in India, providing a wide range of generic medicines to improve the 
+                    healthcare and wellness of people worldwide. 
+                    <a href="#" class="text-decoration-none link-dark">Location selector</a>
                 </p>
                 &nbsp;
-                <p class="fs-7">© 2001-2024 Numina plc. All rights reserved. Trade marks are owned by or licensed to the Numina group of companies.</p>
+                <!-- <p class="fs-7">© 2001-2024 Numina plc. All rights reserved. Trade marks are owned by or licensed to the Numina group of companies.</p>
                 <p class="fs-7">Numina plc. Registered in England and Wales No. 3888792.</p>
                 <p class="fs-7">Registered office: 79 New Oxford Street, London. United Kingdom. WC1A 1DG</p>
                 <hr>
-                <a href="#" class="fs-7 text-decoration-none link-dark">> Modern Slavery Act statement 2023 (PDF - 139.1KB)</a>
+                <a href="#" class="fs-7 text-decoration-none link-dark">> Modern Slavery Act statement 2023 (PDF - 139.1KB)</a> -->
             </div>
             <div class="col-lg-3">
                 <ul class="list-group">

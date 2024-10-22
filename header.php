@@ -12,8 +12,8 @@ class header
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- links -->
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="' . $path . 'public/css/bootstrap.min.css">
     <link rel="stylesheet" href="' . $path . 'public/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="' . $path . 'public/font/css/all.min.css">
