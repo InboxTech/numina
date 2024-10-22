@@ -4,8 +4,9 @@ var show_submenu_pro = document.getElementById("show-pro-submenu");
 // Variable to keep track of the menu visibility
 var isVisible = false;
 
-submenu_pro.addEventListener("click", function() {
-    // Toggle between show and hide on a single click
+// Toggle the submenu on clicking the "Our product" link
+submenu_pro.addEventListener("click", function(event) {
+    event.stopPropagation(); // Prevents the click from bubbling up to the document
     if (!isVisible) {
         show_submenu_pro.style.display = 'flex';
         isVisible = true;
@@ -15,49 +16,27 @@ submenu_pro.addEventListener("click", function() {
     }
 });
 
-// Optional: If you still want to add a double-click event
-// submenu_pro.addEventListener("dblclick", function() {
-//     show_submenu_pro.style.display = 'none';
-//     isVisible = false; // Ensure the visibility state is reset
-// });
+// Function to hide the submenu when clicking outside of it
+document.addEventListener("click", function(event) {
+    var isClickInside = submenu_pro.contains(event.target) || show_submenu_pro.contains(event.target);
 
+    if (!isClickInside && isVisible) {
+        show_submenu_pro.style.display = 'none';
+        isVisible = false;
+    }
+});
 
-// var link_hover = document.querySelectorAll(".link-hover-animation");
-// var product_details = document.querySelectorAll(".product-details");
-
-// for(var i= 0; i <= 11; i++){
-//     link_hover[i].addEventListener('mouseenter', function(){
-//         product_details[i].classList.remove('d-none');
-//     })
-// }
-
+// Handling hover events for showing product details
 var link_hover = document.querySelectorAll(".link-hover-animation");
 var product_details = document.querySelectorAll(".product-details");
 
 link_hover.forEach((hoverElement, index) => {
     hoverElement.addEventListener('mouseenter', function() {
-        product_details.forEach(detail => detail.classList.add('d-none'));  // Hide all product details
-        product_details[index].classList.remove('d-none');  // Show the relevant product detail
+        product_details.forEach(detail => detail.style.display = 'none');  // Hide all product details
+        product_details[index].style.display = 'block';  // Show the relevant product detail
     });
 
     hoverElement.addEventListener('mouseleave', function() {
-        product_details[index].classList.add('d-none');  // Optionally hide the detail again when mouse leaves
+        product_details[index].style.display = 'none';  // Optionally hide the detail again when mouse leaves
     });
 });
-
-// about us banner swiper start
-
-// var swiper = new Swiper(".mybannerSwiper", {
-//     spaceBetween: 30,
-//     effect: "fade",
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
-
-  // about us banner swiper end
