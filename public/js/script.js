@@ -19,26 +19,17 @@ submenu_pro.addEventListener("click", function(event) {
         caretIcon.classList.add('fa-caret-down'); // Add the down caret
         isVisible = false;
     }
+
 });
 
-// Hide submenu with a slight delay to smooth the hover effect
-submenu_pro.addEventListener("mouseleave", function() {
-    hideTimeout = setTimeout(function() {
+// Function to hide the submenu when clicking outside of it
+document.addEventListener("click", function(event) {
+    var isClickInside = submenu_pro.contains(event.target) || show_submenu_pro.contains(event.target);
+
+    if (!isClickInside && isVisible) {
         show_submenu_pro.style.display = 'none';
-    }, 200);  // Delay of 200ms
-});
-
-// Keep submenu visible when hovering over the submenu itself
-show_submenu_pro.addEventListener("mouseenter", function() {
-    clearTimeout(hideTimeout);  // Prevent hiding when hovering over the submenu
-    show_submenu_pro.style.display = 'flex';
-});
-
-// Hide submenu when mouse leaves the submenu, with the same delay
-show_submenu_pro.addEventListener("mouseleave", function() {
-    hideTimeout = setTimeout(function() {
-        show_submenu_pro.style.display = 'none';
-    }, 200);  // Delay of 200ms
+        isVisible = false;
+    }
 });
 
 // Handling hover events for showing product details
