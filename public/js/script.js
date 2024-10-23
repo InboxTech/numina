@@ -1,29 +1,31 @@
 var submenu_pro = document.getElementById("pro-submenu");
 var show_submenu_pro = document.getElementById("show-pro-submenu");
+var hideTimeout;  // Variable to store the timeout
 
-// Variable to keep track of the menu visibility
-var isVisible = false;
-
-// Toggle the submenu on clicking the "Our product" link
-submenu_pro.addEventListener("click", function(event) {
-    event.stopPropagation(); // Prevents the click from bubbling up to the document
-    if (!isVisible) {
-        show_submenu_pro.style.display = 'flex';
-        isVisible = true;
-    } else {
-        show_submenu_pro.style.display = 'none';
-        isVisible = false;
-    }
+// Show submenu when hovering over "Our product" link
+submenu_pro.addEventListener("mouseenter", function() {
+    clearTimeout(hideTimeout);  // Clear any previous hide timeout
+    show_submenu_pro.style.display = 'flex';
 });
 
-// Function to hide the submenu when clicking outside of it
-document.addEventListener("click", function(event) {
-    var isClickInside = submenu_pro.contains(event.target) || show_submenu_pro.contains(event.target);
-
-    if (!isClickInside && isVisible) {
+// Hide submenu with a slight delay to smooth the hover effect
+submenu_pro.addEventListener("mouseleave", function() {
+    hideTimeout = setTimeout(function() {
         show_submenu_pro.style.display = 'none';
-        isVisible = false;
-    }
+    }, 200);  // Delay of 200ms
+});
+
+// Keep submenu visible when hovering over the submenu itself
+show_submenu_pro.addEventListener("mouseenter", function() {
+    clearTimeout(hideTimeout);  // Prevent hiding when hovering over the submenu
+    show_submenu_pro.style.display = 'flex';
+});
+
+// Hide submenu when mouse leaves the submenu, with the same delay
+show_submenu_pro.addEventListener("mouseleave", function() {
+    hideTimeout = setTimeout(function() {
+        show_submenu_pro.style.display = 'none';
+    }, 200);  // Delay of 200ms
 });
 
 // Handling hover events for showing product details

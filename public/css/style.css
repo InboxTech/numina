@@ -368,7 +368,7 @@ body {
   background: rgba(19, 191, 235, 0.7);
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 14px;
   transition: bottom 0.5s ease-in-out;
 }
 .section4-body .swiper-slide:hover .slider-text {
