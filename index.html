@@ -10,6 +10,7 @@
     <!-- links -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="public/font/css/all.min.css">
@@ -19,11 +20,10 @@
 
 <body>
     <header>
-       <!----------------------------------------------Navbar-------------------------------------------------->
-        
+        <!----------------------------------------------Navbar-------------------------------------------------->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand logo" href="#"><img src="public/images/header/Numina Logo.png"
+                <a class="navbar-brand logo" href="index.html"><img src="public/images/header/Numina Logo.png"
                         class="w-100 h-inherit" alt="" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link fs-5 postion-relative" id="pro-submenu">
-                                Our product
+                                Our product <i class="fa-solid fa-caret-down" id="caret-icon"></i>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -59,7 +59,7 @@
         <!------------------------- Product menu ------------------------->
         <div class="product-main-menu container row border rouded-bottom-5 mx-auto ps-5" id="show-pro-submenu">
             <div class="menu col-lg-6 col-md-12 col-sm-12 border-lg-end p-3 row flex-column">
-                <a href="#" class="text-decoration-none fw-bold mb-3 fs-3 link-orange">
+                <a href="product.html" class="text-decoration-none fw-bold mb-3 fs-3 link-orange">
                     Product <span class="fs-2 right-arrow"> &#8594; </span>
                 </a>
                 <a href="#" class="text-decoration-none link-hover-animation">
@@ -728,6 +728,7 @@
 
         <script src="public/js/bootstrap.min.js"></script>
         <script src="public/js/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="public/js/custom.js"></script>
         <script src="public/js/script.js"></script>
     </footer>

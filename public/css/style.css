@@ -16,9 +16,16 @@ body {
   width: auto;
 }
 /* ------------------------- product submenu  -------------------------- */
+header{
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
 .navbar .navbar-collapse .nav-link {
   margin-inline: 15px;
-  color: grey;
+  color: black;
   transition: all 2s linear;
   padding: 5px;
 }
@@ -26,7 +33,7 @@ body {
   color: black;
   font-weight: 400;
   background-color: var(--primary-hover);
-  /* padding: 10px; */
+  padding: 5x;
   border-radius: 15px;
 }
 .navbar .logo {
@@ -37,7 +44,7 @@ body {
   width: 60%;
   display: none;
   position: absolute;
-  top: 9%;
+  top: 100%;
   z-index: 2;
   left: 20%;
   background-color: white;
@@ -62,10 +69,11 @@ body {
   );
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: background-position 0.7s ease;
+  transition: all 0.7s ease;
 }
 .product-main-menu .menu .link-hover-animation:hover {
   background-position: left bottom;
+  /* color: white; */
 }
 
 .product-main-menu .menu .featured-section .feature-img {
@@ -88,12 +96,12 @@ body {
   }
  }
 
-/* -------------------------------------------------------------------- Aadil's code-------------------------------------------------- */
 /* ----------------------------- section 1 ----------------------------- */
 #section1 {
   width: 100%;
   height: 100%;
   position: relative;
+  margin-top: 85px !important;
 }
 .btn-custom {
   color: #fff;
@@ -361,10 +369,11 @@ body {
 }
 .section4-body .slider-text {
   position: absolute;
-  bottom: -9vh;
+  bottom: -7.8vh;
   /* Start with text hidden below the image */
   left: 0;
   width: 100%;
+  height: 14vh;
   background: rgba(19, 191, 235, 0.7);
   color: white;
   text-align: center;
@@ -389,6 +398,7 @@ body {
   height: 20vh;
   padding: 10px;
   border-radius: 15px;
+  color: #fff;
 }
 #last-section a {
   text-decoration: none;
@@ -411,64 +421,3 @@ footer .link-dark {
 footer .link-dark:hover {
   color: var(--primary-color) !important;
 }
-
-/* about us banner swiper css start*/
-.aboutus p {
-  font-size: 17px;
-  line-height: 24px;
-}
-.banner {
-  width: 100%;
-  height: 100%;
-}
-.banner .banner-img {
-  width: 100%;
-}
-.title {
-  color: var(--primary-color);
-}
-.mission,
-.dosage-form {
-  background-color: var(--primary-color);
-}
-.mission .mission-details .details .icon {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  color: var(--primary-color);
-  transition: all 1s linear;
-}
-.mission .mission-details .details .icon:hover {
-  background-color: var(--primary-hover);
-  color: white;
-}
-/* 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-} */
-
-/* about us banner swiper css end*/
-
-/* product page css start*/
- .dosage-form .dosage .img{
-  width: 80px;
-  height: 80px;
-  /* border-radius: 100%; */
- }
- .dosage-form .dosage .img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
- }
-/* product page css end*/
