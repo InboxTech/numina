@@ -1,6 +1,7 @@
+
 var submenu_pro = document.getElementById("pro-submenu");
 var show_submenu_pro = document.getElementById("show-pro-submenu");
-
+var caretIcon = document.getElementById("caret-icon"); // Get the caret icon element
 // Variable to keep track of the menu visibility
 var isVisible = false;
 
@@ -9,11 +10,16 @@ submenu_pro.addEventListener("click", function(event) {
     event.stopPropagation(); // Prevents the click from bubbling up to the document
     if (!isVisible) {
         show_submenu_pro.style.display = 'flex';
+        caretIcon.classList.remove('fa-caret-down'); // Remove the down caret
+        caretIcon.classList.add('fa-caret-up'); // Add the up caret
         isVisible = true;
     } else {
         show_submenu_pro.style.display = 'none';
+        caretIcon.classList.remove('fa-caret-up'); // Remove the up caret
+        caretIcon.classList.add('fa-caret-down'); // Add the down caret
         isVisible = false;
     }
+
 });
 
 // Function to hide the submenu when clicking outside of it
@@ -40,3 +46,32 @@ link_hover.forEach((hoverElement, index) => {
         product_details[index].style.display = 'none';  // Optionally hide the detail again when mouse leaves
     });
 });
+
+// swiper of product page
+var swiper = new Swiper(".myProductSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
+
+  // Animation On Scroll library 
+  AOS.init({
+    duration: 2000,
+  });
