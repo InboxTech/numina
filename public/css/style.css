@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Urbanist", sans-serif; /* font style */
-  font-weight: 400;
+  /* font-family: "Noto Sans", sans-serif;  */
   font-style: normal;
+  font-weight: 500;
 }
 :root {
   --primary-color: #19a0e1;
@@ -21,7 +21,7 @@ header{
   background-color: #fff;
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 10;
 }
 .navbar .navbar-collapse .nav-link {
   margin-inline: 15px;
@@ -113,7 +113,7 @@ header{
 }
 .pinch-img {
   width: 100%; /* Ensure it has a defined initial width */
-  mask-image: url("../images/pinch-left-mask.svg");
+  /* mask-image: url("../images/pinch-left-mask.svg"); */
   mask-size: 100%;
   mask-repeat: no-repeat;
   mask-position: center;
@@ -156,7 +156,7 @@ header{
   z-index: 1;
 }
 
-.bg-test::before {
+/* .bg-test::before {
   background-color: #fff;
   background-size: 100%;
   content: "";
@@ -172,22 +172,22 @@ header{
   transition-delay: 0.2s;
   width: 80px;
   z-index: 2;
-}
+} */
 
-.section2-main {
+/* .section2-main {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Keep video behind the content */
+  z-index: -1; 
 }
 
 .section2-main video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire background */
-}
+  object-fit: cover;
+} */
 
 .section2-body {
   position: relative;
