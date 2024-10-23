@@ -1,7 +1,7 @@
 <?php
     include_once('header.php');
     $header = new Header();
-    $header->includeHeader('Numina | Home', './'); 
+    $header->includeHeader('Numina | Home', './');
 ?>
 
 <main>
@@ -157,7 +157,7 @@
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Antiretrovirals</a></div>
                             </div>
                         </div>
-                        
+
                     </div>
 
                 </div>
