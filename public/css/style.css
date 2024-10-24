@@ -113,7 +113,7 @@ header{
 }
 .pinch-img {
   width: 100%; /* Ensure it has a defined initial width */
-  /* mask-image: url("../images/pinch-left-mask.svg"); */
+  mask-image: url("../images/pinch-left-mask.svg");
   mask-size: 100%;
   mask-repeat: no-repeat;
   mask-position: center;
@@ -156,7 +156,7 @@ header{
   z-index: 1;
 }
 
-/* .bg-test::before {
+.bg-test::before {
   background-color: #fff;
   background-size: 100%;
   content: "";
@@ -172,9 +172,9 @@ header{
   transition-delay: 0.2s;
   width: 80px;
   z-index: 2;
-} */
+}
 
-/* .section2-main {
+.section2-main {
   position: absolute;
   top: 0;
   left: 0;
@@ -187,7 +187,7 @@ header{
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
+}
 
 .section2-body {
   position: relative;
