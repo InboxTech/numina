@@ -23,6 +23,11 @@ header{
   top: 0;
   z-index: 1000;
 }
+.navbar{
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(180deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+  border-image-slice: 1;
+}
 .navbar .navbar-collapse .nav-link {
   margin-inline: 15px;
   color: black;
@@ -121,7 +126,10 @@ header{
 }
 
 .pinch-img:hover {
-  width: 600vh; /* Adjust for testing */
+  /* width: 600vh;  */
+  /* border: 3px solid transparent;
+  border-image: linear-gradient(180deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+  border-image-slice: 1; */
 }
 
 .main-img {
@@ -163,7 +171,7 @@ header{
   height: 169px;
   left: 0;
   margin: 0 auto;
-  mask-image: url(../images/fold.svg);
+  /* mask-image: url(../images/fold.svg); */
   position: absolute;
   right: 0;
   top: -46px;
@@ -227,12 +235,14 @@ header{
   margin-top: 20px;
 }
 
-.card {
-  width: 20rem;
+.section2-body .swiper-slide .custom-card {
+  width: 25rem;
   height: 23rem;
   position: relative;
   margin-bottom: 2rem;
-  border-radius: 20px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(180deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+  border-image-slice: 1;
 }
 .link-footer {
   position: absolute;

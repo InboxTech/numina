@@ -28,7 +28,7 @@ var swiper = new Swiper(".section2Swiper", {
     },
     1440: {
       slidesPerView: 4,
-      spaceBetween: 70,
+      // spaceBetween: 70,
     },
   },
 });
