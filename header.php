@@ -8,12 +8,7 @@ class header
                 <html lang="en">
 
                 <head>
-                    <title>' . $title . '
-                    <!doctype html>
-                <html lang="en">
-
-                <head>
-                    <title>Numina | Home</title>
+                    <title>' . $title . '</title>
                     <!-- Required meta tags -->
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -59,6 +54,9 @@ class header
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link fs-5"> Drop us a line </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="admin/logout.php" class="nav-link fs-5"> Logout </a>
                                         </li>
                                     </ul>
                                 </div>

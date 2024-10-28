@@ -1,5 +1,6 @@
 <?php
     include_once('header.php');
+
     $header = new Header();
     $header->includeHeader('Numina | Home', './');
 ?>
