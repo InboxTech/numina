@@ -29,7 +29,7 @@ if (isset($_POST['update_btn'])) {
     $updateProduct = ProductService::ProductUpdate($id, $title, $subTitle, $shortDescription, $longDescription, $link);
 }
 
-if(isset($_POST['delete_btn'])){
+if (isset($_POST['delete_btn'])) {
     $id = $_POST['id'];
 
     $deleteProduct = ProductService::ProductDelete($id);
@@ -46,6 +46,16 @@ if(isset($_POST['delete_btn'])){
 
     <link rel="stylesheet" href="../public/css/bootstrap.min.css">
     <link rel="stylesheet" href="../public/fontawesome-free-6.6.0-web/css/all.css">
+    <style>
+        #autoCloseAlert {
+            position: fixed;
+            width: 70%;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10; 
+        }
+    </style>
 </head>
 
 <body>
@@ -95,24 +105,15 @@ if(isset($_POST['delete_btn'])){
         <div class="container py-3">
             <!-------------------- Header -------------------->
             <?php
-                if (strlen(ProductService::$msg) > 0) {
-                    if (strpos(ProductService::$msg, 'Success:') === 0) {
-                        echo '
-                            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                ' . ProductService::$msg . '
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            </div>
-                        ';
-                    } else {
-                        // Handle as an error message.
-                        echo '
-                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                ' . ProductService::$msg . '
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            </div>
-                        ';
-                    }
-                }
+            if (strlen(ProductService::$msg) > 0) {
+                $alertType = strpos(ProductService::$msg, 'Success:') === 0 ? 'success' : 'danger';
+                echo '
+                        <div class="alert alert-' . $alertType . ' alert-dismissible fade show" role="alert" id="autoCloseAlert">
+                            ' . ProductService::$msg . '
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    ';
+            }
             ?>
             <div class="d-flex justify-content-between">
                 <h2>Products</h2>
@@ -178,13 +179,13 @@ if(isset($_POST['delete_btn'])){
                         </tr>
                     </thead>
                     <tbody>
-                <!-- Fetching data from the database -->
-                <?php
+                        <!-- Fetching data from the database -->
+                        <?php
 
-                $products = ProductService::getAllProducts();
-                $i = 1;
-                foreach ($products as $product) {
-                    echo '
+                        $products = ProductService::getAllProducts();
+                        $i = 1;
+                        foreach ($products as $product) {
+                            echo '
                         <tr>
                             <th class="py-3" scope="row">' . $i++ . '</th>
                             <td class="py-3">' . $product->getProductTitle() . '</td>
@@ -197,7 +198,7 @@ if(isset($_POST['delete_btn'])){
                                 <button type="button" data-id="' . $product->getProductId() . '" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#editProduct_' . $product->getProductId() . '">
                                     <i class="fa-solid fa-pen-to-square"></i> Edit
                                 </button>
-                                <form action="'. htmlspecialchars($_SERVER['PHP_SELF']) .'" method="post">
+                                <form action="' . htmlspecialchars($_SERVER['PHP_SELF']) . '" method="post">
                                     <input type="hidden" name="id" value="' . $product->getProductId() . '">
                                     <button type="submit" name="delete_btn" class="btn btn-sm btn-danger">
                                         <i class="fa-solid fa-trash"></i> Delete
@@ -219,7 +220,7 @@ if(isset($_POST['delete_btn'])){
                                     <button type="button" data-id="' . $product->getProductId() . '" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#editProduct_' . $product->getProductId() . '">
                                         <i class="fa-solid fa-pen-to-square"></i> Edit
                                     </button>
-                                    <form action="'. htmlspecialchars($_SERVER['PHP_SELF']) .'" method="post">
+                                    <form action="' . htmlspecialchars($_SERVER['PHP_SELF']) . '" method="post">
                                         <input type="hidden" name="id" value="' . $product->getProductId() . '">
                                         <button type="submit" name="delete_btn" class="btn btn-sm btn-danger">
                                             <i class="fa-solid fa-trash"></i> Delete
@@ -273,9 +274,9 @@ if(isset($_POST['delete_btn'])){
                             </div>
                         </div>
                     ';
-                }
-                ?>
-                </tbody>
+                        }
+                        ?>
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -344,6 +345,16 @@ if(isset($_POST['delete_btn'])){
                     document.getElementById('editProductLabel').textContent = 'Edit Product ' + productId;
                 });
             });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                var alertElement = document.getElementById("autoCloseAlert");
+                if (alertElement) {
+                    var alert = new bootstrap.Alert(alertElement);
+                    alert.close();
+                }
+            }, 3000); // 3000 milliseconds = 3 seconds
         });
     </script>
 </body>

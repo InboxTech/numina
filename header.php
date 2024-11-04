@@ -16,10 +16,10 @@ class header
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap">
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap">
                     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-                    <link rel="stylesheet" href="public/css/bootstrap.min.css">
-                    <link rel="stylesheet" href="public/css/swiper-bundle.min.css" />
-                    <link rel="stylesheet" href="public/font/css/all.min.css">
-                    <link rel="stylesheet" href="public/css/style.css">
+                    <link rel="stylesheet" href="'. $path .'public/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="'. $path .'public/css/swiper-bundle.min.css" />
+                    <link rel="stylesheet" href="'. $path .'public/fonts/css/all.css">
+                    <link rel="stylesheet" href="'. $path .'public/css/style.css">
 
                 </head>
 
