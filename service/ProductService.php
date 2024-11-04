@@ -14,10 +14,10 @@
             $resultProdcutInsert = mysqli_query($conn, $productInsertSql);
 
             if($resultProdcutInsert) {
-                return ProductService::$msg = 'inserted';
+                return ProductService::$msg = 'Success: Inserted Product!';
                 return true;            
             } else { 
-                return ProductService::$msg = 'error';
+                return ProductService::$msg = 'Error: Failed to Inserted Product!';
                 return false;
             }
         }
@@ -79,14 +79,14 @@
             $db = new DbConnect();
             $conn = $db->getConnection();
 
-            $productUpdateSql = "UPDATE `product` SET title = '$title', sub_title = '$subTitle', short_description = '$shortDescription', long_description = '$longDescription', link = '$link' updated_at = CURRENT_TIMESTAMP() WHERE id = '$id'";
+            $productUpdateSql = "UPDATE `product` SET title = '$title', sub_title = '$subTitle', short_description = '$shortDescription', long_description = '$longDescription', link = '$link', updated_at = CURRENT_TIMESTAMP() WHERE id = '$id'";
             $resultProdcutUpdate = mysqli_query($conn, $productUpdateSql);
 
             if($resultProdcutUpdate){
-                return ProductService::$msg = 'Success, Update Product!';
+                return ProductService::$msg = 'Success: Update Product!';
                 return true;
             }else{
-                return ProductService::$msg = 'Error, Failed to Update Product!';
+                return ProductService::$msg = 'Error: Failed to Update Product!';
                 return true;
             }
         }
@@ -99,10 +99,10 @@
             $resultProdcutDelete = mysqli_query($conn, $productDeleteSql);
 
             if($resultProdcutDelete){
-                return ProductService::$msg = 'Success, Delete Product!';
+                return ProductService::$msg = 'Success: Delete Product!';
                 return true;
             }else{
-                return ProductService::$msg = 'Error, Failed to Delete Product!';
+                return ProductService::$msg = 'Error: Failed to Delete Product!';
                 return true;
             }
         }

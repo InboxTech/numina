@@ -33,11 +33,8 @@ if(isset($_POST['delete_btn'])){
     $id = $_POST['id'];
 
     $deleteProduct = ProductService::ProductDelete($id);
-
 }
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +51,7 @@ if(isset($_POST['delete_btn'])){
 <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Numina</a>
             <button
                 class="navbar-toggler d-lg-none"
                 type="button"
@@ -99,19 +96,22 @@ if(isset($_POST['delete_btn'])){
             <!-------------------- Header -------------------->
             <?php
                 if (strlen(ProductService::$msg) > 0) {
-                    echo '
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            ' . ProductService::$msg . '
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    ';
-                } else {
-                    echo '
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            ' . ProductService::$msg . '
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    ';
+                    if (strpos(ProductService::$msg, 'Success:') === 0) {
+                        echo '
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                ' . ProductService::$msg . '
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        ';
+                    } else {
+                        // Handle as an error message.
+                        echo '
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                ' . ProductService::$msg . '
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        ';
+                    }
                 }
             ?>
             <div class="d-flex justify-content-between">
@@ -165,7 +165,7 @@ if(isset($_POST['delete_btn'])){
 
             <!-------------------- Body -------------------->
             <div class="row">
-                <!-- <table class="table">
+                <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">Sr.</th>
@@ -177,7 +177,7 @@ if(isset($_POST['delete_btn'])){
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
-                    <tbody> -->
+                    <tbody>
                 <!-- Fetching data from the database -->
                 <?php
 
@@ -185,37 +185,14 @@ if(isset($_POST['delete_btn'])){
                 $i = 1;
                 foreach ($products as $product) {
                     echo '
-                        <!--
-                            <tr>
-                                <th class="py-3" scope="row">' . $i++ . '</th>
-                                <td class="py-3">' . $product->getProductTitle() . '</td>
-                                <td class="py-3">' . $product->getProductSubTitle() . '</td>
-                                <td class="py-3">' . $product->getProductShortDescription() . '</td>
-                                <td class="py-3">' . $product->getProductLongDescription() . '</td>
-                                <td class="py-3">' . $product->getProductLink() . '</td>
-                                <td class="py-3">
-                                    <input type="hidden" name="id" value="' . $product->getProductId() . '">
-                                    <button type="button" data-id="' . $product->getProductId() . '" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#editProduct_' . $product->getProductId() . '">
-                                        <i class="fa-solid fa-pen-to-square"></i> Edit
-                                    </button>
-                                    <form action="'. htmlspecialchars($_SERVER['PHP_SELF']) .'" method="post">
-
-                                        <button type="submit" name="delete_btn" class="btn btn-sm btn-danger">
-                                            <i class="fa-solid fa-trash"></i> Delete
-                                        </button>
-                                    </form>
-                                </td>
-                            </tr>
-                        -->
-
-                        <div class="card m-2" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">' . $product->getProductTitle() . '</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">' . $product->getProductSubTitle() . '</h6>
-                            <p class="card-text">' . $product->getProductShortDescription() . '</p>
-                            <p class="card-text">' . $product->getProductLongDescription() . '</p>
-                            <a href="#" class="card-link">' . $product->getProductLink() . '</a>
-                            <div>
+                        <tr>
+                            <th class="py-3" scope="row">' . $i++ . '</th>
+                            <td class="py-3">' . $product->getProductTitle() . '</td>
+                            <td class="py-3">' . $product->getProductSubTitle() . '</td>
+                            <td class="py-3">' . $product->getProductShortDescription() . '</td>
+                            <td class="py-3">' . $product->getProductLongDescription() . '</td>
+                            <td class="py-3">' . $product->getProductLink() . '</td>
+                            <td class="py-3">
                                 <input type="hidden" name="id" value="' . $product->getProductId() . '">
                                 <button type="button" data-id="' . $product->getProductId() . '" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#editProduct_' . $product->getProductId() . '">
                                     <i class="fa-solid fa-pen-to-square"></i> Edit
@@ -226,9 +203,33 @@ if(isset($_POST['delete_btn'])){
                                         <i class="fa-solid fa-trash"></i> Delete
                                     </button>
                                 </form>
+                            </td>
+                        </tr>
+
+                        <!--
+                            <div class="card m-2" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">' . $product->getProductTitle() . '</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">' . $product->getProductSubTitle() . '</h6>
+                                <p class="card-text">' . $product->getProductShortDescription() . '</p>
+                                <p class="card-text">' . $product->getProductLongDescription() . '</p>
+                                <a href="#" class="card-link">' . $product->getProductLink() . '</a>
+                                <div>
+                                    <input type="hidden" name="id" value="' . $product->getProductId() . '">
+                                    <button type="button" data-id="' . $product->getProductId() . '" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#editProduct_' . $product->getProductId() . '">
+                                        <i class="fa-solid fa-pen-to-square"></i> Edit
+                                    </button>
+                                    <form action="'. htmlspecialchars($_SERVER['PHP_SELF']) .'" method="post">
+                                        <input type="hidden" name="id" value="' . $product->getProductId() . '">
+                                        <button type="submit" name="delete_btn" class="btn btn-sm btn-danger">
+                                            <i class="fa-solid fa-trash"></i> Delete
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                        </div>
+                            </div> -->
+
+
                         <div class="modal fade" id="editProduct_' . $product->getProductId() . '" tabindex="-1" aria-labelledby="editProductLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-xl">
                                 <div class="modal-content">
@@ -274,8 +275,8 @@ if(isset($_POST['delete_btn'])){
                     ';
                 }
                 ?>
-                <!-- </tbody>
-                </table> -->
+                </tbody>
+                </table>
             </div>
         </div>
     </main>
