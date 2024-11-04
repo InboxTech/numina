@@ -1,8 +1,14 @@
 <?php
-    include_once('header.php');
+    include_once('service/DbConnect.php');
+    include_once('service/ProductService.php');
+    include_once('service/ProductModel.php');
 
+    include_once('header.php');
     $header = new Header();
     $header->includeHeader('Numina | Home', './');
+
+    $product = ProductService::getAllProducts();
+
 ?>
 
 <main>
@@ -24,7 +30,7 @@
             <div class="col-lg-6">
                 <div class="rounded-4 overflow-hidden">
                     <div class="pinch-img">
-                        <img src="public/images/home-1.jpg" class="main-img" />
+                        <img src="public/images/section3/openart-image_uShboVPI_1730117810929_raw.jpg" class="main-img" />
                     </div>
                 </div>
             </div>
@@ -70,15 +76,25 @@
             <div class="section2-body">
                 <div class="swiper section2Swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide card border-0">
-                            <div class="card-body">
-                                <div class="card-title text-uppercase">Antacid</div>
-                                <div class="card-title display-6 link-custom">Fast relief for heartburn & indigestion</div>
-                                <div class="card-text mb-5">Relief in 60 Secs</div>
-                                <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Antacid</a></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card border-0">
+
+                    <?php
+                        foreach($product as $product){
+                            echo'
+                                <div class="swiper-slide card border-0">
+                                    <div class="card-body">
+                                        <div class="card-title text-uppercase">'. $product->getProductTitle() .'</div>
+                                        <div class="card-title display-6 link-custom">'. $product->getProductSubTitle() .'</div>
+                                        <div class="card-text mb-5">'. $product->getProductShortDescription() .'</div>
+                                        <div class="link-footer"><a href="#" class="link-dark text-decoration-none">'. $product->getProductLink() .'</a></div>
+                                    </div>
+                                </div>
+                            ';
+                        }
+                    ?>
+
+
+
+                        <!-- <div class="swiper-slide card border-0">
                             <div class="card-body">
                                 <div class="card-title text-uppercase">Antibiotics</div>
                                 <div class="card-title display-6 link-custom">Targeted treatments for bacterial infections</div>
@@ -157,7 +173,7 @@
                                 <div class="card-text mb-5">1 Solution for Life</div>
                                 <div class="link-footer"><a href="#" class="link-dark text-decoration-none">Go to Antiretrovirals</a></div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
 
@@ -179,6 +195,17 @@
             <div class="section3-body p-5">
                 <div class="swiper section3Swiper">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="text-decoration-none link-dark">
+                                <span>World-Class Manufacturing Infrastructure</span>
+                                <div class="slide-img">
+                                    <img src="public/images/section3/openart-image_uShboVPI_1730117810929_raw.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p>Our manufacturing units are equipped with the latest machinery and automated systems to produce high-quality drugs.</p>
+                                </div>
+                            </a>
+                        </div>
                         <div class="swiper-slide">
                             <a href="#" class="text-decoration-none link-dark">
                                 <span>World-Class Manufacturing Infrastructure</span>
