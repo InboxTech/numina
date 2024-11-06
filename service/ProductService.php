@@ -4,7 +4,6 @@
 
         public static $msg = '';
 
-
         public static function ProductAdd($title, $subTitle, $shortDescription, $longDescription, $link){
             $db = new DbConnect();
             $conn = $db->getConnection();
@@ -75,7 +74,7 @@
             return $productArray;   
         }
 
-        public static function ProductUpdate($id,$title, $subTitle, $shortDescription, $longDescription, $link){
+        public static function ProductUpdate($id, $title, $subTitle, $shortDescription, $longDescription, $link){
             $db = new DbConnect();
             $conn = $db->getConnection();
 
