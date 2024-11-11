@@ -34,7 +34,7 @@ header{
   font-weight: 400;
   background-color: var(--primary-hover);
   padding: 5x;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 .navbar .logo {
   width: 12%;
