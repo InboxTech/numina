@@ -30,7 +30,7 @@
             <div class="col-lg-6">
                 <div class="rounded-4 overflow-hidden">
                     <div class="pinch-img">
-                        <img src="public/images/section3/openart-image_uShboVPI_1730117810929_raw.jpg" class="main-img" />
+                        <img src="public/images/home/section3/openart-image_uShboVPI_1730117810929_raw.jpg" class="main-img" />
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
         <!------------------------- Section 2 ------------------------->
         <div id="section2">
             <div class="section2-main">
-                <video src="public/images/respiratory-syncytial-virus-rsv-science-animation-16x9-gskcom-only.mp4" autoplay muted loop></video>
+                <video src="public/images/home/respiratory-syncytial-virus-rsv-science-animation-16x9-gskcom-only.mp4" autoplay muted loop></video>
             </div>
             <div class="section2-head">
                 <div class="bg-test">
@@ -116,7 +116,7 @@
                             <a href="#" class="text-decoration-none link-dark">
                                 <span>World-Class Manufacturing Infrastructure</span>
                                 <div class="slide-img">
-                                    <img src="public/images/section3/openart-image_uShboVPI_1730117810929_raw.jpg" alt="">
+                                    <img src="public/images/home/section3/Next-gen Quality Control Mechanisms.png" alt="">
                                 </div>
                                 <div>
                                     <p>Our manufacturing units are equipped with the latest machinery and automated systems to produce high-quality drugs.</p>
@@ -127,7 +127,7 @@
                             <a href="#" class="text-decoration-none link-dark">
                                 <span>World-Class Manufacturing Infrastructure</span>
                                 <div class="slide-img">
-                                    <img src="public/images/section3/slide_1.jpg" alt="">
+                                    <img src="public/images/home/section3/world-class_manufacturing_infrastructure.jpg" alt="">
                                 </div>
                                 <div>
                                     <p>Our manufacturing units are equipped with the latest machinery and automated systems to produce high-quality drugs.</p>
@@ -138,7 +138,7 @@
                             <a href="#" class="text-decoration-none link-dark">
                                 <span>Next-gen Quality Control Mechanisms</span>
                                 <div class="slide-img">
-                                    <img src="public/images/section3/slide_2.jpg" alt="">
+                                    <img src="public/images/home/section3/slide_2.jpg" alt="">
                                 </div>
                                 <div>
                                     <p>Our every product meets the highest quality and safety standards by using latest technologies like AI-driven inspections & real-time monitoring.</p>
@@ -149,7 +149,7 @@
                             <a href="#" class="text-decoration-none link-dark">
                                 <span>R&D-Driven Innovation</span>
                                 <div class="slide-img">
-                                    <img src="public/images/section3/slide_3.jpg" alt="">
+                                    <img src="public/images/home/section3/slide_3.jpg" alt="">
                                 </div>
                                 <div>
                                     <p>Our innovative R&D team focuses on developing new formulations and improving how we make them to be the best in the market.</p>
@@ -160,7 +160,7 @@
                             <a href="#" class="text-decoration-none link-dark">
                                 <span>Global Supply Chain Expansion</span>
                                 <div class="slide-img">
-                                    <img src="public/images/section3/slide_4.jpg" alt="">
+                                    <img src="public/images/home/section3/slide_4.jpg" alt="">
                                 </div>
                                 <div>
                                     <p>We have a smart delivery network that helps us deliver our products to customers fast, secure across the world.</p>
@@ -171,7 +171,7 @@
                             <a href="#" class="text-decoration-none link-dark">
                                 <span>Global Standard Certifications</span>
                                 <div class="slide-img">
-                                    <img src="public/images/section3/slide_5.jpg" alt="">
+                                    <img src="public/images/home/section3/slide_5.jpg" alt="">
                                 </div>
                                 <div>
                                     <p>We’ve certifications like ISO 9001 and GMP that show our products are meeting international standards for quality, and safety.</p>
@@ -182,7 +182,7 @@
                             <a href="#" class="text-decoration-none link-dark">
                                 <span>Collaborative Innovation Partnerships</span>
                                 <div class="slide-img">
-                                    <img src="public/images/section3/slide_6.jpg" alt="">
+                                    <img src="public/images/home/section3/slide_6.jpg" alt="">
                                 </div>
                                 <div>
                                     <p>Through partnerships with industry leaders and research groups, we are developing innovative ideas and improving our manufacturing techniques.</p>
@@ -202,7 +202,7 @@
         <!------------------------- Section 4 ------------------------->
         <div id="section4">
             <div class="section4-main">
-                <video src="public/images/gradient-inverted.mp4" autoplay muted loop></video>
+                <video src="public/images/home/gradient-inverted.mp4" autoplay muted loop></video>
             </div>
 
             <div class="section4-head py-5">
@@ -216,7 +216,7 @@
                         <div class="swiper-slide">
                             <a href="#" class="text-decoration-none link-light pos">
                                 <div class="slider-img">
-                                    <img src="public/images/section4/slide_1.jpg" alt="">
+                                    <img src="public/images/home/section4/slide_1.jpg" alt="">
                                 </div>
                                 <div class="slider-text">
                                     <h2>Enhancing Global Health</h2>
@@ -228,7 +228,7 @@
                         <div class="swiper-slide">
                             <a href="#" class="text-decoration-none link-light">
                                 <div class="slider-img">
-                                    <img src="public/images/section4/slide_2.jpg" alt="">
+                                    <img src="public/images/home/section4/slide_2.jpg" alt="">
                                 </div>
                                 <div class="slider-text">
                                     <h2>Supporting Diversity and Inclusion</h2>
@@ -240,7 +240,7 @@
                         <div class="swiper-slide">
                             <a href="#" class="text-decoration-none link-light">
                                 <div class="slider-img">
-                                    <img src="public/images/section4/slide_3.jpg" alt="">
+                                    <img src="public/images/home/section4/slide_3.jpg" alt="">
                                 </div>
                                 <div class="slider-text">
                                     <h2>Upholding Ethical Standards</h2>
@@ -252,7 +252,7 @@
                         <div class="swiper-slide">
                             <a href="#" class="text-decoration-none link-light">
                                 <div class="slider-img">
-                                    <img src="public/images/section4/slide_4.jpg" alt="">
+                                    <img src="public/images/home/section4/slide_4.jpg" alt="">
                                 </div>
                                 <div class="slider-text">
                                     <h2>Protecting Our Planet</h2>
@@ -264,7 +264,7 @@
                         <div class="swiper-slide">
                             <a href="#" class="text-decoration-none link-light">
                                 <div class="slider-img">
-                                    <img src="public/images/section4/slide_2.jpg" alt="">
+                                    <img src="public/images/home/section4/slide_2.jpg" alt="">
                                 </div>
                                 <div class="slider-text">
                                     <h2>Product Governance</h2>
@@ -276,7 +276,7 @@
                         <div class="swiper-slide">
                             <a href="#" class="text-decoration-none link-light">
                                 <div class="slider-img">
-                                    <img src="public/images/section4/slide_4.jpg" alt="">
+                                    <img src="public/images/home/section4/slide_4.jpg" alt="">
                                 </div>
                                 <div class="slider-text">
                                     <h2>Improving Access for All</h2>

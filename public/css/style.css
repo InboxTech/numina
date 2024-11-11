@@ -134,6 +134,7 @@ header{
   width: 100%;
   height: 100%;
   overflow: hidden;
+  margin-top: 50px;
 }
 #section2 .section2-head {
   align-items: flex-start;
@@ -163,7 +164,7 @@ header{
   height: 169px;
   left: 0;
   margin: 0 auto;
-  mask-image: url(../images/fold.svg);
+  mask-image: url(../images/home/fold.svg);
   position: absolute;
   right: 0;
   top: -46px;
@@ -349,7 +350,7 @@ header{
   transform: scale(1.1);
 }
 .section4-body .slider-img {
-  /* -webkit-mask-image: url('../images/twist-mask.svg'); */
+  /* -webkit-mask-image: url('../images/home/twist-mask.svg'); */
   -webkit-mask-position: -132px -132px;
   -webkit-mask-repeat: no-repeat;
   height: 0;

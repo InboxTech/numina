@@ -1,8 +1,6 @@
 <?php
-class header
-{
-    public function includeHeader($title, $path,)
-    {
+class header{
+    public function includeHeader($title, $path,){
         echo '
             <!doctype html>
                 <html lang="en">
@@ -20,6 +18,8 @@ class header
                     <link rel="stylesheet" href="'. $path .'public/css/swiper-bundle.min.css" />
                     <link rel="stylesheet" href="'. $path .'public/fonts/css/all.css">
                     <link rel="stylesheet" href="'. $path .'public/css/style.css">
+                    <link rel="stylesheet" href="'. $path .'public/css/about.css">
+                    <link rel="stylesheet" href="'. $path .'public/css/product.css" />
 
                 </head>
 
@@ -34,10 +34,11 @@ class header
                                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
+                                
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item">
-                                            <a href="aboutus.html" class="nav-link fs-5"> Who is Numina </a>
+                                            <a href="about.php" class="nav-link fs-5"> Who is Numina </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link fs-5 postion-relative" id="pro-submenu">
@@ -65,7 +66,7 @@ class header
 
                         <div class="product-main-menu container row border rouded-bottom-5 mx-auto ps-5" id="show-pro-submenu">
                             <div class="menu col-lg-6 col-md-12 col-sm-12 border-lg-end p-3 row flex-column">
-                                <a href="product.html" class="text-decoration-none fw-bold mb-3 fs-3 link-orange">
+                                <a href="product.php" class="text-decoration-none fw-bold mb-3 fs-3 link-orange">
                                     Product <span class="fs-2 right-arrow"> &#8594; </span>
                                 </a>
                                 <a href="#" class="text-decoration-none link-hover-animation">
