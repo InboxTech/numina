@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Urbanist", sans-serif; /* font style */
+   /* font-family: "Urbanist", sans-serif; 
+  font-weight: 400;
+  font-style: normal;  */
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -34,7 +38,7 @@ header{
   font-weight: 400;
   background-color: var(--primary-hover);
   padding: 5x;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 .navbar .logo {
   width: 12%;

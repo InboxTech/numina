@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="public/css/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="public/fonts/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="public/css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="public/css/style.css" />
     <link rel="stylesheet" href="public/css/product.css" />
 </head>
@@ -45,7 +48,7 @@
                             <a href="aboutus.html" class="nav-link fs-5"> Who is Numina </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link fs-5 postion-relative" id="pro-submenu">
+                            <a href="#" class="nav-link fs-5 postion-relative active" id="pro-submenu">
                                 Our product <i class="fa-solid fa-caret-down" id="caret-icon"></i>
                             </a>
                         </li>
@@ -291,11 +294,12 @@
 
     <main>
         <section>
-            <div class="container-fluid row justify-content-evenly align-items-center p-5">
+            <div class="container-fluid  p-5">
+                <div class="row justify-content-evenly align-items-center">
                 <div class="col-lg-6 col-md-12 p-5">
                     <h1 class="fs-1 title text-capitalize"> Our pharma products </h1>
 
-                    <p class="fs-2 fw-light my-3"> Expert Care, Quality Medicines for Health Needs….<br>Because You
+                    <p class="fs-4 fw-light my-3"> Expert Care, Quality Medicines for Health Needs….<br>Because You
                         Deserve The Best!!
                     </p>
 
@@ -310,6 +314,7 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
 
         <section>
@@ -323,12 +328,14 @@
             </div>
         </section>
 
+        <!-----------------------------------------------------tablets, capsules and syrup section start----------------------------------------->
         <section>
             <div class="container-fluid dosage-form my-5 p-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <h1 class="text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> Our Dosage Forms- Formulated For You </h1>
 
-                <div class="container mx-auto row justify-content-evenly my-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <div class="dosage bg-white rounded-5 col-lg-3 text-center p-3 m-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="container mx-auto  my-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="row justify-content-evenly">
+                    <div class="dosage bg-white rounded-5 col-lg-3 text-center p-3 m-2" data-aos="fade-right">
                         <div class="img mx-auto">
                             <img src="public/images/product/tablet.jpg" class="rounded-5" alt="">
                         </div>
@@ -344,7 +351,7 @@
                         <p class="fs-5">Fast-working capsules for effective treatment
                         </p>
                     </div>
-                    <div class="dosage bg-white rounded-5 col-lg-3 text-center p-3 m-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="dosage bg-white rounded-5 col-lg-3 text-center p-3 m-2"  data-aos="fade-left">
                         <div class="img mx-auto">
                             <img src="public/images/product/syrup.jpg" class="rounded-5" alt="">
                         </div>
@@ -353,10 +360,15 @@
                         </p>
                     </div>
                 </div>
+                </div>
 
             </div>
         </section>
+        <!-----------------------------------------------------tablets, capsules and syrup section end----------------------------------------->
 
+
+
+        <!------------------------------------------------------product details swiper start-------------------------------------->
         <section>
             <div class="our-products container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <h1 class="fs-1 title text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> Our Therapeutic Products </h1>
@@ -374,195 +386,220 @@
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center"> Antacid </h2>
-                                <div>
-                                    <p>Antacid provides relief from digestive comfort. These agents neutralize stomach acid and
+                                <h2 class="title text-center mb-3"> Antacid </h2>
+                                <div class="text-container">
+                                    <p class="mb-0">Antacid provides relief from digestive comfort. These agents neutralize stomach acid and
                                         raise the pH level of gastric fluid. As antacids raise the pH, they decrease peptic
-                                        activity. When the pH rises above 4, pepsin (a stomach enzyme) becomes inactive.
+                                        activity. When the pH rises above 4, pepsin (a stomach enzyme) becomes inactive... <br> <br> 
+                                        <span class="more-text">Antacid preparations don’t reduce acid production, instead, they activate the release of
+                                            more acid (acid rebound) in patients experiencing hyperacidity or duodenal ulcers.
+                                            Antacid drugs can react with some medications such as tetracycline antibiotics, iron
+                                            supplements, and heart medications. <br><br>
+                                            
+                                            Ranitidine, Aluminum Hydroxide, Magnesium Hydroxide, Calcium Carbonate, etc. are some
+                                            popularly used Antacids.  
+                                        </span>
+                                        <a href="javascript:void(0);" class="view-more"> View More</a>
                                     </p>
-        
-                                    <p>Antacid preparations don’t reduce acid production, instead, they activate the release of
-                                        more acid (acid rebound) in patients experiencing hyperacidity or duodenal ulcers.
-                                        Antacid drugs can react with some medications such as tetracycline antibiotics, iron
-                                        supplements, and heart medications.
-                                    </p>
-        
-                                    <p>Ranitidine, Aluminum Hydroxide, Magnesium Hydroxide, Calcium Carbonate, etc. are some
-                                        popularly used Antacids.
-                                    </p>
+                                    
+                                   
                                 </div>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center"> Antibiotics </h2>
-                                <div>
+                                <h2 class="title text-center mb-3"> Antibiotics </h2>
+                                <div class="text-container">
                                     <p>Antibiotics are the drugs that treat different types of bacterial infections. These drugs
                                         work by killing harmful pathogens or hindering the formation of bacterial cell walls
                                         which makes it difficult for them to multiply.
+                                        <br> <br>
+                                        <span class="more-text">  We are manufacturing a broad-spectrum antibiotic that is specifically used to treat
+                                            different types of bacteria. Certain infections such as strep throat, urinary tract,
+                                            dental, many skin and ear and sinus infections are treated using antibiotics. <br> <br>
+
+                                             There may be interactions between antibiotics and blood thinners, birth control pills,
+                                            and other drugs like antacids. <br> <br>
+                                            
+                                            Amoxicillin, Azithromycin, Ciprofloxacin and Doxycycline are some common Antibiotics.</span>
                                     </p>
-                                    <p>We are manufacturing a broad-spectrum antibiotic that is specifically used to treat
-                                        different types of bacteria. Certain infections such as strep throat, urinary tract,
-                                        dental, many skin and ear and sinus infections are treated using antibiotics.
-                                    </p>
-                                    <p>There may be interactions between antibiotics and blood thinners, birth control pills,
-                                        and other drugs like antacids.
-                                    </p>
-                                    <p>Amoxicillin, Azithromycin, Ciprofloxacin and Doxycycline are some common Antibiotics.
-                                    </p>
+                                    <a href="javascript:void(0);" class="view-more"> View More</a>
                                 </div>
                             </div>
                           </div>
                           <div class="swiper-slide">
  
                             <div class="product-categories">
-                                <h2 class="title text-center"> Analgesic </h2>
-                                <div>
+                                <h2 class="title text-center mb-3"> Analgesic </h2>
+                                <div class="text-container">
                                     <p>Analgesics are drugs that provide fast relief from different types of pain. These drugs
                                         work well for headaches, toothaches, body discomfort, muscle soreness, and
-                                        arthritis-related pain.</p>
-                                    <p>Analgesic formulations lower inflammation at the source or affect how the brain processes
-                                        pain signals.
+                                        arthritis-related pain. <br> <br> 
+                                        <span class="more-text">
+                                            Analgesic formulations lower inflammation at the source or affect how the brain processes
+                                        pain signals. <br> <br>
+                                        Some analgesic preparations like acetaminophen might react with blood thinners and
+                                        alcohol, and also increase the chances of liver damage. <br> <br>
+                                        Paracetamol, Ibuprofen and Aspirin are commonly used Analgesics.
+
+                                        </span>
+                                    
                                     </p>
-                                    <p>Some analgesic preparations like acetaminophen might react with blood thinners and
-                                        alcohol, and also increase the chances of liver damage.
-                                    </p>
-                                    <p>Paracetamol, Ibuprofen and Aspirin are commonly used Analgesics.
-                                    </p>
+                                    <a href="javascript:void(0);" class="view-more"> View More</a>
                                 </div>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="product-categories">
                                 <h2 class="title text-center"> Analgesic, Antipyretic and Anti-emetic </h2>
-                                <div>
+                                <div class="text-container">
                                     <p>Analgesic, antipyretic, and anti-emetic combined to provide relief from multiple
-                                        symptoms. These drugs are used to treat pain, fever, and nausea. </p>
-                                    <p>Analgesics obstruct prostaglandin synthesis through the cyclooxygenase (COX) pathway.
+                                        symptoms. These drugs are used to treat pain, fever, and nausea... <br><br>
+                                    <span class="more-text">
+                                        Analgesics obstruct prostaglandin synthesis through the cyclooxygenase (COX) pathway.
                                         They block pain signals and control inflammation. Antipyretics lowers the body
                                         temperature by modulating the hypothalamic set point and enhancing heat loss.
                                         Anti-emetics obstruct serotonin (5-HT3) and dopamine receptors in the central nervous
-                                        system that control nausea and vomiting.
-                                    </p>
-                                    <p>These medications are useful in managing infections, postoperative care, and motion
-                                        sickness
-                                    </p>
-                                    <p>Antipyretics might react with anticoagulants, anti-emetics with antidepressants or drugs
+                                        system that control nausea and vomiting. <br><br>
+                                        These medications are useful in managing infections, postoperative care, and motion
+                                        sickness <br><br>
+                                        Antipyretics might react with anticoagulants, anti-emetics with antidepressants or drugs
                                         that affect dopamine levels.
+                                    </span>
                                     </p>
+                                    <a href="javascript:void(0);" class="view-more"> View More</a>
+                                    
                                 </div>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center">Analgesic & Anti-inflammatory
+                                <h2 class="title text-center mb-3">Analgesic & Anti-inflammatory
                                 </h2>
-                                <div>
+                                <div class="text-container">
                                     <p>Analgesic and anti-inflammatory combined effectively to reduce pain. They actively
-                                        control inflammation in the body.
-                                    </p>
-                                    <p>These drugs provide quick relief from pain caused due to conditions like arthritis,
-                                        injuries, post-surgical pain and more.
-                                    </p>
-                                    <p>NSAIDs like ibuprofen may react with blood pressure pills, diuretics, and blood thinners.
+                                        control inflammation in the body... <br><br>
+                                        <span class="more-text">
+                                            These drugs provide quick relief from pain caused due to conditions like arthritis,
+                                            injuries, post-surgical pain and more. <br><br>
+                                            NSAIDs like ibuprofen may react with blood pressure pills, diuretics, and blood thinners.
                                         This could increase the chances of bleeding.
+                                        </span>
                                     </p>
+                                    <a href="javascript:void(0);" class="view-more"> View More</a>
+                                    
                                 </div>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center">Anti-allergic
+                                <h2 class="title text-center mb-3">Anti-allergic
                                 </h2>
-                                <div>
+                                <div class="text-container">
                                     <p>Our anti-allergic medications block certain cells in the body from receiving histamine (a
                                         chemical released by the immune system that causes the symptoms of an allergic
-                                        reaction).
+                                        reaction)... <br><br>
+                                        <span class="more-text">
+                                        These drugs are effective for seasonal, food-related allergies.  <br> <br>
+                                        Anti-allergic medicines react with sedatives, alcohol, and certain antidepressants (MAO
+                                        inhibitors). It might cause drowsiness. <br><br>
+                                        Cetirizine, Loratadine, Diphenhydramine, etc are the most popular anti-allergic drugs.
+                                    </span>
                                     </p>
-                                    <p>These drugs are effective for seasonal, food-related allergies. </p>
-                                    <p>Anti-allergic medicines react with sedatives, alcohol, and certain antidepressants (MAO
-                                        inhibitors). It might cause drowsiness.
-                                    </p>
-                                    <p>Cetirizine, Loratadine, Diphenhydramine, etc are the most popular anti-allergic drugs.
-                                    </p>
+                                    <a href="javascript:void(0);" class="view-more"> View More</a>
+                                   
                                 </div>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center">Multivitamins and Supplements
+                                <h2 class="title text-center mb-3">Multivitamins and Supplements
                                 </h2>
-                                <div>
+                                <div class="text-container">
                                     <p>Multivitamins and supplements contain essential nutrients that help to fill nutritional
-                                        gaps. These preparations improve immunity and energy levels.
-                                    </p>
-                                    <p>Certain supplements like vitamin K should not be consumed with blood thinners.
-                                    </p>
-                                    <p>Vitamin C & Zinc, Vitamin D3, and multivitamins with Folic Acid are the most commonly
+                                        gaps. These preparations improve immunity and energy levels... <br> <br>
+                                        <span class="more-text">
+                                            Certain supplements like vitamin K should not be consumed with blood thinners. <br> <br>
+                                            Vitamin C & Zinc, Vitamin D3, and multivitamins with Folic Acid are the most commonly
                                         used supplements.
+                                        </span>
                                     </p>
+                                    <a href="javascript:void(0);" class="view-more"> View More</a>
+                                    
                                 </div>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center">
+                                <h2 class="title text-center mb-3">
                                     Anti-diabetics
                                 </h2>
-                                <div>
+                                <div class="text-container">
                                     <p>We are also manufacturing antidiabetic medications that help maintain blood sugar levels
-                                        in your body. These medicines lower the risk of complications caused by diabetes.
+                                        in your body. These medicines lower the risk of complications caused by diabetes... <br><br>
+                                        <span class="more-text">
+                                            Certain antidiabetic drugs interact with diuretics, which may affect blood sugar levels. <br> <br>
+                                            Metformin, Glipizide, and Sitagliptin are some common anti-diabetic drugs.
+                                        </span>
                                     </p>
-                                    <p>Certain antidiabetic drugs interact with diuretics, which may affect blood sugar levels.
-                                    </p>
-                                    <p>Metformin, Glipizide, and Sitagliptin are some common anti-diabetic drugs.
-                                    </p>
+                                    <a href="javascript:void(0);" class="view-more"> View More</a>
+                                   
                                 </div>
                             </div>
                           </div>
                           <div class="swiper-slide">
   
                             <div class="product-categories">
-                                <h2 class="title text-center">Cardiovascular Drugs
+                                <h2 class="title text-center mb-3">Cardiovascular Drugs
                                 </h2>
-                                <div>
+                                <div class="text-container">
                                     <p>Cardiovascular medications are helpful in improving and maintaining heart health and
                                         managing blood pressure. These therapies regulate abnormal rhythm, lower the risk of
-                                        heart disease and improve cardiovascular wellness.
+                                        heart disease and improve cardiovascular wellness... <br> <br>
+                                        <span class="more-text">
+                                            These drugs may interact with NSAIDs and affect blood pressure management. Some common
+                                            examples of these drugs include Amlodipine, Atorvastatin, Lisinopril, etc.
+                                        </span>
                                     </p>
-                                    <p>These drugs may interact with NSAIDs and affect blood pressure management. Some common
-                                        examples of these drugs include Amlodipine, Atorvastatin, Lisinopril, etc.
-                                    </p>
+                                    <a href="javascript:void(0);" class="view-more"> View More</a>
+                                   
                                 </div>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center">Antimicrobials
+                                <h2 class="title text-center mb-3">Antimicrobials
                                 </h2>
-                                <div>
+                                <div class="text-container">
                                     <p>Our antimicrobial drugs help fight different infections. These drugs contain a group of
                                         agents that kill microorganisms or stop their growth to restore health and prevent the
-                                        spread of illness.
+                                        spread of illness... <br> <br>
+                                        <span class="more-text">
+                                            Some drugs like ciprofloxacin can interact with antacids and reduce their efficacy.
+                                            Amoxicillin, Metronidazole, Ciprofloxacin, and are often used antimicrobials.
+                                        </span>
                                     </p>
-                                    <p>Some drugs like ciprofloxacin can interact with antacids and reduce their efficacy.
-                                        Amoxicillin, Metronidazole, Ciprofloxacin, and are often used antimicrobials.
-                                    </p>
+                                    <a href="javascript:void(0);" class="view-more"> View More</a>
+                                    
                                 </div>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center">Antiretrovirals (ARVs)
+                                <h2 class="title text-center mb-3">Antiretrovirals (ARVs)
                                 </h2>
-                                <div>
+                                <div class="text-container">
                                     <p>Our range of antiretroviral medications helps to manage HIV. If consumed properly,
                                         individuals lead healthier lives. These drugs also suppress the virus load, combat
-                                        infection and improve immune function. ARVs also minimize the risk of transmission.
+                                        infection and improve immune function. ARVs also minimize the risk of transmission... <br><br>
+                                        <span class="more-text">
+                                            There is a chance that antiretrovirals react with certain antibiotics and antifungals and
+                                            reduce their efficacy. Some common ARVs are Efavirenz, Tenofovir and Rilpivirine.
+
+                                        </span>
                                     </p>
-                                    <p>There is a chance that antiretrovirals react with certain antibiotics and antifungals and
-                                        reduce their efficacy. Some common ARVs are Efavirenz, Tenofovir and Rilpivirine.
-                                    </p>
+                                    <a href="javascript:void(0);" class="view-more"> View More</a>
+                                   
                                 </div>
                             </div>
                           </div>
@@ -573,11 +610,13 @@
                 </div>
             </div>
         </section>
+        <!------------------------------------------------------product details swiper end-------------------------------------->
+
     </main>
 
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="public/js/aos.js"></script>
     <script src="public/js/script.js"></script>
 </body>
 
