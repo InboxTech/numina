@@ -9,6 +9,10 @@ var swiper = new Swiper(".section2Swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -36,7 +40,10 @@ var swiper = new Swiper(".section2Swiper", {
 var swiper = new Swiper(".section3Swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
-  
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -72,6 +79,10 @@ var swiper = new Swiper(".section4Swiper", {
   //   nextEl: ".swiper-button-next",
   //   prevEl: ".swiper-button-prev",
   // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 1,
