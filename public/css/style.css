@@ -2,12 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-<<<<<<< HEAD
-  /* font-family: "Noto Sans", sans-serif;  */
-=======
   font-family: "Poppins", sans-serif;
   /* font style */
->>>>>>> master
   font-style: normal;
   font-weight: 500;
 }
@@ -204,11 +200,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
-  z-index: -1; 
-=======
   z-index: -1;
->>>>>>> master
 }
 
 .section2-main video {
