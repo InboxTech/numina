@@ -28,6 +28,8 @@ document.addEventListener("click", function(event) {
 
     if (!isClickInside && isVisible) {
         show_submenu_pro.style.display = 'none';
+        caretIcon.classList.remove('fa-caret-up'); // Remove the up caret
+        caretIcon.classList.add('fa-caret-down'); 
         isVisible = false;
     }
 });
@@ -75,3 +77,37 @@ var swiper = new Swiper(".myProductSwiper", {
   AOS.init({
     duration: 2000,
   });
+
+
+
+  
+  const viewMoreLinks = document.querySelectorAll('.view-more');
+const moreTexts = document.querySelectorAll('.more-text');
+const proCategories = document.querySelectorAll('.products .product-categories');
+
+// Iterate over each link and corresponding "More Text" element
+viewMoreLinks.forEach((viewMore, index) => {
+  const moreText = moreTexts[index]; // Get the corresponding moreText element for this index
+  const productCategory = proCategories[index]; // Get the corresponding product category container for this index
+  
+  viewMore.addEventListener('click', function() {
+    // Toggle the visibility of the extra text
+    moreText.classList.toggle('show');
+
+    // Change the link text based on whether it's shown or not
+    if (moreText.classList.contains('show')) {
+      viewMore.textContent = 'View Less';
+      
+      // Increase the height of the product category container when expanded
+      productCategory.style.height = '62vh';  // Allow it to expand based on content height
+    } else {
+      viewMore.textContent = 'View More';
+      
+      // Set the height back to the initial value (you can adjust this as needed)
+      productCategory.style.height = '30vh';  // Restore the original height
+    }
+  });
+});
+
+  
+
