@@ -2,9 +2,9 @@
  session_start();
     class DbConnect{
         private $hosteName = "localhost";
-        private $userName = "root";
-        private $password = "";
-        private $database = "numina_db";
+        private $userName = "inboxmca_numinapharma";
+        private $password = ";d.i4&&q2;xd";
+        private $database = "inboxmca_numinapharma";
         private $conn;
 
         function __construct(){

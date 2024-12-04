@@ -1,6 +1,6 @@
 <?php
 class header{
-    public function includeHeader($title, $path,){
+    public function includeHeader($title, $path){
         echo '
             <!doctype html>
                 <html lang="en">

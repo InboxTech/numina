@@ -1,6 +1,6 @@
 <?php
 class AdminHeader{
-    public function includeAdminHeader($title, $path,){
+    public function includeAdminHeader($title, $path){
         echo '
             <!DOCTYPE html>
             <html lang="en">
