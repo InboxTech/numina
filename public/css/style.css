@@ -2,33 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif ; /* font style */
+  font-family: "Poppins", sans-serif;
+  /* font style */
   font-style: normal;
   font-weight: 500;
 }
+
 :root {
   --primary-color: #19a0e1;
   --primary-hover: rgb(40, 199, 235);
 }
+
 html,
 body {
   height: 100%;
   width: auto;
 }
+
 /* ------------------------- product submenu  -------------------------- */
-header{
+header {
   width: 100%;
   background-color: #fff;
   position: fixed;
   top: 0;
   z-index: 1000;
 }
+
 .navbar .navbar-collapse .nav-link {
   margin-inline: 15px;
   color: black;
   transition: all 2s linear;
   padding: 5px;
 }
+
 .navbar .navbar-collapse .nav-link:hover {
   color: black;
   font-weight: 400;
@@ -36,6 +42,7 @@ header{
   padding: 5x;
   border-radius: 8px;
 }
+
 .navbar .logo {
   width: 12%;
 }
@@ -49,28 +56,31 @@ header{
   left: 20%;
   background-color: white;
 }
+
 .product-main-menu a {
   color: black;
   padding: 8px 0;
 }
+
 .product-main-menu .menu a:nth-child(1):hover {
   color: var(--primary-hover);
 }
+
 .product-main-menu .menu .right-arrow {
   color: var(--primary-color);
 }
+
 .product-main-menu .menu .link-hover-animation {
-  background: linear-gradient(
-    to right,
-    var(--primary-hover) 0%,
-    var(--primary-hover) 50%,
-    transparent 50%,
-    transparent 100%
-  );
+  background: linear-gradient(to right,
+      var(--primary-hover) 0%,
+      var(--primary-hover) 50%,
+      transparent 50%,
+      transparent 100%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.7s ease;
 }
+
 .product-main-menu .menu .link-hover-animation:hover {
   background-position: left bottom;
   /* color: white; */
@@ -79,23 +89,27 @@ header{
 .product-main-menu .menu .featured-section .feature-img {
   overflow: hidden;
 }
+
 .product-main-menu .menu .featured-section .feature-img img {
   transition: all 1s linear;
 }
+
 .product-main-menu .menu .featured-section .feature-img img:hover {
   transform: scale(1.1);
 }
-.product-main-menu .menu .details .product-details{
+
+.product-main-menu .menu .details .product-details {
   display: none;
 }
 
 /*  media query of submenu */
-@media (max-width: 991.98px) { 
-  .product-main-menu .menu .details{
+@media (max-width: 991.98px) {
+  .product-main-menu .menu .details {
     display: none;
   }
- }
+}
 
+/* -------------------------------------------------- Index Page start --------------------------------------------------- */
 /* ----------------------------- section 1 ----------------------------- */
 #section1 {
   width: 100%;
@@ -103,16 +117,20 @@ header{
   position: relative;
   margin-top: 85px !important;
 }
+
 .btn-custom {
   color: #fff;
   background-color: var(--primary-color);
 }
+
 .btn-custom:hover {
   color: #fff;
   background-color: var(--primary-hover);
 }
+
 .pinch-img {
-  width: 100%; /* Ensure it has a defined initial width */
+  width: 100%;
+  /* Ensure it has a defined initial width */
   /* mask-image: url("../images/pinch-left-mask.svg"); */
   mask-size: 100%;
   mask-repeat: no-repeat;
@@ -121,7 +139,8 @@ header{
 }
 
 .pinch-img:hover {
-  width: 600vh; /* Adjust for testing */
+  width: 600vh;
+  /* Adjust for testing */
 }
 
 .main-img {
@@ -136,19 +155,19 @@ header{
   overflow: hidden;
   margin-top: 50px;
 }
+
 #section2 .section2-head {
   align-items: flex-start;
   height: auto;
   padding: 180px 0 100px;
   position: relative;
 }
+
 .section2-head {
   -webkit-mask-image: linear-gradient(to bottom, #000 90%, transparent 100%);
   backdrop-filter: blur(25px);
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.5)
-  );
+  background-image: linear-gradient(rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5));
   box-sizing: border-box;
   display: flex;
   height: calc(100vh + 200px);
@@ -181,7 +200,7 @@ header{
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .section2-main video {
@@ -194,7 +213,8 @@ header{
   position: relative;
   left: 0;
   margin: 0 auto;
-  z-index: 2; /* Keep the swiper above the video */
+  z-index: 2;
+  /* Keep the swiper above the video */
 }
 
 .section2-body .swiper {
@@ -204,9 +224,11 @@ header{
   padding: 0 70px;
   background: transparent;
 }
+
 .section2-body .swiper-wrapper {
   transform: translate3d(0px, 0, 0);
 }
+
 .section2-body .swiper-slide {
   font-size: 18px;
   display: flex;
@@ -221,7 +243,7 @@ header{
   object-fit: cover;
 }
 
-.section2-body .swiper-horizontal > .swiper-pagination-progressbar {
+.section2-body .swiper-horizontal>.swiper-pagination-progressbar {
   width: 40%;
   left: 30%;
   bottom: 0 !important;
@@ -235,17 +257,20 @@ header{
   margin-bottom: 2rem;
   border-radius: 20px;
 }
+
 .link-footer {
   position: absolute;
   bottom: 20px;
   right: 20px;
 }
+
 /* ----------------------------- section 3 ----------------------------- */
 #section3 {
   position: relative;
   width: 100%;
   height: 100%;
 }
+
 .section3-body .swiper {
   width: 100%;
   height: 100%;
@@ -258,10 +283,12 @@ header{
   justify-content: center;
   align-items: center;
 }
+
 .section3-body .swiper-slide .slide-img {
   overflow: hidden;
   border-radius: 15px;
 }
+
 .section3-body .swiper-slide img {
   display: block;
   width: 100%;
@@ -269,11 +296,14 @@ header{
   object-fit: cover;
   border-radius: 15px;
   object-fit: cover;
+  aspect-ratio: 16 / 12;
   transition: transform 0.5s ease-in-out;
 }
+
 .section3-body .swiper-slide img:hover {
   transform: scale(1.1);
 }
+
 /* .section3-body .swiper-slide:nth-child(1n) {
   margin-top: 50px ;
 }
@@ -292,6 +322,7 @@ header{
   overflow: hidden;
   color: #fff;
 }
+
 .section4-head {
   position: relative;
   z-index: 2;
@@ -300,6 +331,7 @@ header{
   justify-content: center;
   align-items: center;
 }
+
 .section4-main {
   position: absolute;
   top: 0;
@@ -309,21 +341,25 @@ header{
   z-index: -1;
   /* Ensure the video stays behind */
 }
+
 .section4-main video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   /* Ensures the video covers the entire background */
 }
+
 .section4-body {
   position: relative;
   z-index: 2;
   /* Ensure swiper content is on top */
 }
+
 .section4-body .swiper {
   width: 100%;
   height: 100%;
 }
+
 .section4-body .swiper-wrapper {
   position: relative;
   width: 100%;
@@ -334,6 +370,7 @@ header{
   box-sizing: content-box;
   margin-left: 10vh;
 }
+
 .section4-body .swiper-slide {
   flex-shrink: 0;
   width: 100%;
@@ -346,9 +383,11 @@ header{
   position: relative;
   will-change: transform;
 }
+
 .section4-body .swiper-slide.active-slide {
   transform: scale(1.1);
 }
+
 .section4-body .slider-img {
   /* -webkit-mask-image: url('../images/home/twist-mask.svg'); */
   -webkit-mask-position: -132px -132px;
@@ -359,6 +398,7 @@ header{
   padding-top: 80%;
   position: relative;
 }
+
 .section4-body .swiper-slide img {
   height: 100%;
   left: 0;
@@ -368,19 +408,21 @@ header{
   /* transform: translate(-50%, -50%); */
   width: 100%;
 }
+
 .section4-body .slider-text {
   position: absolute;
-  bottom: -7.8vh;
+  bottom: -4.5rem;
   /* Start with text hidden below the image */
   left: 0;
   width: 100%;
-  height: 14vh;
+  height: 8rem;
   background: rgba(19, 191, 235, 0.7);
   color: white;
   text-align: center;
   padding: 10px;
   transition: bottom 0.5s ease-in-out;
 }
+
 .section4-body .swiper-slide:hover .slider-text {
   bottom: 0;
   /* Bring text up when hovering */
@@ -390,9 +432,9 @@ header{
 #last-section {
   padding: 20px 0;
 }
+
 #last-section .custom-card {
-  background: var(--primary-color)
-    linear-gradient(180deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+  background: var(--primary-color) linear-gradient(180deg, var(--primary-color) 0%, var(--primary-hover) 100%);
   text-align: start;
   border: 0;
   width: 100%;
@@ -401,24 +443,165 @@ header{
   border-radius: 15px;
   color: #fff;
 }
+
 #last-section a {
   text-decoration: none;
   color: #000;
 }
+
 #last-section a:hover {
   text-decoration: underline;
 }
-/* footer */
+
+/* -------------------------------------------------- Index Page end -------------------------------------------------- */
+
+/* -------------------------------------------------- Footer start -------------------------------------------------- */
 .fs-7 {
   font-size: 12.5px;
   line-height: 1.7;
 }
+
 .link-custom {
   color: var(--primary-color);
 }
+
 footer .link-dark {
   font-weight: 500;
 }
+
 footer .link-dark:hover {
   color: var(--primary-color) !important;
 }
+
+/* -------------------------------------------------- Footer end -------------------------------------------------- */
+
+/* -------------------------------------------------- About us Page start --------------------------------------------------- */
+.active{
+  background-color: var(--primary-hover);
+  border-radius: 8px;
+}
+.aboutus p{
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .banner{
+    width: 100%;
+    height: 100%;
+  }
+  .banner .banner-img{
+    width: 100%;
+  }
+  .title{
+    color: var(--primary-color);
+  }
+  .mission, .dosage-form{
+    background-color: var(--primary-color);
+  }
+  .mission .mission-details .details .icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transition: all 1s linear;
+  }
+  .mission .mission-details .details:hover .icon{
+    background-color: var(--primary-hover);
+    color: white;
+  }
+/* -------------------------------------------------- About us Page end --------------------------------------------------- */
+
+/* -------------------------------------------------- Product Page start -------------------------------------------------- */
+.active {
+  background-color: var(--primary-hover);
+  border-radius: 8px;
+}
+
+.dosage-form {
+  background-color: var(--primary-color);
+}
+
+.dosage-form .dosage .img {
+  width: 80px;
+  height: 80px;
+  /* border-radius: 100%; */
+}
+
+.dosage-form .dosage .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.our-products .products {
+  height: 100%;
+  margin-bottom: 20%;
+}
+
+.our-products .products .product-categories {
+  border: 1px solid var(--primary-color);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  height: 38rem;
+  overflow: hidden;
+}
+
+.our-products .products .product-categories p {
+  font-size: 15px;
+  text-align: left;
+}
+
+.title {
+  color: var(--primary-color);
+  font-size: 22px;
+}
+
+.products .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.products .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.products .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products .swiper-pagination {
+  position: relative;
+  margin-top: 15px;
+}
+
+.text-container {
+  max-width: 500px;
+  /* You can set a max width for the container */
+  /* font-family: Arial, sans-serif; */
+}
+
+.more-text {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.more-text.show {
+  display: block;
+  opacity: 1;
+}
+
+.view-more {
+  color: var(--primary-color);
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* -------------------------------------------------- Product Page end --------------------------------------------------- */

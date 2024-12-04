@@ -11,16 +11,14 @@ class header{
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
                     <!-- links -->
-                    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap">
-                    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap">
+                    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap">
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"> -->
+                    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
                     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
                     <link rel="stylesheet" href="'. $path .'public/css/bootstrap.min.css">
                     <link rel="stylesheet" href="'. $path .'public/css/swiper-bundle.min.css" />
                     <link rel="stylesheet" href="'. $path .'public/fonts/css/all.css">
                     <link rel="stylesheet" href="'. $path .'public/css/style.css">
-                    <link rel="stylesheet" href="'. $path .'public/css/about.css">
-                    <link rel="stylesheet" href="'. $path .'public/css/product.css" />
-
                 </head>
 
                 <body>
@@ -28,7 +26,7 @@ class header{
                         <!----------------------------------------------Navbar-------------------------------------------------->
                         <nav class="navbar navbar-expand-lg">
                             <div class="container-fluid">
-                                <a class="navbar-brand logo" href="index.html"><img src="public/images/header/Numina Logo.png"
+                                <a class="navbar-brand logo" href="index.php"><img src="public/images/header/Numina Logo.png"
                                         class="w-100 h-inherit" alt="" /></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,23 +39,23 @@ class header{
                                             <a href="about.php" class="nav-link fs-5"> Who is Numina </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link fs-5 postion-relative" id="pro-submenu">
+                                            <a href="#product" class="nav-link fs-5 postion-relative" id="pro-submenu">
                                                 Our product <i class="fa-solid fa-caret-down" id="caret-icon"></i>
                                             </a>
                                         </li>
-                                        <li class="nav-item">
+                                        <!-- <li class="nav-item">
                                             <a href="#" class="nav-link fs-5">
                                                 Reasearch and development
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link fs-5"> F & Q </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link fs-5"> Drop us a line </a>
-                                        </li>
+                                        </li>                                        
                                         <li class="nav-item">
                                             <a href="admin/logout.php" class="nav-link fs-5"> Logout </a>
+                                        </li> -->
+                                        <li class="nav-item">
+                                            <a href="contect_us.php" class="nav-link fs-5"> Drop us a line </a>
                                         </li>
                                     </ul>
                                 </div>

@@ -2,7 +2,7 @@
         <hr>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 mt-3">
                     <p class="fs-4 fw-medium mb-3 py-2">Numina</p>
                     <p class="fs-7 pt-2">
                         We are a top pharmaceutical company in India, providing a wide range of generic medicines to
@@ -17,7 +17,7 @@
                         <hr>
                         <a href="#" class="fs-7 text-decoration-none link-dark">> Modern Slavery Act statement 2023 (PDF - 139.1KB)</a> -->
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 mt-3">
                     <ul class="list-group">
                         <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Numina websites</span>
                         </li>
@@ -37,7 +37,7 @@
                                 website</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 mt-3">
                     <ul class="list-group">
                         <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Quick links</span></li>
                         <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Behind
@@ -58,7 +58,7 @@
                                 class="text-decoration-none link-dark">Careers</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 mt-3">
                     <ul class="list-group">
                         <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Get in touch</span></li>
                         <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Contact
