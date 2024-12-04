@@ -25,8 +25,8 @@
                                 website <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
                         <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Market
                                 website selector</a></li>
-                        <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Global
-                                Behind the science magazine</a></li>
+                        <!-- <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Global
+                                Behind the science magazine</a></li> -->
                         <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Numina
                                 Pro for healthcare professionals</a></li>
                         <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">ViiV
@@ -40,8 +40,8 @@
                 <div class="col-lg-3 col-md-6 mt-3">
                     <ul class="list-group">
                         <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Quick links</span></li>
-                        <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Behind
-                                the science magazine</a></li>
+                        <!-- <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Behind
+                                the science magazine</a></li> -->
                         <li class="list-group-item border-0"><a href="#"
                                 class="text-decoration-none link-dark">Company</a></li>
                         <li class="list-group-item border-0"><a href="#"
@@ -69,7 +69,7 @@
                                 possible side effect</a></li>
                         <li class="list-group-item border-0"><a href="#" class="text-decoration-none link-dark">Numina
                                 Speak up</a></li>
-                        <li class="list-group-item border-0 mt-3">
+                        <!-- <li class="list-group-item border-0 mt-3">
                             <strong>Follow us on:</strong>
                             <ul class="list-group flex-row">
                                 <li class="list-group-item border-0 p-2">
@@ -96,7 +96,7 @@
                                     <a href="#rss" class="link-custom"><i class="fa-solid fa-square-rss fs-2"></i></a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>

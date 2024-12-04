@@ -39,13 +39,13 @@
         <!------------------------- Section 2 ------------------------->
         <div id="section2">
             <div class="section2-main">
-                <video src="public/images/home/respiratory-syncytial-virus-rsv-science-animation-16x9-gskcom-only.mp4" autoplay muted loop></video>
+                <video src="public/images/home/respiratory-syncytial-virus-rsv-science-animation-numina.mp4" autoplay muted loop></video>
             </div>
             <div class="section2-head">
                 <div class="bg-test">
                     <div class="row justify-content-center ">
                         <div class="col-lg-8 col-10">
-                            <div class="">
+                            <div class="text-white">
                                 <!-- <h2 class="fs-4">Our purpose</h2> -->
                                 <h2 class="fs-4">Numina Pharmaceuticals - Elevating Healthcare Excellence</h2>
                                 <span class="fs-2 fw-light">
@@ -204,7 +204,7 @@
                         <div class="swiper-slide">
                             <a href="#" class="text-decoration-none link-light pos">
                                 <div class="slider-img">
-                                    <img src="public/images/home/section4/slide_1.jpg" alt="">
+                                    <img src="public/images/home/section4/EnhancingGlobalHealthjpg.jpg" alt="">
                                 </div>
                                 <div class="slider-text">
                                     <h2>Enhancing Global Health</h2>
@@ -216,43 +216,7 @@
                         <div class="swiper-slide">
                             <a href="#" class="text-decoration-none link-light">
                                 <div class="slider-img">
-                                    <img src="public/images/home/section4/slide_2.jpg" alt="">
-                                </div>
-                                <div class="slider-text">
-                                    <h2>Supporting Diversity and Inclusion</h2>
-                                    <p>To help our diverse patients, we need different voices in our clinical trials and
-                                        support an inclusive team.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-light">
-                                <div class="slider-img">
-                                    <img src="public/images/home/section4/slide_3.jpg" alt="">
-                                </div>
-                                <div class="slider-text">
-                                    <h2>Upholding Ethical Standards</h2>
-                                    <p>Our culture encourages everyone to do the right thing, voice their opinions, and
-                                        speak up about any concerns.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-light">
-                                <div class="slider-img">
-                                    <img src="public/images/home/section4/slide_4.jpg" alt="">
-                                </div>
-                                <div class="slider-text">
-                                    <h2>Protecting Our Planet</h2>
-                                    <p>We are working toward a healthier planet with goals for 2030 and 2045, focusing on
-                                        being net zero and positive for nature.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-light">
-                                <div class="slider-img">
-                                    <img src="public/images/home/section4/slide_2.jpg" alt="">
+                                    <img src="public/images/home/section4/ProductGovernance.jpg" alt="">
                                 </div>
                                 <div class="slider-text">
                                     <h2>Product Governance</h2>
@@ -264,12 +228,49 @@
                         <div class="swiper-slide">
                             <a href="#" class="text-decoration-none link-light">
                                 <div class="slider-img">
-                                    <img src="public/images/home/section4/slide_4.jpg" alt="">
+                                    <img src="public/images/home/section4/ProtectingOurPlanet.jpg" alt="">
+                                </div>
+                                <div class="slider-text">
+                                    <h2>Protecting Our Planet</h2>
+                                    <p>We are working toward a healthier planet with goals for 2030 and 2045, focusing on
+                                        being net zero and positive for nature.</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <a href="#" class="text-decoration-none link-light">
+                                <div class="slider-img">
+                                    <img src="public/images/home/section4/ImprovingAccessforAll.jpg" alt="">
                                 </div>
                                 <div class="slider-text">
                                     <h2>Improving Access for All</h2>
                                     <p>We are making our products affordable and available to more people worldwide through
                                         fair pricing and collaborations.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="text-decoration-none link-light">
+                                <div class="slider-img">
+                                    <img src="public/images/home/section4/SupportingDiversityandInclusion.png" alt="">
+                                </div>
+                                <div class="slider-text">
+                                    <h2>Supporting Diversity and Inclusion</h2>
+                                    <p>To help our diverse patients, we need different voices in our clinical trials and
+                                        support an inclusive team.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="text-decoration-none link-light">
+                                <div class="slider-img">
+                                    <img src="public/images/home/section4/UpholdingEthicalStandards.jpg" alt="">
+                                </div>
+                                <div class="slider-text">
+                                    <h2>Upholding Ethical Standards</h2>
+                                    <p>Our culture encourages everyone to do the right thing, voice their opinions, and
+                                        speak up about any concerns.</p>
                                 </div>
                             </a>
                         </div>
