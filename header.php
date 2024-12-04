@@ -57,7 +57,7 @@ class header{
                                             <a href="admin/logout.php" class="nav-link fs-5"> Logout </a>
                                         </li> -->
                                         <li class="nav-item">
-                                            <a href="contect_us.php" class="nav-link fs-5"> Drop us a line </a>
+                                            <a href="contact_us.php" class="nav-link fs-5"> Drop us a line </a>
                                         </li>
                                     </ul>
                                 </div>
