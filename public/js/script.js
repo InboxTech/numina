@@ -111,3 +111,39 @@ viewMoreLinks.forEach((viewMore, index) => {
 
   
 
+$(".formValidate").validate({
+  rules: {
+    firstname: {
+      required: true
+    },
+    lastname: {
+      required: true
+    },
+    email: {
+      required: true
+    },
+    phone: {
+      required: true
+    },
+    msg: {
+      required: true
+    }
+  },
+  messages: {
+    firstname: {
+      required: "please enter firstname"
+    },
+    lastname: {
+      required: "Please enter lastname"
+    },
+    email: {
+      required: "Please enter email"
+    },
+    phone: {
+      required: "Please enter phone"
+    },
+    msg: {
+      required: "Please enter comment"
+    }
+  }
+})
