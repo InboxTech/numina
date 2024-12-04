@@ -19,7 +19,7 @@
                     <h2 class="display-3">Top Pharmaceutical Manufacturing Company in India</h2>
                     <p class="fs-4">
                         Shaping Healthier Tomorrows, Today- Delivering quality healthcare products that improve the well-being of
-                        millions across India and around the world. CTA-Connect with us today!
+                        millions across India and around the world.
                     </p>
                 </div>
                 <div class="">
