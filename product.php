@@ -9,14 +9,14 @@ $header->includeHeader('Numina | Product', './');
 ?>
 
 <!-- Product -->
-<main>
-    <section>
-        <div class="container-fluid row justify-content-evenly align-items-center p-5">
-            <div class="col-lg-6 col-md-12 p-5">
-                <h1 class="fs-1 title text-capitalize"> Our pharma products </h1>
+<main class="product-us">
+    <section class="px-lg-5 px-md-3 pe-0">
+        <div class="container-fluid row justify-content-evenly align-items-center">
+            <div class="col-lg-6 col-md-12 pe-lg-5">
+                <h2 class="display-4 top-title"> Our Pharma Products </h2>
 
-                <p class="fs-2 fw-light my-3"> Expert Care, Quality Medicines for Health Needs….<br>Because You
-                    Deserve The Best!!
+                <p class="fs-4 fw-normal">
+                    Expert Care, Quality Medicines for Health Needs…. Because You Deserve The Best!!
                 </p>
 
                 <div>
@@ -24,9 +24,9 @@ $header->includeHeader('Numina | Product', './');
                     </button>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 p-5">
-                <div class="pro-img w-100">
-                    <img src="public/images/product/pharma_product.jpg" class="w-100 h-inherit rounded-5" alt="">
+            <div class="col-lg-6 col-md-12">
+                <div class="pro-img">
+                    <img src="public/images/product/pharma_product.jpg" alt="our product image">
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@ $header->includeHeader('Numina | Product', './');
     <section>
         <div class="container mx-auto p-3 text-center my-5" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
-            <h1 class="fs-1 title" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> Addressing Global
+            <h1 class="fs-1 top-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> Addressing Global
                 Health Challenges </h1>
             <p class="fs-5 fw-light" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> In an era marked by
                 major global health challenges and fast technological
@@ -58,7 +58,7 @@ $header->includeHeader('Numina | Product', './');
                     <div class="img mx-auto">
                         <img src="public/images/product/tablet.jpg" class="rounded-5" alt="">
                     </div>
-                    <h1 class="title fs-1"> Tablets </h1>
+                    <h1 class="top-title fs-1"> Tablets </h1>
                     <p class="fs-5"> Easy to take pills for various health conditions
                     </p>
                 </div>
@@ -67,7 +67,7 @@ $header->includeHeader('Numina | Product', './');
                     <div class="img mx-auto">
                         <img src="public/images/product/capsule.jpg" class="rounded-5" alt="">
                     </div>
-                    <h1 class="title fs-1"> Capsules </h1>
+                    <h1 class="top-title fs-1"> Capsules </h1>
                     <p class="fs-5">Fast-working capsules for effective treatment
                     </p>
                 </div>
@@ -76,7 +76,7 @@ $header->includeHeader('Numina | Product', './');
                     <div class="img mx-auto">
                         <img src="public/images/product/syrup.jpg" class="rounded-5" alt="">
                     </div>
-                    <h1 class="title fs-1"> Syrups </h1>
+                    <h1 class="top-title fs-1"> Syrups </h1>
                     <p class="fs-5"> Liquid medicine ideal for children and the elderly
                     </p>
                 </div>
@@ -87,7 +87,7 @@ $header->includeHeader('Numina | Product', './');
 
     <section>
         <div class="our-products container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h1 class="fs-1 title text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> Our
+            <h1 class="fs-1 top-title text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> Our
                 Therapeutic Products </h1>
             <p class="fs-5 fw-light text-center my-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 Numina Pharmaceuticals offers a diverse portfolio comprised of
@@ -105,7 +105,7 @@ $header->includeHeader('Numina | Product', './');
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center"> Antacid </h2>
+                                <h5 class="top-title text-center"> Antacid </h5>
                                 <div>
                                     <p>Antacid provides relief from digestive comfort. These agents neutralize
                                         stomach acid and
@@ -133,7 +133,7 @@ $header->includeHeader('Numina | Product', './');
                         </div>
                         <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center"> Antibiotics </h2>
+                                <h5 class="top-title text-center"> Antibiotics </h5>
                                 <div>
                                     <p>Antibiotics are the drugs that treat different types of bacterial infections.
                                         These drugs
@@ -161,7 +161,7 @@ $header->includeHeader('Numina | Product', './');
                         <div class="swiper-slide">
 
                             <div class="product-categories">
-                                <h2 class="title text-center"> Analgesic </h2>
+                                <h5 class="top-title text-center"> Analgesic </h5>
                                 <div>
                                     <p>Analgesics are drugs that provide fast relief from different types of pain.
                                         These drugs
@@ -182,7 +182,7 @@ $header->includeHeader('Numina | Product', './');
                         </div>
                         <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center"> Analgesic, Antipyretic and Anti-emetic </h2>
+                                <h5 class="top-title text-center"> Analgesic, Antipyretic and Anti-emetic </h5>
                                 <div>
                                     <p>Analgesic, antipyretic, and anti-emetic combined to provide relief from
                                         multiple
@@ -210,8 +210,8 @@ $header->includeHeader('Numina | Product', './');
                         </div>
                         <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center">Analgesic & Anti-inflammatory
-                                </h2>
+                                <h5 class="top-title text-center">Analgesic & Anti-inflammatory
+                                </h5>
                                 <div>
                                     <p>Analgesic and anti-inflammatory combined effectively to reduce pain. They
                                         actively
@@ -230,8 +230,8 @@ $header->includeHeader('Numina | Product', './');
                         </div>
                         <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center">Anti-allergic
-                                </h2>
+                                <h5 class="top-title text-center">Anti-allergic
+                                </h5>
                                 <div>
                                     <p>Our anti-allergic medications block certain cells in the body from receiving
                                         histamine (a
@@ -252,8 +252,8 @@ $header->includeHeader('Numina | Product', './');
                         </div>
                         <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center">Multivitamins and Supplements
-                                </h2>
+                                <h5 class="top-title text-center">Multivitamins and Supplements
+                                </h5>
                                 <div>
                                     <p>Multivitamins and supplements contain essential nutrients that help to fill
                                         nutritional
@@ -271,9 +271,9 @@ $header->includeHeader('Numina | Product', './');
                         </div>
                         <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center">
+                                <h5 class="top-title text-center">
                                     Anti-diabetics
-                                </h2>
+                                </h5>
                                 <div>
                                     <p>We are also manufacturing antidiabetic medications that help maintain blood
                                         sugar levels
@@ -291,8 +291,8 @@ $header->includeHeader('Numina | Product', './');
                         <div class="swiper-slide">
 
                             <div class="product-categories">
-                                <h2 class="title text-center">Cardiovascular Drugs
-                                </h2>
+                                <h5 class="top-title text-center">Cardiovascular Drugs
+                                </h5>
                                 <div>
                                     <p>Cardiovascular medications are helpful in improving and maintaining heart
                                         health and
@@ -309,8 +309,8 @@ $header->includeHeader('Numina | Product', './');
                         </div>
                         <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center">Antimicrobials
-                                </h2>
+                                <h5 class="top-title text-center">Antimicrobials
+                                </h5>
                                 <div>
                                     <p>Our antimicrobial drugs help fight different infections. These drugs contain
                                         a group of
@@ -328,8 +328,8 @@ $header->includeHeader('Numina | Product', './');
                         </div>
                         <div class="swiper-slide">
                             <div class="product-categories">
-                                <h2 class="title text-center">Antiretrovirals (ARVs)
-                                </h2>
+                                <h5 class="top-title text-center">Antiretrovirals (ARVs)
+                                </h5>
                                 <div>
                                     <p>Our range of antiretroviral medications helps to manage HIV. If consumed
                                         properly,

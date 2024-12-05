@@ -36,7 +36,7 @@ class AdminHeader{
                 <!-------------------- Nav-bar -------------------->
                 <nav class="navbar navbar-expand-sm navbar-light bg-light">
                     <div class="container">
-                        <a class="navbar-brand" href="#">Numina</a>
+                        <a class="navbar-brand" href="javascript:void(0);">Numina</a>
                         <button
                             class="navbar-toggler d-lg-none"
                             type="button"
@@ -50,7 +50,7 @@ class AdminHeader{
                         <div class="collapse navbar-collapse" id="collapsibleNavId">
                             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                                 <!-- <li class="nav-item">
-                                    <a class="nav-link active" href="#" aria-current="page">Home
+                                    <a class="nav-link active" href="javascript:void(0);" aria-current="page">Home
                                         <span class="visually-hidden">(current)</span></a>
                                 </li>-->
                                 <li class="nav-item">
@@ -59,7 +59,7 @@ class AdminHeader{
                                 <!-- <li class="nav-item dropdown">
                                     <a
                                         class="nav-link dropdown-toggle"
-                                        href="#"
+                                        href="javascript:void(0);"
                                         id="dropdownId"
                                         data-bs-toggle="dropdown"
                                         aria-haspopup="true"
@@ -67,7 +67,7 @@ class AdminHeader{
                                     <div
                                         class="dropdown-menu"
                                         aria-labelledby="dropdownId">
-                                        <a class="dropdown-item" href="#">Action 1</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">Action 1</a>
                                     </div>
                                 </li> -->
                             </ul>

@@ -41,17 +41,17 @@ class header{
                                             <a href="about.php" class="nav-link fs-5"> Who is Numina </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#product" class="nav-link fs-5 postion-relative" id="pro-submenu">
-                                                Our product <i class="fa-solid fa-caret-down" id="caret-icon"></i>
+                                            <a href="#product.php" class="nav-link fs-5 postion-relative" id="pro-submenu">
+                                                Our Product <i class="fa-solid fa-caret-down" id="caret-icon"></i>
                                             </a>
                                         </li>
                                         <!-- <li class="nav-item">
-                                            <a href="#" class="nav-link fs-5">
+                                            <a href="javascript:void(0);" class="nav-link fs-5">
                                                 Reasearch and development
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link fs-5"> F & Q </a>
+                                            <a href="javascript:void(0);" class="nav-link fs-5"> F & Q </a>
                                         </li>                                        
                                         <li class="nav-item">
                                             <a href="admin/logout.php" class="nav-link fs-5"> Logout </a>
@@ -69,40 +69,40 @@ class header{
                                 <a href="product.php" class="text-decoration-none fw-bold mb-3 fs-3 link-orange">
                                     Product <span class="fs-2 right-arrow"> &#8594; </span>
                                 </a>
-                                <a href="#" class="text-decoration-none link-hover-animation">
+                                <a href="javascript:void(0);" class="text-decoration-none link-hover-animation">
                                     Antacid <i class="fa-solid fa-angle-right"></i>
                                 </a>
-                                <a href="#" class="text-decoration-none link-hover-animation">
+                                <a href="javascript:void(0);" class="text-decoration-none link-hover-animation">
                                     Antibiotic <i class="fa-solid fa-angle-right"></i>
                                 </a>
-                                <a href="#" class="text-decoration-none link-hover-animation">
+                                <a href="javascript:void(0);" class="text-decoration-none link-hover-animation">
                                     Analgesic <i class="fa-solid fa-angle-right"></i>
                                 </a>
-                                <a href="#" class="text-decoration-none link-hover-animation">
+                                <a href="javascript:void(0);" class="text-decoration-none link-hover-animation">
                                     Analgesic, Antipyretic and Anti-emetic
                                     <i class="fa-solid fa-angle-right"></i>
                                 </a>
-                                <a href="#" class="text-decoration-none link-hover-animation">
+                                <a href="javascript:void(0);" class="text-decoration-none link-hover-animation">
                                     Analgesic & Anti-inflammatory
                                     <i class="fa-solid fa-angle-right"></i>
                                 </a>
-                                <a href="#" class="text-decoration-none link-hover-animation">
+                                <a href="javascript:void(0);" class="text-decoration-none link-hover-animation">
                                     Anti-allergic <i class="fa-solid fa-angle-right"></i>
                                 </a>
-                                <a href="#" class="text-decoration-none link-hover-animation">
+                                <a href="javascript:void(0);" class="text-decoration-none link-hover-animation">
                                     Multivitamins and Supplements
                                     <i class="fa-solid fa-angle-right"></i>
                                 </a>
-                                <a href="#" class="text-decoration-none link-hover-animation">
+                                <a href="javascript:void(0);" class="text-decoration-none link-hover-animation">
                                     Anti-diabetic <i class="fa-solid fa-angle-right"></i>
                                 </a>
-                                <a href="#" class="text-decoration-none link-hover-animation">
+                                <a href="javascript:void(0);" class="text-decoration-none link-hover-animation">
                                     Cardiovascular Drugs <i class="fa-solid fa-angle-right"></i>
                                 </a>
-                                <a href="#" class="text-decoration-none link-hover-animation">
+                                <a href="javascript:void(0);" class="text-decoration-none link-hover-animation">
                                     Antimicrobials <i class="fa-solid fa-angle-right"></i>
                                 </a>
-                                <a href="#" class="text-decoration-none link-hover-animation">
+                                <a href="javascript:void(0);" class="text-decoration-none link-hover-animation">
                                     Antiretrovirals(ARVs) <i class="fa-solid fa-angle-right"></i>
                                 </a>
                             </div>
