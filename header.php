@@ -7,6 +7,8 @@ class header{
 
                 <head>
                     <title>' . $title . '</title>
+                    <link rel="icon" type="image/x-icon" href="public/images/header/numina_header.png">
+
                     <!-- Required meta tags -->
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -26,7 +28,7 @@ class header{
                         <!----------------------------------------------Navbar-------------------------------------------------->
                         <nav class="navbar navbar-expand-lg">
                             <div class="container-fluid">
-                                <a class="navbar-brand logo" href="index.php"><img src="public/images/header/Numina Logo.png"
+                                <a class="navbar-brand logo" href="index.php"><img src="public/images/header/numina_logo.png"
                                         class="w-100 h-inherit" alt="" /></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +57,7 @@ class header{
                                             <a href="admin/logout.php" class="nav-link fs-5"> Logout </a>
                                         </li> -->
                                         <li class="nav-item">
-                                            <a href="contect_us.php" class="nav-link fs-5"> Drop us a line </a>
+                                            <a href="contact_us.php" class="nav-link fs-5"> Drop us a line </a>
                                         </li>
                                     </ul>
                                 </div>

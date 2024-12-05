@@ -3,7 +3,7 @@ include_once('service/DbConnect.php');
 
 include_once('header.php');
 $header = new Header();
-$header->includeHeader('Numina | About us', './');
+$header->includeHeader('Numina | About Us', './');
 
 ?>
 <!--------------------------------------main start--------------------------------------------------------->
