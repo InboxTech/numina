@@ -66,7 +66,7 @@
                                 <button class="btn btn-lg btn-custom my-3">Reach out for collaboration</button>
                             </div>
                             <div class="">
-                                <a href="#" class=" link-dark">Why invest in Numina?</a>
+                                <a href="javascript:void(0);" class=" link-dark">Why invest in Numina?</a>
                             </div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                                         <div class="card-title text-uppercase">'. $product->getProductTitle() .'</div>
                                         <div class="card-title display-6 link-custom">'. $product->getProductSubTitle() .'</div>
                                         <div class="card-text mb-5">'. $product->getProductShortDescription() .'</div>
-                                        <div class="link-footer"><a href="#" class="link-dark text-decoration-none">'. $product->getProductLink() .'</a></div>
+                                        <div class="link-footer"><a href="javascript:void(0);" class="link-dark text-decoration-none">'. $product->getProductLink() .'</a></div>
                                     </div>
                                 </div>
                             ';
@@ -112,7 +112,7 @@
                 <div class="swiper section3Swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-dark">
+                            <a href="javascript:void(0);" class="text-decoration-none link-dark">
                                 <span>World-Class Manufacturing Infrastructure</span>
                                 <div class="slide-img">
                                     <img src="public/images/home/section3/World-Class Manufacturing Infrastructure.jpg" alt="">
@@ -123,7 +123,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-dark">
+                            <a href="javascript:void(0);" class="text-decoration-none link-dark">
                                 <span>Next-gen Quality Control Mechanisms</span>
                                 <div class="slide-img">
                                     <img src="public/images/home/section3/Next-gen Quality Control Mechanisms.png" alt="">
@@ -134,7 +134,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-dark">
+                            <a href="javascript:void(0);" class="text-decoration-none link-dark">
                                 <span>R&D-Driven Innovation</span>
                                 <div class="slide-img">
                                     <img src="public/images/home/section3/R&D-Driven Innovation.JPG" alt="">
@@ -145,7 +145,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-dark">
+                            <a href="javascript:void(0);" class="text-decoration-none link-dark">
                                 <span>Global Supply Chain Expansion</span>
                                 <div class="slide-img">
                                     <img src="public/images/home/section3/Global Supply Chain Expansion.jpg" alt="">
@@ -156,7 +156,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-dark">
+                            <a href="javascript:void(0);" class="text-decoration-none link-dark">
                                 <span>Supporting Diversity and Inclusion</span>
                                 <div class="slide-img">
                                     <img src="public/images/home/section3/Supporting Diversity and Inclusion.jpg" alt="">
@@ -167,7 +167,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-dark">
+                            <a href="javascript:void(0);" class="text-decoration-none link-dark">
                                 <span>Collaborative Innovation Partnerships</span>
                                 <div class="slide-img">
                                     <img src="public/images/home/section3/Collaborative Innovation Partnerships.jpg" alt="">
@@ -202,7 +202,7 @@
                 <div class="swiper section4Swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-light pos">
+                            <a href="javascript:void(0);" class="text-decoration-none link-light pos">
                                 <div class="slider-img">
                                     <img src="public/images/home/section4/EnhancingGlobalHealthjpg.jpg" alt="">
                                 </div>
@@ -214,7 +214,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-light">
+                            <a href="javascript:void(0);" class="text-decoration-none link-light">
                                 <div class="slider-img">
                                     <img src="public/images/home/section4/ProductGovernance.jpg" alt="">
                                 </div>
@@ -226,7 +226,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-light">
+                            <a href="javascript:void(0);" class="text-decoration-none link-light">
                                 <div class="slider-img">
                                     <img src="public/images/home/section4/ProtectingOurPlanet.jpg" alt="">
                                 </div>
@@ -239,7 +239,7 @@
                         </div>
                         
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-light">
+                            <a href="javascript:void(0);" class="text-decoration-none link-light">
                                 <div class="slider-img">
                                     <img src="public/images/home/section4/ImprovingAccessforAll.jpg" alt="">
                                 </div>
@@ -251,7 +251,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-light">
+                            <a href="javascript:void(0);" class="text-decoration-none link-light">
                                 <div class="slider-img">
                                     <img src="public/images/home/section4/SupportingDiversityandInclusion.png" alt="">
                                 </div>
@@ -263,7 +263,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="text-decoration-none link-light">
+                            <a href="javascript:void(0);" class="text-decoration-none link-light">
                                 <div class="slider-img">
                                     <img src="public/images/home/section4/UpholdingEthicalStandards.jpg" alt="">
                                 </div>
