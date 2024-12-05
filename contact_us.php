@@ -12,7 +12,7 @@ $header->includeHeader('Numina | Contact Us', './');
         <div class="container mx-auto">
             <div class="row ">
                 <div class="col-6">
-                    <h1> Get In Touch </h1>
+                    <h2 class="display-5 top-title"> Get In Touch </h2>
                     <form class="formValidate">
                         <div class="row">
                             <div class="col-6">

@@ -150,7 +150,7 @@ header {
     object-fit: cover;
     border-radius: 15px;
     object-fit: cover;
-    aspect-ratio: 16 / 12;
+    aspect-ratio: 14 / 12;
 }
 
 /* ----------------------------- section 2 ----------------------------- */
@@ -508,7 +508,7 @@ footer .link-dark:hover {
     object-fit: cover;
     aspect-ratio: 14 / 5;
   }
-  .title{
+  .top-title{
     color: var(--primary-color);
   }
   .mission, .dosage-form{
@@ -528,6 +528,9 @@ footer .link-dark:hover {
 /* -------------------------------------------------- About us Page end --------------------------------------------------- */
 
 /* -------------------------------------------------- Product Page start -------------------------------------------------- */
+.product-us {
+  margin-top: 100px;
+}
 .product-us .pro-img img{
   display: block;
     width: 100%;
@@ -575,11 +578,6 @@ footer .link-dark:hover {
 .our-products .products .product-categories p {
   font-size: 15px;
   text-align: left;
-}
-
-.title {
-  color: var(--primary-color);
-  font-size: 22px;
 }
 
 .products .swiper {
