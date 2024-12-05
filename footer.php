@@ -73,27 +73,27 @@
                             <strong>Follow us on:</strong>
                             <ul class="list-group flex-row">
                                 <li class="list-group-item border-0 p-2">
-                                    <a href="#facebook" class="link-custom"><i
+                                    <a href="javascript:void(0);" class="link-custom"><i
                                             class="fa-brands fa-square-facebook fs-2"></i></a>
                                 </li>
                                 <li class="list-group-item border-0 p-2">
-                                    <a href="#twitter" class="link-custom"><i
+                                    <a href="javascript:void(0);" class="link-custom"><i
                                             class="fa-brands fa-square-x-twitter fs-2"></i></a>
                                 </li>
                                 <li class="list-group-item border-0 p-2">
-                                    <a href="#youtube" class="link-custom"><i
+                                    <a href="javascript:void(0);" class="link-custom"><i
                                             class="fa-brands fa-square-youtube fs-2"></i></a>
                                 </li>
                                 <li class="list-group-item border-0 p-2">
-                                    <a href="#linkedin" class="link-custom"><i
+                                    <a href="javascript:void(0);" class="link-custom"><i
                                             class="fa-brands fa-linkedin fs-2"></i></a>
                                 </li>
                                 <li class="list-group-item border-0 p-2">
-                                    <a href="#instagram" class="link-custom"><i
+                                    <a href="javascript:void(0);" class="link-custom"><i
                                             class="fa-brands fa-square-instagram fs-2"></i></a>
                                 </li>
                                 <li class="list-group-item border-0 p-2">
-                                    <a href="#rss" class="link-custom"><i class="fa-solid fa-square-rss fs-2"></i></a>
+                                    <a href="javascript:void(0);" class="link-custom"><i class="fa-solid fa-square-rss fs-2"></i></a>
                                 </li>
                             </ul>
                         </li> -->
@@ -129,7 +129,6 @@
         <script src="public/js/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="public/js/gsap.min.js"></script>
-        <script src="public/js/custom.js"></script>
         <script src="public/js/jquery.min.js"></script>
         <script src="public/js/plugin/jqueryvalidation/jquery.validate.min.js"></script>
         <script src="public/js/script.js"></script>

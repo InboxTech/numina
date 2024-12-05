@@ -41,8 +41,8 @@ class header{
                                             <a href="about.php" class="nav-link fs-5"> Who is Numina </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link fs-5 postion-relative" id="pro-submenu">
-                                                Our product <i class="fa-solid fa-caret-down" id="caret-icon"></i>
+                                            <a href="#product.php" class="nav-link fs-5 postion-relative" id="pro-submenu">
+                                                Our Product <i class="fa-solid fa-caret-down" id="caret-icon"></i>
                                             </a>
                                         </li>
                                         <!-- <li class="nav-item">

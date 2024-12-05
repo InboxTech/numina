@@ -11,8 +11,8 @@ $header->includeHeader('Numina | About Us', './');
 
     <section>
         <div class="banner container-fluid">
-            <div class="banner-img row ratio ratio-21x9">
-                <img src="public/images/home/section3/openart-image_uShboVPI_1730117810929_raw.jpg" class="" alt="">
+            <div class="banner-img">
+                <img src="public/images/about/digital_pharma_manufacturing.jpg" class="" alt="">
             </div>
         </div>
     </section>
@@ -119,7 +119,7 @@ $header->includeHeader('Numina | About Us', './');
                 <div class="details m-3 rounded-5 p-5 col-lg-3 bg-white" data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom">
                     <div class="icon mx-auto shadow d-flex align-items-center justify-content-center">
-                        <i class="fa-regular fa-thumbs-up fs-1"></i>
+                        <i class="fa-solid fa-rocket fs-1"></i>
                     </div>
                     <h1 class="title text-center my-3"> Mission </h1>
                     <p class="fw-light"> To strengthen our core capabilities to meet the unmet medical needs of
@@ -129,7 +129,7 @@ $header->includeHeader('Numina | About Us', './');
                 <div class="details m-3 rounded-5 p-5 col-lg-3 bg-white" data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom">
                     <div class="icon mx-auto shadow d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-hourglass-start fs-1"></i>
+                        <i class="fa-solid fa-lightbulb fs-1"></i>
                     </div>
                     <h1 class="title text-center my-3"> Vission </h1>
                     <p class="fw-light"> To strengthen our core capabilities to meet the unmet medical needs of
@@ -139,7 +139,7 @@ $header->includeHeader('Numina | About Us', './');
                 <div class="details m-3 rounded-5 p-5 col-lg-3 bg-white" data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom">
                     <div class="icon mx-auto shadow d-flex align-items-center justify-content-center">
-                        <i class="fa-regular fa-thumbs-up fs-1"></i>
+                        <i class="fa-solid fa-hand-holding-heart fs-1"></i>
                     </div>
                     <h1 class="title text-center my-3"> Values </h1>
                     <p class="fw-light"> To strengthen our core capabilities to meet the unmet medical needs of

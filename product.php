@@ -9,14 +9,19 @@ $header->includeHeader('Numina | Product', './');
 ?>
 
 <!-- Product -->
-<main>
+<main class="product-us">
     <section>
-        <div class="container-fluid row justify-content-evenly align-items-center p-5">
+        <div class="container-fluid row justify-content-evenly align-items-center p-lg-5">
             <div class="col-lg-6 col-md-12 p-5">
-                <h1 class="fs-1 title text-capitalize"> Our pharma products </h1>
+                <h1 class="display-4 text-custom"> Our Pharma Products </h1>
 
-                <p class="fs-2 fw-light my-3"> Expert Care, Quality Medicines for Health Needs….<br>Because You
-                    Deserve The Best!!
+                <p class="fs-4 fw-light my-3">
+                Numina Pharmaceuticals offers a diverse portfolio comprised of
+                therapeutic drugs specially used for chronic and severe ailments. We are producing generics, OTC
+                (Over-The-Counter), specialty products, ARVs and APIs for Indian as well as global markets. Our
+                products are approved by local regulatory authorities in various countries for specific medical
+                uses. As an emerging player in the pharmaceutical industry, we are working to strengthen our global
+                footprint by delivering a broad range of healthcare products to greatly benefit local communities.
                 </p>
 
                 <div>
@@ -24,9 +29,9 @@ $header->includeHeader('Numina | Product', './');
                     </button>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 p-5">
-                <div class="pro-img w-100">
-                    <img src="public/images/product/pharma_product.jpg" class="w-100 h-inherit rounded-5" alt="">
+            <div class="col-lg-6 col-md-12 p-lg-5">
+                <div class="pro-img">
+                    <img src="public/images/product/pharma_product.jpg" alt="our product image">
                 </div>
             </div>
         </div>
@@ -90,12 +95,7 @@ $header->includeHeader('Numina | Product', './');
             <h1 class="fs-1 title text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> Our
                 Therapeutic Products </h1>
             <p class="fs-5 fw-light text-center my-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                Numina Pharmaceuticals offers a diverse portfolio comprised of
-                therapeutic drugs specially used for chronic and severe ailments. We are producing generics, OTC
-                (Over-The-Counter), specialty products, ARVs and APIs for Indian as well as global markets. Our
-                products are approved by local regulatory authorities in various countries for specific medical
-                uses. As an emerging player in the pharmaceutical industry, we are working to strengthen our global
-                footprint by delivering a broad range of healthcare products to greatly benefit local communities.
+                
             </p>
 
             <div class="products row justify-content-center" data-aos="fade-up"

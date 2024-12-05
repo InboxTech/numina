@@ -1,4 +1,14 @@
+// Nav Active js
+const currentPage = window.location.pathname.split("/").pop();
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
+navLinks.forEach((link) => {
+  if (link.getAttribute("href").includes(currentPage)) {
+    link.classList.add("active");
+  }
+});
+
+// Submenu Dropdown
 var submenu_pro = document.getElementById("pro-submenu");
 var show_submenu_pro = document.getElementById("show-pro-submenu");
 var caretIcon = document.getElementById("caret-icon"); // Get the caret icon element
@@ -6,35 +16,36 @@ var caretIcon = document.getElementById("caret-icon"); // Get the caret icon ele
 var isVisible = false;
 
 // Toggle the submenu on clicking the "Our product" link
-submenu_pro.addEventListener("click", function(event) {
-    event.stopPropagation(); // Prevents the click from bubbling up to the document
-    if (!isVisible) {
-        show_submenu_pro.style.display = 'flex';
-        caretIcon.classList.remove('fa-caret-down'); // Remove the down caret
-        caretIcon.classList.add('fa-caret-up'); // Add the up caret
-        isVisible = true;
-    } else {
-        show_submenu_pro.style.display = 'none';
-        caretIcon.classList.remove('fa-caret-up'); // Remove the up caret
-        caretIcon.classList.add('fa-caret-down'); // Add the down caret
-        isVisible = false;
-    }
-
+submenu_pro.addEventListener("click", function (event) {
+  event.stopPropagation(); // Prevents the click from bubbling up to the document
+  if (!isVisible) {
+    show_submenu_pro.style.display = "flex";
+    caretIcon.classList.remove("fa-caret-down"); // Remove the down caret
+    caretIcon.classList.add("fa-caret-up"); // Add the up caret
+    isVisible = true;
+  } else {
+    show_submenu_pro.style.display = "none";
+    caretIcon.classList.remove("fa-caret-up"); // Remove the up caret
+    caretIcon.classList.add("fa-caret-down"); // Add the down caret
+    isVisible = false;
+  }
 });
 
 // Function to hide the submenu when clicking outside of it
-document.addEventListener("click", function(event) {
-    var isClickInside = submenu_pro.contains(event.target) || show_submenu_pro.contains(event.target);
+document.addEventListener("click", function (event) {
+  var isClickInside =
+    submenu_pro.contains(event.target) ||
+    show_submenu_pro.contains(event.target);
 
-    if (!isClickInside && isVisible) {
-        show_submenu_pro.style.display = 'none';
-        caretIcon.classList.remove('fa-caret-up'); // Remove the up caret
-        caretIcon.classList.add('fa-caret-down'); 
-        isVisible = false;
-    }
+  if (!isClickInside && isVisible) {
+    show_submenu_pro.style.display = "none";
+    caretIcon.classList.remove("fa-caret-up"); // Remove the up caret
+    caretIcon.classList.add("fa-caret-down");
+    isVisible = false;
+  }
 });
 
-//main page swiper
+//main page swiper section2
 var swiper = new Swiper(".section2Swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -74,6 +85,7 @@ var swiper = new Swiper(".section2Swiper", {
   },
 });
 
+// home page section3
 var swiper = new Swiper(".section3Swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -105,6 +117,7 @@ var swiper = new Swiper(".section3Swiper", {
   },
 });
 
+// home page section4
 var swiper = new Swiper(".section4Swiper", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -145,115 +158,113 @@ var link_hover = document.querySelectorAll(".link-hover-animation");
 var product_details = document.querySelectorAll(".product-details");
 
 link_hover.forEach((hoverElement, index) => {
-    hoverElement.addEventListener('mouseenter', function() {
-        product_details.forEach(detail => detail.style.display = 'none');  // Hide all product details
-        product_details[index].style.display = 'block';  // Show the relevant product detail
-    });
+  hoverElement.addEventListener("mouseenter", function () {
+    product_details.forEach((detail) => (detail.style.display = "none")); // Hide all product details
+    product_details[index].style.display = "block"; // Show the relevant product detail
+  });
 
-    hoverElement.addEventListener('mouseleave', function() {
-        product_details[index].style.display = 'none';  // Optionally hide the detail again when mouse leaves
-    });
+  hoverElement.addEventListener("mouseleave", function () {
+    product_details[index].style.display = "none"; // Optionally hide the detail again when mouse leaves
+  });
 });
 
 // swiper of product page
 var swiper = new Swiper(".myProductSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
     },
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 50,
-      },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
     },
-  });
+  },
+});
 
-  // Animation On Scroll library 
-  AOS.init({
-    duration: 2000,
-  });
+// Animation On Scroll library
+AOS.init({
+  duration: 2000,
+});
 
-
-
-  
-  const viewMoreLinks = document.querySelectorAll('.view-more');
-const moreTexts = document.querySelectorAll('.more-text');
-const proCategories = document.querySelectorAll('.products .product-categories');
+const viewMoreLinks = document.querySelectorAll(".view-more");
+const moreTexts = document.querySelectorAll(".more-text");
+const proCategories = document.querySelectorAll(
+  ".products .product-categories"
+);
 
 // Iterate over each link and corresponding "More Text" element
 viewMoreLinks.forEach((viewMore, index) => {
   const moreText = moreTexts[index]; // Get the corresponding moreText element for this index
   const productCategory = proCategories[index]; // Get the corresponding product category container for this index
-  
-  viewMore.addEventListener('click', function() {
+
+  viewMore.addEventListener("click", function () {
     // Toggle the visibility of the extra text
-    moreText.classList.toggle('show');
+    moreText.classList.toggle("show");
 
     // Change the link text based on whether it's shown or not
-    if (moreText.classList.contains('show')) {
-      viewMore.textContent = 'View Less';
-      
+    if (moreText.classList.contains("show")) {
+      viewMore.textContent = "View Less";
+
       // Increase the height of the product category container when expanded
-      productCategory.style.height = '62vh';  // Allow it to expand based on content height
+      productCategory.style.height = "62vh"; // Allow it to expand based on content height
     } else {
-      viewMore.textContent = 'View More';
-      
+      viewMore.textContent = "View More";
+
       // Set the height back to the initial value (you can adjust this as needed)
-      productCategory.style.height = '30vh';  // Restore the original height
+      productCategory.style.height = "30vh"; // Restore the original height
     }
   });
 });
 
-  
-
+// contact us page form validation
 $(".formValidate").validate({
   rules: {
     firstname: {
-      required: true
+      required: true,
     },
     lastname: {
-      required: true
+      required: true,
     },
     email: {
-      required: true
+      required: true,
     },
     phone: {
-      required: true
+      required: true,
     },
     msg: {
-      required: true
-    }
+      required: true,
+    },
   },
   messages: {
     firstname: {
-      required: "please enter firstname"
+      required: "please enter firstname",
     },
     lastname: {
-      required: "Please enter lastname"
+      required: "Please enter lastname",
     },
     email: {
-      required: "Please enter email"
+      required: "Please enter email",
     },
     phone: {
-      required: "Please enter phone"
+      required: "Please enter phone",
     },
     msg: {
-      required: "Please enter comment"
-    }
-  }
-})
+      required: "Please enter comment",
+    },
+  },
+});

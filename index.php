@@ -12,11 +12,11 @@
 
 <main>
     <div class="container-fluid">
-        <div id="section1" class="row p-0 m-0 ps-5">
+        <div id="section1" class="row px-lg-5 px-md-3 pe-0">
             <div class="col-lg-6 m-lg-auto">
                 <!-- <h1 class="h3">Behind the science</h1> -->
                 <div class="">
-                    <h2 class="display-3">Top Pharmaceutical Manufacturing Company in India</h2>
+                    <h2 class="display-4">Top Pharmaceutical Manufacturing Company in India</h2>
                     <p class="fs-4">
                         Shaping Healthier Tomorrows, Today- Delivering quality healthcare products that improve the well-being of
                         millions across India and around the world. CTA-Connect with us today!
@@ -28,9 +28,9 @@
             </div>
             <div class="col-lg-6">
                 <div class="rounded-4 overflow-hidden">
-                    <div class="pinch-img">
-                        <img src="public/images/home/section3/openart-image_uShboVPI_1730117810929_raw.jpg" class="main-img" />
-                    </div>
+                    <img src="public/images/home/section3/openart-image_uShboVPI_1730117810929_raw.jpg" class="main-img" />
+                    <!-- <div class="pinch-img">
+                    </div> -->
                 </div>
             </div>
 
