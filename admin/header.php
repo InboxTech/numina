@@ -11,7 +11,8 @@ class AdminHeader{
                 <title>'. $title .'</title>
 
                 <link rel="stylesheet" href="'. $path .'public/css/bootstrap.min.css">
-                <link rel="stylesheet" href="'. $path .'public/fontawesome-free-6.6.0-web/css/all.css">
+                <link rel="stylesheet" href="'. $path .'public/fonts/css/all.css">
+
                 <style>
                     #autoCloseAlert {
                         position: fixed;
