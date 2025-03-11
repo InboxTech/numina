@@ -5,7 +5,7 @@
 
     include_once('header.php');
     $header = new Header();
-    $header->includeHeader('Numina | Home', './');
+    $header->includeHeader('Numina | Home', './', 'index.php');
     
     $product = ProductService::getAllProducts();
 ?>
@@ -28,7 +28,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="rounded-4 overflow-hidden">
-                    <img src="public/images/home/section3/openart-image_uShboVPI_1730117810929_raw.jpg" class="main-img" />
+                    <img src="public/images/home/openart.jpg" class="main-img" />
                     <!-- <div class="pinch-img">
                     </div> -->
                 </div>
@@ -115,7 +115,7 @@
                             <a href="javascript:void(0);" class="text-decoration-none link-dark">
                                 <span>World-Class Manufacturing Infrastructure</span>
                                 <div class="slide-img">
-                                    <img src="public/images/home/section3/World-Class Manufacturing Infrastructure.jpg" alt="">
+                                    <img src="public/images/home/section3/world_class_manufacturing_infrastructure.jpg" alt="">
                                 </div>
                                 <div>
                                     <p>Our manufacturing units are equipped with the latest machinery and automated systems to produce high-quality drugs.</p>
@@ -126,7 +126,7 @@
                             <a href="javascript:void(0);" class="text-decoration-none link-dark">
                                 <span>Next-gen Quality Control Mechanisms</span>
                                 <div class="slide-img">
-                                    <img src="public/images/home/section3/Next-gen Quality Control Mechanisms.png" alt="">
+                                    <img src="public/images/home/section3/next_gen_quality_control_mechanisms.png" alt="">
                                 </div>
                                 <div>
                                     <p>Our every product meets the highest quality and safety standards by using latest technologies like AI-driven inspections & real-time monitoring.</p>
@@ -137,7 +137,7 @@
                             <a href="javascript:void(0);" class="text-decoration-none link-dark">
                                 <span>R&D-Driven Innovation</span>
                                 <div class="slide-img">
-                                    <img src="public/images/home/section3/R&D-Driven Innovation.JPG" alt="">
+                                    <img src="public/images/home/section3/r&d_driven_iInnovation.JPG" alt="">
                                 </div>
                                 <div>
                                     <p>Our innovative R&D team focuses on developing new formulations and improving how we make them to be the best in the market.</p>
@@ -148,7 +148,7 @@
                             <a href="javascript:void(0);" class="text-decoration-none link-dark">
                                 <span>Global Supply Chain Expansion</span>
                                 <div class="slide-img">
-                                    <img src="public/images/home/section3/Global Supply Chain Expansion.jpg" alt="">
+                                    <img src="public/images/home/section3/global_supply_chain_expansion.jpg" alt="">
                                 </div>
                                 <div>
                                     <p>We have a smart delivery network that helps us deliver our products to customers fast, secure across the world.</p>
@@ -159,7 +159,7 @@
                             <a href="javascript:void(0);" class="text-decoration-none link-dark">
                                 <span>Supporting Diversity and Inclusion</span>
                                 <div class="slide-img">
-                                    <img src="public/images/home/section3/Supporting Diversity and Inclusion.jpg" alt="">
+                                    <img src="public/images/home/section3/supporting_diversity_inclusion.jpg" alt="">
                                 </div>
                                 <div>
                                     <p>We’ve certifications like ISO 9001 and GMP that show our products are meeting international standards for quality, and safety.</p>
@@ -170,7 +170,7 @@
                             <a href="javascript:void(0);" class="text-decoration-none link-dark">
                                 <span>Collaborative Innovation Partnerships</span>
                                 <div class="slide-img">
-                                    <img src="public/images/home/section3/Collaborative Innovation Partnerships.jpg" alt="">
+                                    <img src="public/images/home/section3/collaborative_innovation_partnerships.jpg" alt="">
                                 </div>
                                 <div>
                                     <p>Through partnerships with industry leaders and research groups, we are developing innovative ideas and improving our manufacturing techniques.</p>

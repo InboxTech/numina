@@ -1,6 +1,19 @@
 <?php
 class header{
-    public function includeHeader($title, $path){
+    public function includeHeader($title, $path, $url){
+        $aboutActive = '';
+        $productActive = '';
+        $contactActive = '';
+
+        if($url == "about.php") {
+            $aboutActive = 'active';
+        } 
+        else if($url =="product.php") {
+            $productActive = 'active';
+        }
+        else if($url =="contact_us.php") {
+            $contactActive = 'active';
+        }
         echo '
             <!doctype html>
                 <html lang="en">
@@ -38,26 +51,15 @@ class header{
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item">
-                                            <a href="about.php" class="nav-link fs-5"> Who is Numina </a>
+                                            <a href="about.php" class="nav-link fs-5 '.$aboutActive.'"> Who is Numina </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#product.php" class="nav-link fs-5 postion-relative" id="pro-submenu">
+                                            <a href="#product.php" class="nav-link fs-5 postion-relative '.$productActive.'" id="pro-submenu">
                                                 Our Product <i class="fa-solid fa-caret-down" id="caret-icon"></i>
                                             </a>
                                         </li>
-                                        <!-- <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link fs-5">
-                                                Reasearch and development
-                                            </a>
-                                        </li>
                                         <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link fs-5"> F & Q </a>
-                                        </li>                                        
-                                        <li class="nav-item">
-                                            <a href="admin/logout.php" class="nav-link fs-5"> Logout </a>
-                                        </li> -->
-                                        <li class="nav-item">
-                                            <a href="contact_us.php" class="nav-link fs-5"> Drop us a line </a>
+                                            <a href="contact_us.php" class="nav-link fs-5 '.$contactActive.'"> Drop us a line </a>
                                         </li>
                                     </ul>
                                 </div>

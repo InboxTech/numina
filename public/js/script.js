@@ -1,13 +1,3 @@
-// Nav Active js
-const currentPage = window.location.pathname.split("/").pop();
-const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
-navLinks.forEach((link) => {
-  if (link.getAttribute("href").includes(currentPage)) {
-    link.classList.add("active");
-  }
-});
-
 // Submenu Dropdown
 var submenu_pro = document.getElementById("pro-submenu");
 var show_submenu_pro = document.getElementById("show-pro-submenu");

@@ -4,7 +4,7 @@ include_once('service/DbConnect.php');
 
 include_once('header.php');
 $header = new Header();
-$header->includeHeader('Numina | Product', './');
+$header->includeHeader('Numina | Product', './', 'product.php');
 
 ?>
 
