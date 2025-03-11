@@ -4,6 +4,7 @@ class header{
         $aboutActive = '';
         $productActive = '';
         $contactActive = '';
+        $careerActive = '';
 
         if($url == "about.php") {
             $aboutActive = 'active';
@@ -13,6 +14,9 @@ class header{
         }
         else if($url =="contact_us.php") {
             $contactActive = 'active';
+        }
+        else if($url =="career.php") {
+            $careerActive = 'active';
         }
         echo '
             <!doctype html>
@@ -41,7 +45,7 @@ class header{
                         <!----------------------------------------------Navbar-------------------------------------------------->
                         <nav class="navbar navbar-expand-lg">
                             <div class="container-fluid">
-                                <a class="navbar-brand logo" href="index.php"><img src="public/images/header/numina_logo.png"
+                                <a class="navbar-brand logo" href="index.php"><img src="public/images/header/numina_healthcare.png"
                                         class="w-100 h-inherit" alt="" /></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,12 +55,15 @@ class header{
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item">
-                                            <a href="about.php" class="nav-link fs-5 '.$aboutActive.'"> Who is Numina </a>
+                                            <a href="about.php" class="nav-link fs-5 '.$aboutActive.'"> Overview </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#product.php" class="nav-link fs-5 postion-relative '.$productActive.'" id="pro-submenu">
                                                 Our Product <i class="fa-solid fa-caret-down" id="caret-icon"></i>
                                             </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link fs-5 '.$careerActive.'"> Career </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="contact_us.php" class="nav-link fs-5 '.$contactActive.'"> Drop us a line </a>

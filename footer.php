@@ -2,8 +2,12 @@
         <hr>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 mt-3">
-                    <p class="fs-4 fw-medium mb-3 py-2">Numina</p>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="logo mb-3">
+                        <a  href="index.php"><img src="public/images/header/numina_healthcare.png"
+                        class="w-100 h-inherit" alt="" /></a>
+
+                    </div>
                     <p class="fs-7 pt-2">
                         We are a top pharmaceutical company in India, providing a wide range of generic medicines to
                         improve the
@@ -17,7 +21,7 @@
                         <hr>
                         <a href="javascript:void(0);" class="fs-7 text-decoration-none link-dark">> Modern Slavery Act statement 2023 (PDF - 139.1KB)</a> -->
                 </div>
-                <div class="col-lg-3 col-md-6 mt-3">
+                <!-- <div class="col-lg-4 col-md-6 mt-3">
                     <ul class="list-group">
                         <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Numina websites</span>
                         </li>
@@ -25,8 +29,6 @@
                                 website <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
                         <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">Market
                                 website selector</a></li>
-                        <!-- <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">Global
-                                Behind the science magazine</a></li> -->
                         <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">Numina
                                 Pro for healthcare professionals</a></li>
                         <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">ViiV
@@ -36,39 +38,38 @@
                         <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">Supplier
                                 website</a></li>
                     </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-3">
+                </div> -->
+                <div class="col-lg-4 col-md-6 mt-3">
                     <ul class="list-group">
                         <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Quick links</span></li>
                         <!-- <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">Behind
                                 the science magazine</a></li> -->
                         <li class="list-group-item border-0"><a href="javascript:void(0);"
-                                class="text-decoration-none link-dark">Company</a></li>
+                                class="text-decoration-none link-dark">Overview</a></li>
                         <li class="list-group-item border-0"><a href="javascript:void(0);"
-                                class="text-decoration-none link-dark">Innovation</a></li>
+                                class="text-decoration-none link-dark">Our Product</a></li>
+                         <li class="list-group-item border-0"><a href="javascript:void(0);"
+                                        class="text-decoration-none link-dark">Careers</a></li>
+                                        <li class="list-group-item border-0"><a href="javascript:void(0);"
+                                        class="text-decoration-none link-dark">Newsletter</a></li>
                         <li class="list-group-item border-0"><a href="javascript:void(0);"
-                                class="text-decoration-none link-dark">Products</a></li>
-                        <li class="list-group-item border-0"><a href="javascript:void(0);"
-                                class="text-decoration-none link-dark">Responsibility</a></li>
-                        <li class="list-group-item border-0"><a href="javascript:void(0);"
-                                class="text-decoration-none link-dark">Investors</a></li>
-                        <li class="list-group-item border-0"><a href="javascript:void(0);"
-                                class="text-decoration-none link-dark">Media</a></li>
-                        <li class="list-group-item border-0"><a href="javascript:void(0);"
-                                class="text-decoration-none link-dark">Careers</a></li>
+                                class="text-decoration-none link-dark"> Drop us a line</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mt-3">
+                <div class="col-lg-4 col-md-6 mt-3">
                     <ul class="list-group">
-                        <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Get in touch</span></li>
-                        <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">Contact
-                                us</a></li>
-                        <li class="list-group-item border-0"><a href="javascript:void(0);"
+                        <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Contact Us </span></li>
+
+                       <li class="list-group-item border-0">  Email Id: info@numina-healthcare.com </li>
+                       <li class="list-group-item border-0">  Phone no: 1234567890 </li>
+                        <!-- <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">Contact
+                                us</a></li> -->
+                        <!-- <li class="list-group-item border-0"><a href="javascript:void(0);"
                                 class="text-decoration-none link-dark">Partnerships</a></li>
                         <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">Report a
                                 possible side effect</a></li>
                         <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">Numina
-                                Speak up</a></li>
+                                Speak up</a></li> -->
                         <!-- <li class="list-group-item border-0 mt-3">
                             <strong>Follow us on:</strong>
                             <ul class="list-group flex-row">
@@ -119,9 +120,9 @@
                 <li class="list-group-item border-0 mb-3">
                     <a href="javascript:void(0);" class="text-decoration-none link-dark">Privacy notice</a>
                 </li>
-                <li class="list-group-item border-0 mb-3">
+                <!-- <li class="list-group-item border-0 mb-3">
                     <a href="javascript:void(0);" class="text-decoration-none link-dark">Sitemap</a>
-                </li>
+                </li> -->
             </ul>
         </div>
 

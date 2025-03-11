@@ -9,8 +9,8 @@
 }
 
 :root {
-  --primary-color: #19a0e1;
-  --primary-hover: rgb(40, 199, 235);
+  --primary-color: #d64193;
+  --primary-hover: rgb(40, 131, 235);
 }
 
 html,
@@ -129,7 +129,7 @@ header {
   color: #fff;
   /* background-color: var(--primary-hover); */
   /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
-  background: linear-gradient(0deg, rgba(150,218,128,1) 0%,  rgba(20,157,240,1) 100%);
+  background:  #e959a8 ;
   font-weight: 600;
 }
 
@@ -446,7 +446,8 @@ header {
 }
 
 #last-section .custom-card {
-  background: var(--primary-color) linear-gradient(180deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+  /* background: var(--primary-color) linear-gradient(180deg, var(--primary-color) 0%, var(--primary-hover) 100%); */
+  background-color: var(--primary-hover);
   text-align: start;
   border: 0;
   width: 100%;
@@ -484,7 +485,9 @@ footer .link-dark {
 footer .link-dark:hover {
   color: var(--primary-color) !important;
 }
-
+footer .logo{
+  width: 10rem;
+}
 /* -------------------------------------------------- Footer end -------------------------------------------------- */
 
 /* -------------------------------------------------- About us Page start --------------------------------------------------- */
@@ -513,7 +516,8 @@ footer .link-dark:hover {
     aspect-ratio: 14 / 5;
   }
   .top-title{
-    color: var(--primary-color);
+    color: black;
+    font-size: 2rem;
   }
   .mission, .dosage-form{
     background-color: var(--primary-color);

@@ -16,10 +16,10 @@
             <div class="col-lg-6 m-lg-auto">
                 <!-- <h1 class="h3">Behind the science</h1> -->
                 <div class="">
-                    <h2 class="display-4 top-title">Top Pharmaceutical Manufacturing Company in India</h2>
-                    <p class="fs-4  fw-normal">
+                    <h2 class="top-title">Top Pharmaceutical Manufacturing Company in India</h2>
+                    <p class="fs-5 fw-normal">
                         Shaping Healthier Tomorrows, Today- Delivering quality healthcare products that improve the well-being of
-                        millions across India and around the world. CTA-Connect with us today!
+                        millions across India and around the world. 
                     </p>
                 </div>
                 <div class="">
