@@ -17,7 +17,7 @@
                 <!-- <h1 class="h3">Behind the science</h1> -->
                 <div class="">
                     <h2 class="top-title">Top Pharmaceutical Manufacturing Company in India</h2>
-                    <p class="fs-5 fw-normal">
+                    <p class="fs-5 fw-normal my-5">
                         Shaping Healthier Tomorrows, Today- Delivering quality healthcare products that improve the well-being of
                         millions across India and around the world. 
                     </p>
