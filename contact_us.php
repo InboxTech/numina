@@ -49,7 +49,7 @@ $header->includeHeader('Numina | Contact Us', './', 'contact_us.php');
                     </form>
                 </div>
                 <div class="col-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.914297863139!2d73.16496507586686!3d22.31908074221339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8b0ad7c2637%3A0x2a345d8d78456d64!2sInbox%20Infotech!5e0!3m2!1sen!2sin!4v1733310564571!5m2!1sen!2sin"  style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d118112.52659717874!2d73.0618740730391!3d22.315217386033147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x395fc9f063c9c445%3A0xd4cd501246d5d840!2snear%20Iscon%20Heights%2C%20Gotri%2C%20Vadodara%2C%20Gujarat%20390021!3m2!1d22.3152382!2d73.1442757!5e0!3m2!1sen!2sin!4v1743763550920!5m2!1sen!2sin" style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>

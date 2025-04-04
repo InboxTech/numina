@@ -11,8 +11,11 @@ $header->includeHeader('Numina | Product', './', 'product.php');
 <!-- Product -->
 <main class="product-us">
     <section class="px-lg-5 px-md-3 pe-0">
-        <div class="container-fluid row justify-content-evenly align-items-center">
-            <div class="col-lg-6 col-md-12 pe-lg-5">
+        <div class="container-fluid row justify-content-evenly flex-lg-row flex-column-reverse align-items-center">
+
+            <div class="col-lg-6 pe-lg-5 my-2" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                 <h2 class="display-4 top-title"> Our Pharma Products </h2>
 
                 <p class="fs-4 fw-normal">
@@ -24,11 +27,14 @@ $header->includeHeader('Numina | Product', './', 'product.php');
                     </button>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 my-2" data-aos="fade-left"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                 <div class="pro-img">
                     <img src="public/images/product/pharma_product.jpg" alt="our product image">
                 </div>
             </div>
+            
         </div>
     </section>
 

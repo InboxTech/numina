@@ -32,18 +32,33 @@ header {
 .navbar .navbar-collapse .nav-link {
   margin-inline: 15px;
   color: black;
-  transition: all .4s ease-in-out;
+  transition: all .4s linear;
   border-radius: 8px;
   padding: 5px;
+  position: relative;
 }
-
-.navbar .navbar-collapse .nav-link:hover,
-.navbar .navbar-collapse .nav-link.active {
-  color: black;
+/* .navbar .navbar-collapse .nav-link.active */
+.navbar .navbar-collapse .nav-link:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
   background-color: var(--primary-color);
-  color: white;
+  bottom: 2px;
+  left: 0;
+  border-radius: 8px;
 }
-
+.active{ position: relative; }
+.active::after{
+content: '';
+position: absolute;
+width: 100%;
+height: 3px;  
+background-color: var(--primary-color);
+bottom: 2px;
+left: 0;
+border-radius: 8px;
+}
 .navbar .logo {
   width: 12%;
 }
@@ -112,7 +127,7 @@ header {
 
 /* -------------------------------------------------- Index Page start --------------------------------------------------- */
 /* ----------------------------- section 1 ----------------------------- */
-#section1 {
+#hero {
   width: 100%;
   height: 100%;
   position: relative;
@@ -156,138 +171,51 @@ header {
     aspect-ratio: 14 / 12;
 }
 
-/* ----------------------------- section 2 ----------------------------- */
-#section2 {
-  position: relative;
+/* ----------------------------- about numina ----------------------------- */
+.about-numina {
+  width: 100%;
+  margin: 5% 0;
+  background-color: rgb(221, 246, 252);
+  /* padding: 50px; */
+  border-radius: 15px;
+}
+.about-numina .swiper {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  margin-top: 50px;
-  border-radius: 16px;
 }
-
-#section2 .section2-head {
-  align-items: flex-start;
-  height: auto;
-  padding: 180px 0 100px;
-  position: relative;
-}
-
-.section2-head {
-  -webkit-mask-image: linear-gradient(to bottom, #000 90%, transparent 100%);
-  backdrop-filter: blur(25px);
-  background-image: linear-gradient(rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.5));
-  box-sizing: border-box;
-  display: flex;
-  height: calc(100vh + 200px);
-  left: 0;
+.about-numina .swiper-slide {
   text-align: center;
-  z-index: 1;
-}
-
-/* .bg-test::before {
-  background-color: #fff;
-  background-size: 100%;
-  content: "";
-  height: 169px;
-  left: 0;
-  margin: 0 auto;
-  mask-image: url(../images/home/fold.svg);
-  position: absolute;
-  right: 0;
-  top: -46px;
-  transform: rotate(90deg);
-  transition: all 0.2s ease;
-  transition-delay: 0.2s;
-  width: 80px;
-  z-index: 2;
-} */
-
-.section2-main {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.section2-main video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.section2-body {
-  position: relative;
-  left: 0;
-  margin: 0 auto;
-  z-index: 2;
-  /* Keep the swiper above the video */
-}
-
-.section2-body .swiper {
-  width: 100%;
-  height: 100%;
-  /* flex-shrink: 0; */
-  padding: 0 70px;
-  background: transparent;
-}
-
-.section2-body .swiper-wrapper {
-  transform: translate3d(0px, 0, 0);
-}
-
-.section2-body .swiper-slide {
   font-size: 18px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
+  height: 100%;
 }
-
-.section2-body .swiper-slide img {
-  display: block;
-  width: 30%;
-  height: 30%;
-  object-fit: cover;
-}
-
-.section2-body .swiper-horizontal>.swiper-pagination-progressbar {
-  width: 40%;
-  left: 30%;
-  bottom: 0 !important;
-  margin-top: 20px;
-}
-
-.card {
-  width: 20rem;
-  height: 23rem;
-  position: relative;
-  margin-bottom: 2rem;
+.about-numina .swiper .medicine-card {
+  width: 100%;
+  height: 25rem;
+  border: 1px solid rgb(113, 187, 206);
+  padding: 10px;
   border-radius: 20px;
+  text-align: left;
+  padding: 20px;
 }
 
-.link-footer {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  text-align: end;
-}
+
 
 /* ----------------------------- section 3 ----------------------------- */
-#section3 {
+#journey {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.section3-body .swiper {
+.journey-body .swiper {
   width: 100%;
   height: 100%;
 }
 
-.section3-body .swiper-slide {
+.journey-body .swiper-slide {
   font-size: 18px;
   background: #fff;
   display: flex;
@@ -295,12 +223,12 @@ header {
   align-items: center;
 }
 
-.section3-body .swiper-slide .slide-img {
+.journey-body .swiper-slide .slide-img {
   overflow: hidden;
   border-radius: 15px;
 }
 
-.section3-body .swiper-slide img {
+.journey-body .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -311,7 +239,7 @@ header {
   transition: transform 0.5s ease-in-out;
 }
 
-.section3-body .swiper-slide img:hover {
+.journey-body .swiper-slide img:hover {
   transform: scale(1.1);
 }
 
@@ -326,7 +254,7 @@ header {
 }
 
 /* ----------------------------- section 4 ----------------------------- */
-#section4 {
+#comunity {
   position: relative;
   width: 100%;
   height: 100%;
@@ -335,7 +263,7 @@ header {
   border-radius: 16px;
 }
 
-.section4-head {
+.comunity-head {
   position: relative;
   z-index: 2;
   display: flex;
@@ -344,7 +272,7 @@ header {
   align-items: center;
 }
 
-.section4-main {
+.comunity-main {
   position: absolute;
   top: 0;
   left: 0;
@@ -354,25 +282,25 @@ header {
   /* Ensure the video stays behind */
 }
 
-.section4-main video {
+.comunity-main video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   /* Ensures the video covers the entire background */
 }
 
-.section4-body {
+.comunity-body {
   position: relative;
   z-index: 2;
   /* Ensure swiper content is on top */
 }
 
-.section4-body .swiper {
+.comunity-body .swiper {
   width: 100%;
   height: 100%;
 }
 
-.section4-body .swiper-wrapper {
+.comunity-body .swiper-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
@@ -383,7 +311,7 @@ header {
   margin-left: 10vh;
 }
 
-.section4-body .swiper-slide {
+.comunity-body .swiper-slide {
   flex-shrink: 0;
   width: 100%;
   height: 100%;
@@ -396,11 +324,11 @@ header {
   will-change: transform;
 }
 
-.section4-body .swiper-slide.active-slide {
+.comunity-body .swiper-slide.active-slide {
   transform: scale(1.1);
 }
 
-.section4-body .slider-img {
+.comunity-body .slider-img {
   /* -webkit-mask-image: url('../images/home/twist-mask.svg'); */
   -webkit-mask-position: -132px -132px;
   -webkit-mask-repeat: no-repeat;
@@ -411,7 +339,7 @@ header {
   position: relative;
 }
 
-.section4-body .swiper-slide img {
+.comunity-body .swiper-slide img {
   height: 100%;
   left: 0;
   object-fit: cover;
@@ -421,7 +349,7 @@ header {
   width: 100%;
 }
 
-.section4-body .slider-text {
+.comunity-body .slider-text {
   position: absolute;
   bottom: -4.5rem;
   /* Start with text hidden below the image */
@@ -435,34 +363,34 @@ header {
   transition: bottom 0.5s ease-in-out;
 }
 
-.section4-body .swiper-slide:hover .slider-text {
+.comunity-body .swiper-slide:hover .slider-text {
   bottom: 0;
   /* Bring text up when hovering */
 }
 
 /* ----------------------------- last-section ----------------------------- */
-#last-section {
+#policy {
   padding: 20px 0;
 }
 
-#last-section .custom-card {
+#policy .custom-card {
   /* background: var(--primary-color) linear-gradient(180deg, var(--primary-color) 0%, var(--primary-hover) 100%); */
   background-color: var(--primary-hover);
   text-align: start;
   border: 0;
   width: 100%;
-  height: 20vh;
+  height: 100%;
   padding: 10px;
   border-radius: 15px;
   color: #fff;
 }
 
-#last-section a {
+#policy a {
   text-decoration: none;
   color: #000;
 }
 
-#last-section a:hover {
+#lpolicy a:hover {
   text-decoration: underline;
 }
 
@@ -491,10 +419,7 @@ footer .logo{
 /* -------------------------------------------------- Footer end -------------------------------------------------- */
 
 /* -------------------------------------------------- About us Page start --------------------------------------------------- */
-.active{
-  background-color: var(--primary-hover);
-  border-radius: 8px;
-}
+
 .aboutus{
   margin-top: 100px;
 }
@@ -502,22 +427,28 @@ footer .logo{
     font-size: 17px;
     line-height: 24px;
   }
-  .banner{
+  .aboutus .banner{
     width: 100%;
-    height: 100%;
+    height: 70vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 5% 0;
   }
-  .banner .banner-img img{
-    display: block;
+  .banner .banner-img {
+    background-image: url('../images/about/digital_pharma_manufacturing.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    object-fit: cover;
-    aspect-ratio: 14 / 5;
+  }
+  .aboutus .about-numina-image img{
+    border-radius: 15px;
   }
   .top-title{
     color: black;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .mission, .dosage-form{
     background-color: var(--primary-color);
@@ -552,7 +483,9 @@ footer .logo{
   background-color: var(--primary-hover);
   border-radius: 8px;
 }
-
+.product-us  .pro-img img{
+  border-radius: 15px;
+}
 .dosage-form {
   background-color: var(--primary-color);
 }

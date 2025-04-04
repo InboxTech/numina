@@ -35,48 +35,10 @@ document.addEventListener("click", function (event) {
   }
 });
 
-//main page swiper section2
-var swiper = new Swiper(".section2Swiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 1.6,
-      spaceBetween: 40,
-    },
-    1024: {
-      slidesPerView: 1.9,
-      spaceBetween: 50,
-    },
-    1200: {
-      slidesPerView: 2.5,
-      spaceBetween: 60,
-    },
-    1440: {
-      slidesPerView: 4,
-      // spaceBetween: 70,
-    },
-  },
-});
+
 
 // home page section3
-var swiper = new Swiper(".section3Swiper", {
+var swiper = new Swiper(".journeySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   autoplay: {
@@ -108,7 +70,7 @@ var swiper = new Swiper(".section3Swiper", {
 });
 
 // home page section4
-var swiper = new Swiper(".section4Swiper", {
+var swiper = new Swiper(".comunitySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
   // pagination: {
@@ -256,5 +218,42 @@ $(".formValidate").validate({
     msg: {
       required: "Please enter comment",
     },
+  },
+});
+
+var swiper = new Swiper(".medicineSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+
+    425: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1200:{
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    
   },
 });

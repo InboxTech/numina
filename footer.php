@@ -1,10 +1,10 @@
     <footer>
         <hr>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mt-3">
+            <div class="row justify-content-between">
+                <div class="col-lg-3 col-md-6 my-3">
                     <div class="logo mb-3">
-                        <a  href="index.php"><img src="public/images/header/numina_healthcare.png"
+                        <a  href="index.php"><img src="public/images/header/numinaLogo.jpg"
                         class="w-100 h-inherit" alt="" /></a>
 
                     </div>
@@ -21,7 +21,7 @@
                         <hr>
                         <a href="javascript:void(0);" class="fs-7 text-decoration-none link-dark">> Modern Slavery Act statement 2023 (PDF - 139.1KB)</a> -->
                 </div>
-                <!-- <div class="col-lg-4 col-md-6 mt-3">
+                <!-- <div class="col-lg-3 col-md-6 mt-3">
                     <ul class="list-group">
                         <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Numina websites</span>
                         </li>
@@ -39,7 +39,7 @@
                                 website</a></li>
                     </ul>
                 </div> -->
-                <div class="col-lg-4 col-md-6 mt-3">
+                <div class="col-lg-3 col-md-6 my-3">
                     <ul class="list-group">
                         <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Quick links</span></li>
                         <!-- <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">Behind
@@ -56,7 +56,7 @@
                                 class="text-decoration-none link-dark"> Drop us a line</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6 mt-3">
+                <div class="col-lg-3 col-md-6 my-3">
                     <ul class="list-group">
                         <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Contact Us </span></li>
 
@@ -98,6 +98,38 @@
                                 </li>
                             </ul>
                         </li> -->
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <ul class="list-group">
+                    
+                                
+                                <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Follow Us On:</span></li>
+                            <ul class="list-group flex-row">
+                                <li class="list-group-item border-0 p-2">
+                                    <a href="javascript:void(0);" class="link-custom"><i
+                                            class="fa-brands fa-square-facebook fs-2"></i></a>
+                                </li>
+                                <li class="list-group-item border-0 p-2">
+                                    <a href="javascript:void(0);" class="link-custom"><i
+                                            class="fa-brands fa-square-x-twitter fs-2"></i></a>
+                                </li>
+                                <li class="list-group-item border-0 p-2">
+                                    <a href="javascript:void(0);" class="link-custom"><i
+                                            class="fa-brands fa-square-youtube fs-2"></i></a>
+                                </li>
+                                <li class="list-group-item border-0 p-2">
+                                    <a href="javascript:void(0);" class="link-custom"><i
+                                            class="fa-brands fa-linkedin fs-2"></i></a>
+                                </li>
+                                <li class="list-group-item border-0 p-2">
+                                    <a href="javascript:void(0);" class="link-custom"><i
+                                            class="fa-brands fa-square-instagram fs-2"></i></a>
+                                </li>
+                                <li class="list-group-item border-0 p-2">
+                                    <a href="javascript:void(0);" class="link-custom"><i class="fa-solid fa-square-rss fs-2"></i></a>
+                                </li>
+                                </ul>
                     </ul>
                 </div>
             </div>
