@@ -262,9 +262,9 @@ header {
 
 .card {
   width: 20rem;
-  height: 23rem;
+  height: 13rem;
   position: relative;
-  margin-bottom: 2rem;
+  margin: 2rem;
   border-radius: 20px;
 }
 

@@ -48,7 +48,7 @@
                             <div class="text-white">
                                 <!-- <h2 class="fs-4">Our purpose</h2> -->
                                 <h2 class="fs-4">Numina Pharmaceuticals - Elevating Healthcare Excellence</h2>
-                                <span class="fs-2 fw-light">
+                                <span class="fs-5 fw-light">
                                     We are an eminent pharmaceutical manufacturing firm in India, offering a huge range of generic
                                     medicines to advance the healthcare and wellness of people across the globe. Our commitment to
                                     excellence is backed by a team of professionals with rich experience in pharmaceutical
@@ -58,7 +58,7 @@
                                     lives of individuals dealing with different health problems. We are excited to work with top
                                     pharma brands globally and build long-lasting connections with them.
                                 </span>
-                                <p class="fs-4 fw-light mt-3">
+                                <p class="fs-5 fw-light mt-3">
                                     Our R&D focus is on four therapeutic areas: infectious diseases, HIV, immunology/respiratory and oncology
                                 </p>
                             </div>
@@ -82,9 +82,9 @@
                                 <div class="swiper-slide card border-0">
                                     <div class="card-body">
                                         <div class="card-title text-uppercase">'. $product->getProductTitle() .'</div>
-                                        <div class="card-title display-6 link-custom">'. $product->getProductSubTitle() .'</div>
-                                        <div class="card-text mb-5">'. $product->getProductShortDescription() .'</div>
-                                        <div class="link-footer"><a href="javascript:void(0);" class="link-dark text-decoration-none">'. $product->getProductLink() .'</a></div>
+                                        <div class="card-title fs-3 link-custom">'. $product->getProductSubTitle() .'</div>
+                                        <div class="card-text mb-2">'. $product->getProductShortDescription() .'</div>
+                                        <!-- <div class="link-footer"><a href="javascript:void(0);" class="link-dark text-decoration-none">'. $product->getProductLink() .'</a></div> -->
                                     </div>
                                 </div>
                             ';
