@@ -32,7 +32,7 @@ header {
 .navbar .navbar-collapse .nav-link {
   margin-inline: 15px;
   color: black;
-  transition: all .4s linear;
+  transition: all 1s ;
   border-radius: 8px;
   padding: 5px;
   position: relative;
@@ -60,7 +60,7 @@ left: 0;
 border-radius: 8px;
 }
 .navbar .logo {
-  width: 12%;
+  width: 13rem;
 }
 
 .product-main-menu {
@@ -226,6 +226,7 @@ border-radius: 8px;
 .journey-body .swiper-slide .slide-img {
   overflow: hidden;
   border-radius: 15px;
+  margin: 10px 0;
 }
 
 .journey-body .swiper-slide img {
@@ -298,6 +299,7 @@ border-radius: 8px;
 .comunity-body .swiper {
   width: 100%;
   height: 100%;
+  padding:0 5rem 0 5rem;
 }
 
 .comunity-body .swiper-wrapper {
@@ -308,7 +310,6 @@ border-radius: 8px;
   display: flex;
   transition-property: transform;
   box-sizing: content-box;
-  margin-left: 10vh;
 }
 
 .comunity-body .swiper-slide {
@@ -427,24 +428,18 @@ footer .logo{
     font-size: 17px;
     line-height: 24px;
   }
-  .aboutus .banner{
-    width: 100%;
-    height: 70vh;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin: 5% 0;
-  }
-  .banner .banner-img {
-    background-image: url('../images/about/digital_pharma_manufacturing.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
+  .banner{
     width: 100%;
     height: 100%;
+  }
+  .banner .banner-img img{
+    display: block;
+    width: 100%;
+    height: 65vh;
     object-fit: cover;
     border-radius: 15px;
-  }
-  .aboutus .about-numina-image img{
-    border-radius: 15px;
+    object-fit: cover;
+    aspect-ratio: 14 / 5;
   }
   .top-title{
     color: black;

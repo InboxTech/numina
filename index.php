@@ -12,8 +12,8 @@
 
 
     <main>
-        <div class="container-fluid p-5">
-            <section id="hero">
+        <div class="container-fluid">
+            <section id="hero" class=" px-lg-5 p-3">
                 <div class="row align-items-center px-lg-5 px-md-3 pe-0">
                     <div class="col-lg-6 my-2" data-aos="fade-right"
                         data-aos-offset="300"
@@ -36,7 +36,7 @@
                         data-aos-offset="300"
                         data-aos-easing="ease-in-sine">
                         <div class="rounded-4 overflow-hidden">
-                            <img src="public/images/home/discover.jpg" class="main-img" />
+                            <img src="public/images/home/April2025.png" class="main-img" />
                             <!-- <div class="pinch-img">
                         </div> -->
                         </div>
@@ -48,7 +48,7 @@
             <!-------------------------  about numina section  ------------------------->
            <section class="about-numina">
                 <div class="container">
-                    <div class="text-center p-5">
+                    <div class="text-center p-lg-5">
                         <h2>Numina Pharmaceuticals - Elevating Healthcare Excellence</h2>
                         <p class="fs-5 lh-lg"> We are a leading pharmaceutical manufacturer in India, producing
                             high-quality generic medicines with ISO, GMP, and WHO certifications. Our expertise and
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="container-fluid">
-                    <div class="p-5">
+                    <div class="p-lg-5 p-3">
                         <div class="swiper medicineSwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -275,7 +275,7 @@
                     <video src="public/images/home/gradient-inverted.mp4" autoplay muted loop></video>
                 </div>
 
-                <div class="comunity-head py-5">
+                <div class="comunity-head py-5 px-2">
                     <!-- <p class="fs-4">Life at Numina</p> -->
                     <h2 class="display-5">Creating Positive Change in Communities</h2>
                 </div>
