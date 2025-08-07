@@ -10,50 +10,31 @@ $header->includeHeader('Numina | About Us', './', 'about.php');
 <main class="aboutus">
 
     <section>
-        <div class="container-fluid">
-            <div class="row align-items-center flex-lg-row flex-column-reverse  justify-content-center">
-                
-                <div class="col-lg-6 my-2 p-5" data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
-                    <!-- <p class="fs-5 lh-sm"> We are an eminent pharmaceutical manufacturing firm in India, offering a huge range of generic
-                                    medicines to advance the healthcare and wellness of people across the globe. Our commitment to
-                                    excellence is backed by a team of professionals with rich experience in pharmaceutical
-                                    manufacturing, R& D and quality assurance. We have received certification from ISO, GMP quality,
-                                    and WHO that reflects our commitment to meet high standards. Using our rich industry knowledge,
-                                    expertise and global connections, we manufacture high-quality, effective drugs to enhance the
-                                    lives of individuals dealing with different health problems. We are excited to work with top
-                                    pharma brands globally and build long-lasting connections with them. </p> -->
-                                    <h1 class="fs-1 top-title"> About Us </h1>
-            <h3 class="fs-5 my-3 fw-bold"> Redefining
+        <div class="banner container-fluid">
+            <div class="banner-img">
+                <img src="public/images/about/digital_pharma_manufacturing.jpg" class="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------- About us section start --------------------------------------------->
+    <section data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="container mx-auto my-5 p-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <h1 class="fs-1 top-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> About Us </h1>
+            <h3 class="fs-5 my-3 fw-bold" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> Redefining
                 Wellness with Science, <br> Passion, and Breakthrough
                 Solutions…!!! </h3>
-            <p class="fw-normal fs-5"> We are committed to
+            <p class="fw-light" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> We are committed to
                 pushing the boundaries of healthcare for a brighter, healthier
                 tomorrow—that’s the soul of our mission.
             </p>
 
             <div>
-                <button class="btn btn-lg btn-custom my-3"> Let’s Collaborate! Call Us Now! </button>
+                <button class="btn btn-lg btn-custom my-3" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"> Let’s Collaborate! Call Us Now! </button>
             </div>
-                </div>
-                <div class="col-lg-6 my-2 about-numina-image" data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
-                   <img src="public/images/about/digital_pharma_manufacturing.jpg" class="w-100 h-inherit" alt="">
-                </div>
-
-            </div>
-           
         </div>
     </section>
-
-    <!------------------------------------- About us section start --------------------------------------------->
-    <!-- <section data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div class="container mx-auto my-5 p-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            
-        </div>
-    </section> -->
     <!------------------------------------- About us section end --------------------------------------------->
 
     <!------------------------------------------------ Our story section start ------------------------------------->
@@ -91,7 +72,7 @@ $header->includeHeader('Numina | About Us', './', 'about.php');
             </p>
 
             <div>
-                <button class="btn btn-lg btn-custom my-5" data-aos="fade-up"
+                <button class="btn btn-lg btn-custom my-3" data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"> Craving More Details? Schedule a Call Today!
                 </button>
             </div>
@@ -119,6 +100,8 @@ $header->includeHeader('Numina | About Us', './', 'about.php');
         </div>
     </section>
     <!------------------------------------------------ Our story section end ------------------------------------->
+
+   
 
     <!-------------------------------------------------- Mission, vision and values section start ----------------------------------->
     <section data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -150,7 +133,7 @@ $header->includeHeader('Numina | About Us', './', 'about.php');
                     <div class="icon mx-auto shadow d-flex align-items-center justify-content-center">
                         <i class="fa-solid fa-lightbulb fs-1"></i>
                     </div>
-                    <h1 class="top-title text-center my-3"> Vision </h1>
+                    <h1 class="top-title text-center my-3"> Vission </h1>
                     <p class="fw-light"> To strengthen our core capabilities to meet the unmet medical needs of
                         patients. To achieve the leading position by improving patient health and well-being.
                     </p>

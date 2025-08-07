@@ -4,9 +4,8 @@
             <div class="row justify-content-between">
                 <div class="col-lg-3 col-md-6 my-3">
                     <div class="logo mb-3">
-                        <a  href="index.php"><img src="public/images/header/numinaLogo.jpg"
-                        class="w-100 h-inherit" alt="" /></a>
-
+                         <a class="navbar-brand logo" href="index.php"><img src="public/images/header/numinaLogo.jpeg"
+                                    class="w-100 h-inherit" alt="" /></a>
                     </div>
                     <p class="fs-7 pt-2">
                         We are a top pharmaceutical company in India, providing a wide range of generic medicines to
@@ -44,15 +43,15 @@
                         <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Quick links</span></li>
                         <!-- <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">Behind
                                 the science magazine</a></li> -->
-                        <li class="list-group-item border-0"><a href="javascript:void(0);"
+                        <li class="list-group-item border-0"><a href="about.php"
                                 class="text-decoration-none link-dark">Overview</a></li>
-                        <li class="list-group-item border-0"><a href="javascript:void(0);"
+                        <li class="list-group-item border-0"><a href="product.php"
                                 class="text-decoration-none link-dark">Our Product</a></li>
-                         <li class="list-group-item border-0"><a href="javascript:void(0);"
-                                        class="text-decoration-none link-dark">Careers</a></li>
-                                        <li class="list-group-item border-0"><a href="javascript:void(0);"
-                                        class="text-decoration-none link-dark">Newsletter</a></li>
+                        <!-- <li class="list-group-item border-0"><a href="javascript:void(0);"
+                                class="text-decoration-none link-dark">Careers</a></li>
                         <li class="list-group-item border-0"><a href="javascript:void(0);"
+                                class="text-decoration-none link-dark">Newsletter</a></li> -->
+                        <li class="list-group-item border-0"><a href="contact_us.php"
                                 class="text-decoration-none link-dark"> Drop us a line</a></li>
                     </ul>
                 </div>
@@ -60,8 +59,17 @@
                     <ul class="list-group">
                         <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Contact Us </span></li>
 
-                       <li class="list-group-item border-0">  Email Id: info@numina-healthcare.com </li>
-                       <li class="list-group-item border-0">  Phone no: 1234567890 </li>
+                        <li class="list-group-item border-0">
+                            <a href="mailto:info@numinahealthcare.com" class="text-decoration-none link-dark"> 
+                                <i class="fa-solid fa-envelope"></i>
+                                info@numinahealthcare.com
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0">
+                            <a href="tel:9662398895" class="text-decoration-none link-dark"> 
+                                <i class="fa-solid fa-phone"></i> 9662398895
+                            </a>
+                        </li>
                         <!-- <li class="list-group-item border-0"><a href="javascript:void(0);" class="text-decoration-none link-dark">Contact
                                 us</a></li> -->
                         <!-- <li class="list-group-item border-0"><a href="javascript:void(0);"
@@ -102,70 +110,71 @@
                 </div>
                 <div class="col-lg-3 col-md-6 my-3">
                     <ul class="list-group">
-                    
-                                
-                                <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Follow Us On:</span></li>
-                            <ul class="list-group flex-row">
-                                <li class="list-group-item border-0 p-2">
-                                    <a href="javascript:void(0);" class="link-custom"><i
-                                            class="fa-brands fa-square-facebook fs-2"></i></a>
-                                </li>
-                                <li class="list-group-item border-0 p-2">
-                                    <a href="javascript:void(0);" class="link-custom"><i
-                                            class="fa-brands fa-square-x-twitter fs-2"></i></a>
-                                </li>
-                                <li class="list-group-item border-0 p-2">
-                                    <a href="javascript:void(0);" class="link-custom"><i
-                                            class="fa-brands fa-square-youtube fs-2"></i></a>
-                                </li>
-                                <li class="list-group-item border-0 p-2">
-                                    <a href="javascript:void(0);" class="link-custom"><i
-                                            class="fa-brands fa-linkedin fs-2"></i></a>
-                                </li>
-                                <li class="list-group-item border-0 p-2">
-                                    <a href="javascript:void(0);" class="link-custom"><i
-                                            class="fa-brands fa-square-instagram fs-2"></i></a>
-                                </li>
-                                <li class="list-group-item border-0 p-2">
-                                    <a href="javascript:void(0);" class="link-custom"><i class="fa-solid fa-square-rss fs-2"></i></a>
-                                </li>
-                                </ul>
+
+
+                        <li class="list-group-item border-0 mb-3"><span class="fs-4 fw-medium">Follow Us On:</span></li>
+                        <ul class="list-group flex-row">
+                            <li class="list-group-item border-0 p-2">
+                                <a href="javascript:void(0);" class="facebookIcon"><i
+                                        class="fa-brands fa-square-facebook fs-2"></i></a>
+                            </li>
+                            <li class="list-group-item border-0 p-2">
+                                <a href="javascript:void(0);" class="twitterIcon"><i
+                                        class="fa-brands fa-square-x-twitter fs-2"></i></a>
+                            </li>
+                            <li class="list-group-item border-0 p-2">
+                                <a href="javascript:void(0);" class="youtubeIcon"><i
+                                        class="fa-brands fa-square-youtube fs-2"></i></a>
+                            </li>
+                            <li class="list-group-item border-0 p-2">
+                                <a href="javascript:void(0);" class="linkdinIcon"><i
+                                        class="fa-brands fa-linkedin fs-2"></i></a>
+                            </li>
+                            <li class="list-group-item border-0 p-2">
+                                <a href="javascript:void(0);" class="link-custom"><i
+                                        class="fa-brands fa-square-instagram fs-2"></i></a>
+                            </li>
+                            <li class="list-group-item border-0 p-2">
+                                <a href="javascript:void(0);" class="link-custom"><i class="fa-solid fa-square-rss fs-2"></i></a>
+                            </li>
+                        </ul>
                     </ul>
                 </div>
             </div>
         </div>
-        <hr>
+       <div class="footerBottom">
         <div class="container">
             <ul class="list-group flex-lg-row">
-                <li class="list-group-item border-0 mb-2">
-                    <a href="javascript:void(0);" class="text-decoration-none link-dark">Accessibility</a>
+                <li class="list-group-item border-0 listItemBottom ">
+                    <a href="javascript:void(0);" class="text-decoration-none ">Accessibility</a>
                 </li>
-                <li class="list-group-item border-0 mb-3">
-                    <a href="javascript:void(0);" class="text-decoration-none link-dark">Digital sustainability</a>
+                <li class="list-group-item border-0 listItemBottom ">
+                    <a href="javascript:void(0);" class="text-decoration-none">Digital sustainability</a>
                 </li>
-                <li class="list-group-item border-0 mb-3">
-                    <a href="javascript:void(0);" class="text-decoration-none link-dark">Terms of use</a>
+                <li class="list-group-item border-0 listItemBottom">
+                    <a href="javascript:void(0);" class="text-decoration-none ">Terms of use</a>
                 </li>
-                <li class="list-group-item border-0 mb-3">
-                    <a href="javascript:void(0);" class="text-decoration-none link-dark">Cookie policy</a>
+                <li class="list-group-item border-0 listItemBottom ">
+                    <a href="javascript:void(0);" class="text-decoration-none ">Cookie policy</a>
                 </li>
-                <li class="list-group-item border-0 mb-3">
-                    <a href="javascript:void(0);" class="text-decoration-none link-dark">Privacy notice</a>
+                <li class="list-group-item border-0 listItemBottom ">
+                    <a href="javascript:void(0);" class="text-decoration-none ">Privacy notice</a>
                 </li>
                 <!-- <li class="list-group-item border-0 mb-3">
                     <a href="javascript:void(0);" class="text-decoration-none link-dark">Sitemap</a>
                 </li> -->
             </ul>
         </div>
+</div>
 
     </footer>
-    <script src="public/js/bootstrap.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
     <script src="public/js/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="public/js/gsap.min.js"></script>
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/plugin/jqueryvalidation/jquery.validate.min.js"></script>
     <script src="public/js/script.js"></script>
-</body>
+    </body>
 
-</html>
+    </html>

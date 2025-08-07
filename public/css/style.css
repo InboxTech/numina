@@ -32,35 +32,37 @@ header {
 .navbar .navbar-collapse .nav-link {
   margin-inline: 15px;
   color: black;
-  transition: all .4s linear;
+  transition: all 1s;
   border-radius: 8px;
   padding: 5px;
   position: relative;
 }
 /* .navbar .navbar-collapse .nav-link.active */
 .navbar .navbar-collapse .nav-link:hover::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: var(--primary-color);
+  background-color: #74649c;
   bottom: 2px;
   left: 0;
   border-radius: 8px;
 }
-.active{ position: relative; }
-.active::after{
-content: '';
-position: absolute;
-width: 100%;
-height: 3px;  
-background-color: var(--primary-color);
-bottom: 2px;
-left: 0;
-border-radius: 8px;
+.active {
+  position: relative;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #74649c;
+  bottom: 2px;
+  left: 0;
+  border-radius: 8px;
 }
 .navbar .logo {
-  width: 12%;
+  width: 13rem;
 }
 
 .product-main-menu {
@@ -87,11 +89,13 @@ border-radius: 8px;
 }
 
 .product-main-menu .menu .link-hover-animation {
-  background: linear-gradient(to right,
-      var(--primary-hover) 0%,
-      var(--primary-hover) 50%,
-      transparent 50%,
-      transparent 100%);
+  background: linear-gradient(
+    to right,
+    var(--primary-hover) 0%,
+    var(--primary-hover) 50%,
+    transparent 50%,
+    transparent 100%
+  );
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.7s ease;
@@ -136,15 +140,16 @@ border-radius: 8px;
 
 .btn-custom {
   color: #fff;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   font-weight: 600;
+  background-image: linear-gradient(45deg, #e40980, #8cc8d1, #23a640);
 }
 
 .btn-custom:hover {
   color: #fff;
   /* background-color: var(--primary-hover); */
   /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
-  background:  #e959a8 ;
+  background: #e959a8;
   font-weight: 600;
 }
 
@@ -163,12 +168,12 @@ border-radius: 8px;
 
 .main-img {
   display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    object-fit: cover;
-    aspect-ratio: 14 / 12;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  object-fit: cover;
+  aspect-ratio: 14 / 12;
 }
 
 /* ----------------------------- about numina ----------------------------- */
@@ -189,20 +194,85 @@ border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: auto;
 }
 .about-numina .swiper .medicine-card {
   width: 100%;
-  height: 25rem;
-  border: 1px solid rgb(113, 187, 206);
+  height: 100%;
+  border-top: 3px solid #74649c;
   padding: 10px;
   border-radius: 20px;
   text-align: left;
   padding: 20px;
+  background-color: #fff;
+}
+.medicineTitle {
+  font-size: 25px;
+  font-weight: 600;
+  color: #74649c;
+}
+.medicineSubTitle {
+  font-size: 20px;
+}
+.medicineCategoryTitle {
+  font-size: 18px;
+}
+.medicine-card:hover {
+  background: linear-gradient(45deg, #e40980, #8cc8d1, #23a640);
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.journeyTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.journeyCard {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  border-top: 3px solid #74649c;
+  height: 100%;
+}
+.journeyCard {
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px; /* optional */
 }
 
+/* Hover styles */
+.journeyCard:hover {
+  background: linear-gradient(45deg, #e40980, #8cc8d1, #23a640);
+  color: #fff;
+}
 
+/* Make inner text white on hover */
+.journeyCard:hover span,
+.journeyCard:hover p,
+.journeyCard:hover a {
+  color: #fff !important;
+}
 
+/* Optional: Image styles */
+.journeyCard img {
+  width: 100%;
+  border-radius: 6px; /* optional */
+  display: block;
+}
+.journeyCard span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #74649c;
+}
+/* Ensure inner text also turns white */
+.medicine-card:hover .medicineTitle,
+.medicine-card:hover .medicineSubTitle,
+.medicine-card:hover .medicineCategoryTitle {
+  color: #fff;
+}
 /* ----------------------------- section 3 ----------------------------- */
 #journey {
   position: relative;
@@ -221,11 +291,13 @@ border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 
 .journey-body .swiper-slide .slide-img {
   overflow: hidden;
   border-radius: 15px;
+  margin: 10px 0;
 }
 
 .journey-body .swiper-slide img {
@@ -250,7 +322,7 @@ border-radius: 8px;
   margin-top: 0px ;
 } */
 .link-dark:hover {
-  text-decoration: underline !important;
+  /* text-decoration: underline !important; */
 }
 
 /* ----------------------------- section 4 ----------------------------- */
@@ -261,6 +333,7 @@ border-radius: 8px;
   overflow: hidden;
   color: #fff;
   border-radius: 16px;
+  background-image: linear-gradient(45deg, #e40980, #8cc8d1, #23a640);
 }
 
 .comunity-head {
@@ -298,6 +371,7 @@ border-radius: 8px;
 .comunity-body .swiper {
   width: 100%;
   height: 100%;
+  padding: 0 5rem 0 5rem;
 }
 
 .comunity-body .swiper-wrapper {
@@ -308,7 +382,6 @@ border-radius: 8px;
   display: flex;
   transition-property: transform;
   box-sizing: content-box;
-  margin-left: 10vh;
 }
 
 .comunity-body .swiper-slide {
@@ -356,7 +429,7 @@ border-radius: 8px;
   left: 0;
   width: 100%;
   height: 8rem;
-  background: rgba(19, 191, 235, 0.7);
+  background: rgb(116 100 156 / 81%);
   color: white;
   text-align: center;
   padding: 10px;
@@ -375,7 +448,7 @@ border-radius: 8px;
 
 #policy .custom-card {
   /* background: var(--primary-color) linear-gradient(180deg, var(--primary-color) 0%, var(--primary-hover) 100%); */
-  background-color: var(--primary-hover);
+  background: #91c8e9 linear-gradient(180deg, #92c7e7 0%, rgb(88 184 139) 100%);
   text-align: start;
   border: 0;
   width: 100%;
@@ -411,79 +484,117 @@ footer .link-dark {
 }
 
 footer .link-dark:hover {
-  color: var(--primary-color) !important;
+  color: #74649c !important;
 }
-footer .logo{
+footer .logo {
   width: 10rem;
+}
+.footerBottom {
+  background-image: linear-gradient(45deg, #e40980, #8cc8d1, #23a640);
+  padding: 15px;
+  border-top: 1px solid #ccc;
+}
+.listItemBottom {
+  background-color: transparent !important;
+}
+.listItemBottom a {
+  color: #fff;
+}
+.facebookIcon {
+  color: #0866ff;
+}
+.twitterIcon {
+  color: #000;
+}
+.youtubeIcon {
+  color: #ff0033;
+}
+.linkdinIcon {
+  color: #2487bd;
+}
+.link-custom .fa-square-instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
 /* -------------------------------------------------- Footer end -------------------------------------------------- */
 
 /* -------------------------------------------------- About us Page start --------------------------------------------------- */
 
-.aboutus{
+.aboutus {
   margin-top: 100px;
 }
-.aboutus p{
-    font-size: 17px;
-    line-height: 24px;
-  }
-  .aboutus .banner{
-    width: 100%;
-    height: 70vh;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin: 5% 0;
-  }
-  .banner .banner-img {
-    background-image: url('../images/about/digital_pharma_manufacturing.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  .aboutus .about-numina-image img{
-    border-radius: 15px;
-  }
-  .top-title{
-    color: black;
-    font-size: 2.5rem;
-  }
-  .mission, .dosage-form{
-    background-color: var(--primary-color);
-  }
-  .mission .mission-details .details .icon{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    color: var(--primary-color);
-    transition: all 1s linear;
-  }
-  .mission .mission-details .details:hover .icon{
-    background-color: var(--primary-hover);
-    color: white;
-  }
+.aboutus p {
+  font-size: 17px;
+  line-height: 24px;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+}
+.banner .banner-img img {
+  display: block;
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+  border-radius: 15px;
+  object-fit: cover;
+  aspect-ratio: 14 / 5;
+}
+.top-title {
+  color: #74649c;
+  font-size: 2.5rem;
+}
+.bannerImage {
+  box-shadow: 2px 2px 4px #c64ca5;
+}
+.mission,
+.dosage-form {
+  background-color: var(--primary-color);
+}
+.mission .mission-details .details .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  transition: all 1s linear;
+}
+.mission .mission-details .details:hover .icon {
+  background-color: var(--primary-hover);
+  color: white;
+}
 /* -------------------------------------------------- About us Page end --------------------------------------------------- */
 
 /* -------------------------------------------------- Product Page start -------------------------------------------------- */
 .product-us {
   margin-top: 100px;
 }
-.product-us .pro-img img{
+.aboutTitle {
+  color: #74649c;
+}
+.product-us .pro-img img {
   display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    object-fit: cover;
-    aspect-ratio: 14 / 12;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  object-fit: cover;
+  aspect-ratio: 14 / 12;
 }
 .product-us .active {
   background-color: var(--primary-hover);
   border-radius: 8px;
 }
-.product-us  .pro-img img{
+.product-us .pro-img img {
   border-radius: 15px;
 }
 .dosage-form {
@@ -571,13 +682,221 @@ footer .logo{
 }
 /* -------------------------------------------------- Product Page end --------------------------------------------------- */
 /* -------------------------------------------------- Contact us page start ------------------------------------------------*/
-.get-in-touch{
+.get-in-touch {
   margin: 8% 0;
 }
-.get-in-touch textarea{
+.get-in-touch textarea {
   width: 100%;
 }
-.error{
-  color: red
+.error {
+  color: red;
 }
 /* -------------------------------------------------- Contact us page end ------------------------------------------------*/
+
+/* Quick Facts Section Styles */
+.quick-facts-main {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 94px;
+}
+
+.quick-facts-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(228, 9, 128, 0.03),
+    rgba(140, 200, 209, 0.03),
+    rgba(35, 166, 64, 0.03)
+  );
+  pointer-events: none;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #74649c;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(45deg, #e40980, #8cc8d1, #23a640);
+  border-radius: 2px;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.fact-item {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fact-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(45deg, #e40980, #8cc8d1, #23a640);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.fact-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.fact-item:hover::before {
+  transform: scaleX(1);
+}
+
+.fact-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  background: linear-gradient(45deg, #e40980, #8cc8d1, #23a640);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.fact-item:hover .fact-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.fact-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #74649c;
+  margin: 0 0 15px 0;
+  line-height: 1;
+  background: linear-gradient(45deg, #e40980, #8cc8d1, #23a640);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fact-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #74649c;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Animation delays */
+.fact-item[data-delay="0.1s"] {
+  animation-delay: 0.1s;
+}
+
+.fact-item[data-delay="0.2s"] {
+  animation-delay: 0.2s;
+}
+
+.fact-item[data-delay="0.3s"] {
+  animation-delay: 0.3s;
+}
+
+.fact-item[data-delay="0.4s"] {
+  animation-delay: 0.4s;
+}
+
+.fact-item[data-delay="0.5s"] {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quick-facts-main {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .facts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 25px;
+  }
+
+  .fact-item {
+    padding: 30px 20px;
+  }
+
+  .fact-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .fact-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .fact-number {
+    font-size: 2.2rem;
+  }
+
+  .fact-label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fact-item {
+    padding: 25px 15px;
+  }
+
+  .fact-number {
+    font-size: 1.8rem;
+  }
+}

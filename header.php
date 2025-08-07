@@ -23,7 +23,7 @@ class header
 
                 <head>
                     <title>' . $title . '</title>
-                    <link rel="icon" type="image/x-icon" href="public/images/header/numina_header.png">
+                    <link rel="icon" type="image/x-icon" href="public/images/header/numinafav.png">
 
                     <!-- Required meta tags -->
                     <meta charset="utf-8" />
@@ -44,8 +44,8 @@ class header
                         <!----------------------------------------------Navbar-------------------------------------------------->
                         <nav class="navbar navbar-expand-lg">
                             <div class="container-fluid">
-                                <a class="navbar-brand logo" href="index.php"><img src="public/images/header/numinaLogo.jpg"
-                                        class="w-100 h-inherit" alt="" /></a>
+                                <a class="navbar-brand logo" href="index.php"><img src="public/images/header/numinaLogo.jpeg"
+                                    class="w-100 h-inherit" alt="" /></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
