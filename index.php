@@ -12,17 +12,132 @@ $product = ProductService::getAllProducts();
 
 
 <main>
+
+    <!-- ////////banner section ========> -->
+
+    <section class="hero-banner">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active slide1">
+                    <div class="carousel-caption">
+                        <h1 class="hero-title">Shaping Healthier Tomorrows, Today</h1>
+                        <p class="hero-subtitle">Delivering quality healthcare products that improve the well-being of millions across India and around the world. Excellence in pharmaceutical manufacturing with ISO, GMP, and WHO certifications.</p>
+                        <div class="hero-buttons">
+                            <a href="#products" class="btn btn-primary-custom">
+                                <i class="fas fa-pills me-2"></i>Our Products
+                            </a>
+                            <a href="#about" class="btn btn-outline-custom">
+                                <i class="fas fa-info-circle me-2"></i>Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item slide2">
+                    <div class="carousel-caption">
+                        <h1 class="hero-title">Elevating Healthcare Excellence</h1>
+                        <p class="hero-subtitle">Advanced research and development in infectious diseases, HIV, immunology, respiratory, and oncology. Our commitment to innovation drives breakthrough solutions for global health challenges.</p>
+                        <div class="hero-buttons">
+                            <a href="#research" class="btn btn-primary-custom">
+                                <i class="fas fa-microscope me-2"></i>R&D Focus
+                            </a>
+                            <a href="#contact" class="btn btn-outline-custom">
+                                <i class="fas fa-handshake me-2"></i>Partner With Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item slide3">
+                    <div class="carousel-caption">
+                        <h1 class="hero-title">World-Class Manufacturing</h1>
+                        <p class="hero-subtitle">Modern facilities equipped with cutting-edge technology, automated systems, and precision tools. Stringent quality management ensures every product meets international standards.</p>
+                        <div class="hero-buttons">
+                            <a href="#manufacturing" class="btn btn-primary-custom">
+                                <i class="fas fa-industry me-2"></i>Our Facilities
+                            </a>
+                            <a href="#quality" class="btn btn-outline-custom">
+                                <i class="fas fa-certificate me-2"></i>Quality Policy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="feature-title">ISO & WHO Certified</div>
+                            <div class="feature-text">International Standards</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="feature-title">Advanced R&D</div>
+                            <div class="feature-text">Innovation Driven</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="feature-title">Global Reach</div>
+                            <div class="feature-text">Worldwide Distribution</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-title">Quality Care</div>
+                            <div class="feature-text">Patient Focused</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="container-fluid">
+
+        <!-- Capabilities -->   
         <section id="hero" class=" px-lg-5 p-3">
             <div class="row align-items-center px-lg-5 px-md-3 pe-0">
                 <div class="col-lg-6 my-2" data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
-                    <!-- <h1 class="h3">Behind the science</h1> -->
+                    <p class="journeyTitle">Capabilities</p>
                     <div class="">
                         <h2 class="top-title">
                             Discover the World of Health & Wellness with Numina</h2>
-                        <p class="fs-5 fw-normal my-5">
+                        <p class="fs-5 fw-normal ">
                             Your trusted resource for comprehensive information on medicines, tablets, and syrups.
                             Find an extensive database that empowers you to make informed decisions about your
                             health.
@@ -47,21 +162,38 @@ $product = ProductService::getAllProducts();
 
         <!-------------------------  about numina section  ------------------------->
         <section class="about-numina">
-            <div class="container">
-                <div class="text-center p-lg-5">
-                    <h2 class="aboutTitle">Numina Pharmaceuticals - Elevating Healthcare Excellence</h2>
-                    <p class="fs-5 lh-lg"> We are a leading pharmaceutical manufacturer in India, producing
-                        high-quality generic medicines with ISO, GMP, and WHO certifications. Our expertise and
-                        global network enable us to deliver effective drugs and build lasting partnerships with top
-                        pharma brands worldwide.
-                    </p>
-                    <button class="btn btn-lg btn-custom my-3">Reach out for collaboration</button>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 my-2" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <div class="rounded-4 bannerImage overflow-hidden">
+                            <img src="public/images/home/April2025.png" class="main-img" />
+                            <!-- <div class="pinch-img">
+                        </div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class=" p-lg-5">
+                            <p class="journeyTitle">About Us</p>
+                            <h2 class="aboutTitle">Numina Pharmaceuticals - Elevating Healthcare Excellence</h2>
+                            <p class="fs-5 fw-normal "> We are a leading pharmaceutical manufacturer in India, producing
+                                high-quality generic medicines with ISO, GMP, and WHO certifications. Our expertise and
+                                global network enable us to deliver effective drugs and build lasting partnerships with top
+                                pharma brands worldwide.
+                            </p>
+                            <button class="btn btn-lg btn-custom my-3">Reach out for collaboration</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="container-fluid">
                 <div class="p-lg-5 p-3">
                     <div class="swiper medicineSwiper">
+                        <h2 class=" text-center mb-4">Our Medicine </h2>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="medicine-card">
@@ -174,6 +306,65 @@ $product = ProductService::getAllProducts();
 
         </section>
 
+        <!-- ---------------------------------Research & Development--------------------------------->
+        <section class="rd-section">
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Research & Development</h2>
+                    <p class="section-subtitle">
+                        Our R&D team focuses on ground-breaking solutions and advanced research to produce effective medicines that enhance lives and advance healthcare globally.
+                    </p>
+                </div>
+
+                <div class="rd-content">
+                    <div class="rd-card">
+                        <div class="rd-icon">🧬</div>
+                        <h3>Innovative Research</h3>
+                        <p>Pioneering advanced pharmaceutical research with cutting-edge methodologies and state-of-the-art laboratory facilities to develop next-generation medicines.</p>
+                    </div>
+
+                    <div class="rd-card">
+                        <div class="rd-icon">🔬</div>
+                        <h3>Quality Assurance</h3>
+                        <p>Rigorous testing protocols and stringent quality control measures ensure our products meet the highest international standards and regulatory requirements.</p>
+                    </div>
+
+                    <div class="rd-card">
+                        <div class="rd-icon">⚗️</div>
+                        <h3>Drug Development</h3>
+                        <p>From concept to clinical trials, our comprehensive drug development process transforms promising compounds into life-saving medications.</p>
+                    </div>
+                </div>
+
+                <div class="therapeutic-areas">
+                    <h3 class="therapeutic-title">Our Therapeutic Focus Areas</h3>
+                    <div class="therapeutic-grid">
+                        <div class="therapeutic-item">
+                            <h4>🦠 Infectious Diseases</h4>
+                            <p>Developing treatments for bacterial, viral, and fungal infections</p>
+                        </div>
+                        <div class="therapeutic-item">
+                            <h4>🧪 HIV Treatment</h4>
+                            <p>Advanced antiretroviral therapies and prevention solutions</p>
+                        </div>
+                        <div class="therapeutic-item">
+                            <h4>🫁 Immunology & Respiratory</h4>
+                            <p>Treatments for autoimmune disorders and respiratory conditions</p>
+                        </div>
+                        <div class="therapeutic-item">
+                            <h4>🎗️ Oncology</h4>
+                            <p>Innovative cancer treatments and targeted therapies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Quick Facts Section -->
         <section class="quick-facts-main py-5">
             <div class="p-lg-5 p-3">
@@ -254,7 +445,7 @@ $product = ProductService::getAllProducts();
             </div>
         </section>
 
-     
+
 
         <!------------------------- journey  Section  ------------------------->
         <div id="journey">
@@ -387,9 +578,9 @@ $product = ProductService::getAllProducts();
                     <video src="public/images/home/gradient-inverted.mp4" autoplay muted loop></video>
                 </div> -->
 
-            <div class="comunity-head py-5 px-2">
+            <div class="comunity-head px-2">
                 <!-- <p class="fs-4">Life at Numina</p> -->
-                <h2 class="display-5">Creating Positive Change in Communities</h2>
+                <h2 class="display-5 ">Creating Positive Change in Communities</h2>
             </div>
 
             <div class="comunity-body py-5">

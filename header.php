@@ -54,19 +54,31 @@ class header
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item">
-                                            <a href="about.php" class="nav-link fs-5 ' . $aboutActive . '"> Overview </a>
+                                            <a href="about.php" class="nav-link  ' . $aboutActive . '"> About Us </a>
+                                        </li>
+                                         <li class="nav-item">
+                                            <a href="#" class="nav-link  "> Business </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="product.php" class="nav-link fs-5 postion-relative ' . $productActive . '" id="pro-submenu">
+                                            <a href="#" class="nav-link  "> Capabilities  </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link  "> Investors </a>
+                                        </li>
+                                         <li class="nav-item">
+                                            <a href="#" class="nav-link  "> Sustainability </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="product.php" class="nav-link  postion-relative ' . $productActive . '" id="pro-submenu">
                                                 Our Product
                                                 <!-- <i class="fa-solid fa-caret-down" id="caret-icon"></i> -->
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="contact_us.php" class="nav-link fs-5 ' . $careerActive . '"> Career </a>
+                                            <a href="contact_us.php" class="nav-link  ' . $careerActive . '"> Career </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="contact_us.php" class="nav-link fs-5 ' . $contactActive . '"> Drop us a line </a>
+                                            <a href="contact_us.php" class="nav-link  ' . $contactActive . '"> Contact </a>
                                         </li>
                                     </ul>
                                 </div>
