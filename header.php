@@ -7,6 +7,7 @@ class header
         $productActive = '';
         $contactActive = '';
         $careerActive = '';
+        $investortActive='' ;
 
         if ($url == "about.php") {
             $aboutActive = 'active';
@@ -14,7 +15,10 @@ class header
             $productActive = 'active';
         } else if ($url == "contact_us.php") {
             $contactActive = 'active';
-        } else if ($url == "career.php") {
+        }else if ($url == "investor.php") {
+            $investortActive = 'active';
+        } 
+         else if ($url == "career.php") {
             $careerActive = 'active';
         }
         echo '
@@ -63,7 +67,7 @@ class header
                                             <a href="#" class="nav-link  "> Capabilities  </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link  "> Investors </a>
+                                            <a href="investor.php" class="nav-link '.$investortActive. '  "> Investors </a>
                                         </li>
                                          <li class="nav-item">
                                             <a href="#" class="nav-link  "> Sustainability </a>
@@ -73,6 +77,9 @@ class header
                                                 Our Product
                                                 <!-- <i class="fa-solid fa-caret-down" id="caret-icon"></i> -->
                                             </a>
+                                        </li>
+                                         <li class="nav-item">
+                                            <a href="#" class="nav-link  "> Media  </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="contact_us.php" class="nav-link  ' . $careerActive . '"> Career </a>

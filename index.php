@@ -125,9 +125,155 @@ $product = ProductService::getAllProducts();
             </div>
         </div>
     </section>
+    <!-------------------------  about numina section  ------------------------->
+    <section class="about-numina">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 my-2" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <div class="rounded-4 bannerImage overflow-hidden">
+                        <img src="public/images/home/April2025.png" class="main-img" />
+                        <!-- <div class="pinch-img">
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class=" p-lg-5">
+                        <p class="journeyTitle">About Us</p>
+                        <h2 class="aboutTitle">Numina Pharmaceuticals - Elevating Healthcare Excellence</h2>
+                        <p class="fs-5 fw-normal "> We are a leading pharmaceutical manufacturer in India, producing
+                            high-quality generic medicines with ISO, GMP, and WHO certifications. Our expertise and
+                            global network enable us to deliver effective drugs and build lasting partnerships with top
+                            pharma brands worldwide.
+                        </p>
+                        <button class="btn btn-lg btn-custom my-3">Reach out for collaboration</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="p-lg-5 p-3">
+                <div class="swiper medicineSwiper">
+                    <h2 class=" text-center mb-4">Our Medicine </h2>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="medicine-card">
+                                <div class="p-3">
+                                    <h3 class="medicineTitle"> Antacid </h3>
+                                    <p class=" medicineSubTitle me my-4"> fast Relief for heartburn & indigestion </p>
+                                    <p class="medicineCategoryTitle"> Relief in 60 Secs </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medicine-card">
+                                <div class="p-3">
+                                    <h3 class="medicineTitle"> Antibiotics </h3>
+                                    <p class=" medicineSubTitle my-4"> Targeted treatments for bacterial infections.
+                                    </p>
+                                    <p class="medicineCategoryTitle"> Solution for Every Infection</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medicine-card">
+                                <div class="p-3">
+                                    <h3 class="medicineTitle"> Analgesic </h3>
+                                    <p class=" medicineSubTitle my-4"> Fast-acting solutions to manage pain</p>
+                                    <p class="medicineCategoryTitle"> Pain Relief in 30 Mins </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medicine-card">
+                                <div class="p-3">
+                                    <h3 class="medicineTitle"> Analgesic, Antipyretic, and Anti-emetic </h3>
+                                    <p class=" medicineSubTitle my-4"> Pain, fever, and nausea relief in one drug</p>
+                                    <p class="medicineCategoryTitle"> Triple Action, 1 Pill </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medicine-card">
+                                <div class="p-3">
+                                    <h3 class="medicineTitle"> Analgesic & Anti-inflammatory </h3>
+                                    <p class=" medicineSubTitle my-4"> Relieves pain and controls inflammation</p>
+                                    <p class="medicineCategoryTitle"> Dual Action in 45 Minutes </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medicine-card">
+                                <div class="p-3">
+                                    <h3 class="medicineTitle"> Anti-allergic </h3>
+                                    <p class=" medicineSubTitle my-4"> Rapid relief from allergy symptoms </p>
+                                    <p class="medicineCategoryTitle"> Breathe Easy in 5 Minutes </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medicine-card">
+                                <div class="p-3">
+                                    <h3 class="medicineTitle"> Multivitamins and Supplements </h3>
+                                    <p class=" medicineSubTitle my-4"> Essential nutrients for overall wellness </p>
+                                    <p class="medicineCategoryTitle"> Daily Health Boost </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medicine-card">
+                                <div class="p-3">
+                                    <h3 class="medicineTitle"> Anti-diabetics </h3>
+                                    <p class=" medicineSubTitle my-4"> Effective management of blood sugar </p>
+                                    <p class="medicineCategoryTitle"> 1 Dose, Better Control </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medicine-card">
+                                <div class="p-3">
+                                    <h3 class="medicineTitle"> Cardiovascular Drugs </h3>
+                                    <p class=" medicineSubTitle my-4"> Supports iovascular health quickly </p>
+                                    <p class="medicineCategoryTitle"> Heart Health Matters </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medicine-card">
+                                <div class="p-3">
+                                    <h3 class="medicineTitle"> Antimicrobials </h3>
+                                    <p class=" medicineSubTitle my-4"> Protection against harmful microorganisms </p>
+                                    <p class="medicineCategoryTitle"> Defend in 10 Days </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="medicine-card">
+                                <div class="p-3">
+                                    <h3 class="medicineTitle"> Antiretrovirals (ARVs) </h3>
+                                    <p class=" medicineSubTitle my-4"> Effective management for healthier living with
+                                        HIV </p>
+                                    <p class="medicineCategoryTitle"> Solution for Life </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
+                </div>
+
+            </div>
+        </div>
+
+    </section>
     <div class="container-fluid">
 
-        <!-- Capabilities -->   
+
+        <!-- Capabilities -->
         <section id="hero" class=" px-lg-5 p-3">
             <div class="row align-items-center px-lg-5 px-md-3 pe-0">
                 <div class="col-lg-6 my-2" data-aos="fade-right"
@@ -160,151 +306,59 @@ $product = ProductService::getAllProducts();
             </div>
         </section>
 
-        <!-------------------------  about numina section  ------------------------->
-        <section class="about-numina">
-            <div class="container-fluid">
-                <div class="row align-items-center">
 
-                    <div class="col-lg-6 my-2" data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
-                        <div class="rounded-4 bannerImage overflow-hidden">
-                            <img src="public/images/home/April2025.png" class="main-img" />
-                            <!-- <div class="pinch-img">
-                        </div> -->
-                        </div>
+        <!------------------------------Bussiness----------------------------->
+        <section class="business-section">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Our Business Excellence</h1>
+                    <p class="section-subtitle">Driving pharmaceutical innovation through strategic partnerships, advanced manufacturing, and unwavering commitment to quality healthcare solutions worldwide.</p>
+                </div>
+
+                <div class="business-grid">
+                    <div class="business-card">
+                        <div class="card-icon">🏭</div>
+                        <h3 class="card-title">Manufacturing Excellence</h3>
+                        <p class="card-description">State-of-the-art facilities equipped with cutting-edge technology, automated systems, and precision tools ensuring consistent quality and scalable production capabilities for global markets.</p>
                     </div>
 
-                    <div class="col-lg-6">
-                        <div class=" p-lg-5">
-                            <p class="journeyTitle">About Us</p>
-                            <h2 class="aboutTitle">Numina Pharmaceuticals - Elevating Healthcare Excellence</h2>
-                            <p class="fs-5 fw-normal "> We are a leading pharmaceutical manufacturer in India, producing
-                                high-quality generic medicines with ISO, GMP, and WHO certifications. Our expertise and
-                                global network enable us to deliver effective drugs and build lasting partnerships with top
-                                pharma brands worldwide.
-                            </p>
-                            <button class="btn btn-lg btn-custom my-3">Reach out for collaboration</button>
-                        </div>
+                    <div class="business-card">
+                        <div class="card-icon">🤝</div>
+                        <h3 class="card-title">Strategic Partnerships</h3>
+                        <p class="card-description">Building long-lasting relationships with leading pharmaceutical companies worldwide through collaborative development, contract manufacturing, and strategic alliances.</p>
+                    </div>
+
+                    <div class="business-card">
+                        <div class="card-icon">🔬</div>
+                        <h3 class="card-title">Research & Innovation</h3>
+                        <p class="card-description">Focused R&D in infectious diseases, HIV, immunology/respiratory, and oncology, delivering breakthrough solutions that address critical healthcare challenges.</p>
+                    </div>
+
+                    <div class="business-card">
+                        <div class="card-icon">🌍</div>
+                        <h3 class="card-title">Global Reach</h3>
+                        <p class="card-description">Expanding our footprint across international markets while maintaining the highest standards of regulatory compliance and quality assurance in every region we serve.</p>
+                    </div>
+
+                    <div class="business-card">
+                        <div class="card-icon">📋</div>
+                        <h3 class="card-title">Regulatory Compliance</h3>
+                        <p class="card-description">Comprehensive compliance framework ensuring adherence to international standards including ISO, GMP, and WHO certifications across all business operations.</p>
+                    </div>
+
+                    <div class="business-card">
+                        <div class="card-icon">📊</div>
+                        <h3 class="card-title">Market Leadership</h3>
+                        <p class="card-description">Leveraging market insights and industry expertise to deliver differentiated products that meet evolving patient needs and create sustainable competitive advantages.</p>
                     </div>
                 </div>
+
+
+
+
             </div>
-
-            <div class="container-fluid">
-                <div class="p-lg-5 p-3">
-                    <div class="swiper medicineSwiper">
-                        <h2 class=" text-center mb-4">Our Medicine </h2>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="medicine-card">
-                                    <div class="p-3">
-                                        <h3 class="medicineTitle"> Antacid </h3>
-                                        <p class=" medicineSubTitle me my-4"> fast Relief for heartburn & indigestion </p>
-                                        <p class="medicineCategoryTitle"> Relief in 60 Secs </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="medicine-card">
-                                    <div class="p-3">
-                                        <h3 class="medicineTitle"> Antibiotics </h3>
-                                        <p class=" medicineSubTitle my-4"> Targeted treatments for bacterial infections.
-                                        </p>
-                                        <p class="medicineCategoryTitle"> Solution for Every Infection</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="medicine-card">
-                                    <div class="p-3">
-                                        <h3 class="medicineTitle"> Analgesic </h3>
-                                        <p class=" medicineSubTitle my-4"> Fast-acting solutions to manage pain</p>
-                                        <p class="medicineCategoryTitle"> Pain Relief in 30 Mins </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="medicine-card">
-                                    <div class="p-3">
-                                        <h3 class="medicineTitle"> Analgesic, Antipyretic, and Anti-emetic </h3>
-                                        <p class=" medicineSubTitle my-4"> Pain, fever, and nausea relief in one drug</p>
-                                        <p class="medicineCategoryTitle"> Triple Action, 1 Pill </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="medicine-card">
-                                    <div class="p-3">
-                                        <h3 class="medicineTitle"> Analgesic & Anti-inflammatory </h3>
-                                        <p class=" medicineSubTitle my-4"> Relieves pain and controls inflammation</p>
-                                        <p class="medicineCategoryTitle"> Dual Action in 45 Minutes </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="medicine-card">
-                                    <div class="p-3">
-                                        <h3 class="medicineTitle"> Anti-allergic </h3>
-                                        <p class=" medicineSubTitle my-4"> Rapid relief from allergy symptoms </p>
-                                        <p class="medicineCategoryTitle"> Breathe Easy in 5 Minutes </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="medicine-card">
-                                    <div class="p-3">
-                                        <h3 class="medicineTitle"> Multivitamins and Supplements </h3>
-                                        <p class=" medicineSubTitle my-4"> Essential nutrients for overall wellness </p>
-                                        <p class="medicineCategoryTitle"> Daily Health Boost </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="medicine-card">
-                                    <div class="p-3">
-                                        <h3 class="medicineTitle"> Anti-diabetics </h3>
-                                        <p class=" medicineSubTitle my-4"> Effective management of blood sugar </p>
-                                        <p class="medicineCategoryTitle"> 1 Dose, Better Control </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="medicine-card">
-                                    <div class="p-3">
-                                        <h3 class="medicineTitle"> Cardiovascular Drugs </h3>
-                                        <p class=" medicineSubTitle my-4"> Supports iovascular health quickly </p>
-                                        <p class="medicineCategoryTitle"> Heart Health Matters </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="medicine-card">
-                                    <div class="p-3">
-                                        <h3 class="medicineTitle"> Antimicrobials </h3>
-                                        <p class=" medicineSubTitle my-4"> Protection against harmful microorganisms </p>
-                                        <p class="medicineCategoryTitle"> Defend in 10 Days </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="medicine-card">
-                                    <div class="p-3">
-                                        <h3 class="medicineTitle"> Antiretrovirals (ARVs) </h3>
-                                        <p class=" medicineSubTitle my-4"> Effective management for healthier living with
-                                            HIV </p>
-                                        <p class="medicineCategoryTitle"> Solution for Life </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div> -->
-                    </div>
-
-                </div>
-            </div>
-
         </section>
+
 
         <!-- ---------------------------------Research & Development--------------------------------->
         <section class="rd-section">
@@ -676,8 +730,8 @@ $product = ProductService::getAllProducts();
         <div id="policy">
             <div class="container text-end">
                 <div class="row justify-content-center">
-                    <div class="col-lg-4  m-lg-0 mt-4 d-flex justify-content-center">
-                        <div class="custom-card">
+                    <div class="col-lg-4  m-lg-0 mt-4 d-flex justify-content-start">
+                        <div class="journeyCard">
                             <div class="card-body">
                                 <h4 class="card-title     py-3">Quality Policy</h4>
                                 <p class="card-text">We are dedicated to delivering world-class products using a
@@ -686,7 +740,7 @@ $product = ProductService::getAllProducts();
                         </div>
                     </div>
                     <div class="col-lg-4  m-lg-0 mt-4 d-flex justify-content-center">
-                        <div class="custom-card">
+                        <div class="journeyCard">
                             <div class="card-body">
                                 <h4 class="card-title  py-3">Manufacturing Excellence</h4>
                                 <p class="card-text">Our modern facilities are equipped with the latest machinery,
@@ -695,7 +749,7 @@ $product = ProductService::getAllProducts();
                         </div>
                     </div>
                     <div class="col-lg-4  m-lg-0 mt-4 d-flex justify-content-center">
-                        <div class="custom-card">
+                        <div class="journeyCard">
                             <div class="card-body">
                                 <h4 class="card-title  py-3">R&D</h4>
                                 <p class="card-text">Our R&D team focuses on ground-breaking solutions and advanced
