@@ -8,6 +8,8 @@ class header
         $contactActive = '';
         $careerActive = '';
         $investortActive='' ;
+        $businesstActive='' ;
+        $capablitisetActive='' ;
 
         if ($url == "about.php") {
             $aboutActive = 'active';
@@ -17,6 +19,12 @@ class header
             $contactActive = 'active';
         }else if ($url == "investor.php") {
             $investortActive = 'active';
+        } 
+        else if ($url == "capablitise.php") {
+            $capablitisetActive = 'active';
+        } 
+        else if ($url == "business.php") {
+            $businesstActive = 'active';
         } 
          else if ($url == "career.php") {
             $careerActive = 'active';
@@ -61,10 +69,10 @@ class header
                                             <a href="about.php" class="nav-link  ' . $aboutActive . '"> About Us </a>
                                         </li>
                                          <li class="nav-item">
-                                            <a href="#" class="nav-link  "> Business </a>
+                                            <a href="business.php" class="nav-link '.$businesstActive. ' "> Business </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link  "> Capabilities  </a>
+                                            <a href="capablitise.php  " class="nav-link '.$capablitisetActive. '    "> Capabilities  </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="investor.php" class="nav-link '.$investortActive. '  "> Investors </a>

@@ -144,7 +144,7 @@ $product = ProductService::getAllProducts();
                     <div class=" p-lg-5">
                         <p class="journeyTitle">About Us</p>
                         <h2 class="aboutTitle">Numina Pharmaceuticals - Elevating Healthcare Excellence</h2>
-                        <p class="fs-5 fw-normal "> We are a leading pharmaceutical manufacturer in India, producing
+                        <p class=" fw-normal "> We are a leading pharmaceutical manufacturer in India, producing
                             high-quality generic medicines with ISO, GMP, and WHO certifications. Our expertise and
                             global network enable us to deliver effective drugs and build lasting partnerships with top
                             pharma brands worldwide.
