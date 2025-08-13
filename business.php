@@ -9,7 +9,7 @@ $header->includeHeader('Numina | About Us', './', 'business.php');
 <!--------------------------------------main start--------------------------------------------------------->
 <main class="aboutus">
 
-    <!-- besadecrumbe--------------->
+    <!-- breadecrumbe--------------->
     <section class="page-title">
         <div class="container">
             <div class="row">

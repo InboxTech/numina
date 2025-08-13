@@ -14,13 +14,13 @@ $header->includeHeader('Numina | About Us', './', 'capablitise.php');
         <div class="container">
             <div class="row">
                 <div class="col col-xs-12">
-                    <h2> Capablitise </h2>
+                    <h2>  Capabilities   </h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.php"><i class="fa-solid fa-house"></i> Home</a>
                         </li>
                         <li>
-                            <i class="fa-solid fa-angle-right"></i> Capablitise
+                            <i class="fa-solid fa-angle-right"></i>  Capabilities  
                         </li>
                     </ol>
                 </div>

@@ -19,6 +19,17 @@
   --bg-light: #f8f9fa;
   --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.1);
   --shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.15);
+  --primary-blue: #74649c;
+  --secondary-blue: #004499;
+  --accent-green: #28a745;
+  --light-blue: #e6f2ff;
+  --dark-blue: #003366;
+  --text-primary: #2c3e50;
+  --text-secondary: #6c757d;
+  --bg-light: #f8f9fa;
+  --white: #ffffff;
+  --gradient-primary: linear-gradient(135deg, #d4cfe1 0%, #76669d 100%);
+  --gradient-green: linear-gradient(135deg, #28a745 0%, #20c997 100%);
 }
 
 html,
@@ -83,7 +94,140 @@ header {
   left: 20%;
   background-color: white;
 }
+.productDescription {
+  font-size: 16px;
+  font-weight: 300;
+}
+.pharmaceutical-showcase {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 
+  padding: 80px 0;
+}
+.productMainDiv {
+  padding: 80px 0px;
+}
+.section-heading {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 60px;
+  position: relative;
+  font-size: 40px;
+}
+
+.section-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--secondary-gradient);
+  border-radius: 2px;
+}
+
+.medication-card {
+  background: #ffffff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+}
+
+.product-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-image {
+  height: 80px;
+  width: 80px;
+  border-radius: 80px !important;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.medicine-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.icon-overlay {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 123, 255, 0.9);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-content {
+  padding: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .pharmaceutical-showcase {
+    padding: 50px 0;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .medicine-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animation enhancement */
+.medication-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.medication-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.medication-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.medication-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .product-main-menu a {
   color: black;
   padding: 8px 0;
@@ -940,7 +1084,8 @@ footer .logo {
 }
 .top-title {
   color: #74649c;
-  font-size: 2.5rem;
+  font-size: 25px;
+  font-weight: 500;
 }
 .bannerImage {
   box-shadow: 2px 2px 4px #c64ca5;
@@ -964,7 +1109,7 @@ footer .logo {
 
 /* -------------------------------------------------- Product Page start -------------------------------------------------- */
 .product-us {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 .aboutTitle {
   color: #74649c;
@@ -1003,20 +1148,20 @@ footer .logo {
 
 .our-products .products {
   height: 100%;
-  margin-bottom: 20%;
+  /* margin-bottom: 20%; */
 }
 
 .our-products .products .product-categories {
-  border: 1px solid var(--primary-color);
+  border: 2px solid #74649c;
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
-  height: 38rem;
+  height: 100%;
   overflow: hidden;
 }
 
 .our-products .products .product-categories p {
-  font-size: 15px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -1032,6 +1177,7 @@ footer .logo {
   display: flex;
   justify-content: center;
   align-items: stretch;
+  height: auto;
 }
 
 .products .swiper-slide img {
@@ -1078,6 +1224,12 @@ footer .logo {
 }
 .error {
   color: red;
+}
+.coantactRow {
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 4px 4px 16px #e5ddfb;
+  border-left: 4px solid #74649c;
 }
 /* -------------------------------------------------- Contact us page end ------------------------------------------------*/
 
@@ -1577,7 +1729,7 @@ footer .logo {
   max-width: 800px;
   margin: 0 auto;
   font-weight: 300;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
 }
 
 .rd-content {
@@ -1814,7 +1966,9 @@ footer .logo {
   color: #7f8c8d;
   line-height: 1.6;
 }
-
+.description {
+  font-size: 18px;
+}
 @media (max-width: 768px) {
   .business-grid {
     grid-template-columns: 1fr;
@@ -1910,7 +2064,7 @@ footer .logo {
   letter-spacing: 2px;
 }
 
-.hero-content p {
+p {
   font-size: 1.3rem;
   opacity: 0.9;
   font-weight: 300;
@@ -2105,7 +2259,7 @@ footer .logo {
 }
 
 .doc-item:hover {
-  color: #3498db;
+  color: #74649c;
   cursor: pointer;
 }
 
@@ -2621,14 +2775,14 @@ footer .logo {
   transform: translateY(-3px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 }
-.therapeutic-card h3{
-      font-size: 20px;
-    color: #78669c;
-    font-weight: 600;
+.therapeutic-card h3 {
+  font-size: 20px;
+  color: #78669c;
+  font-weight: 600;
 }
-.therapeutic-card  p{
-      font-size: 16px;
-    font-weight: 400;
+.therapeutic-card p {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .therapeutic-icon {
@@ -2662,7 +2816,7 @@ footer .logo {
   padding: 30px;
   border-radius: 15px;
   text-align: center;
- box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 }
 
 .standard-badge:hover {
@@ -2675,9 +2829,318 @@ footer .logo {
   font-weight: 600;
   color: #7953a3;
 }
-.therapeutic-areas h2{
+.therapeutic-areas h2 {
   font-size: 40px;
 }
-.quality-standards h2{
+.quality-standards h2 {
   font-size: 40px;
+}
+
+/* sustaniability -----------------------------> */
+
+/* Hero Section */
+.hero-section-sustaniability {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 74%)),
+    url("../images/home/banner/Environmental-Sustainability-Examples-Tips-to-Implement-Them.jpg")
+      center / cover no-repeat;
+  color: var(--white);
+  padding: 120px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes slidePattern {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+.btn-numina {
+  background: var(--secondary-gradient);
+  color: var(--white);
+  border: none;
+  padding: 14px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-numina:hover {
+  background: linear-gradient(135deg, #e40980, #ff63b9);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Styling */
+.section-padding {
+  padding: 80px 0;
+}
+
+/* Cards */
+.sustainability-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  height: 100%;
+  border: 1px solid rgba(0, 102, 204, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.sustainability-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--secondary-gradient);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.sustainability-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgb(139 124 172 / 33%);
+}
+
+.sustainability-card:hover::before {
+  transform: scaleX(1);
+}
+
+.sustainabilitycard-icon {
+  width: 70px;
+  height: 70px;
+  background: var(--secondary-gradient);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  color: var(--white);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.sustainability-card:hover .sustainabilitycard-icon {
+  background: linear-gradient(135deg, #e40980, #ff63b9);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.card-text {
+  color: var(--text-secondary);
+  /* line-height: 1.7; */
+  font-size: 16px;
+}
+.sustainabilit-card-title {
+  font-size: 20px;
+}
+/* Statistics Section */
+.stats-section {
+  background: var(--bg-light);
+  position: relative;
+}
+
+.stat-card {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.stat-card:hover {
+  border-color: #74649c;
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: var(--secondary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.stat-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Timeline */
+.timeline-section {
+  background: var(--white);
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #8476a859;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 3rem 0;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  padding-right: 3rem;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  padding-left: 3rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--primary-blue);
+  border-radius: 50%;
+  top: 20px;
+  border: 4px solid var(--white);
+  box-shadow: 0 0 0 4px var(--primary-blue);
+}
+
+.timeline-item:nth-child(odd)::before {
+  right: -13px;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -13px;
+}
+
+.timeline-content {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #74649c;
+}
+
+.timeline-year {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.timeline-content p {
+  font-size: 15px;
+}
+/* Goals Section */
+.goals-section {
+  background: var(--gradient-primary);
+  color: var(--white);
+}
+
+.goal-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.goal-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.goal-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+.goal-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* CTA Section */
+
+.btn-outline-numina {
+  border: 2px solid var(--white);
+  color: var(--white);
+  background: transparent;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-numina:hover {
+  background: var(--white);
+  color: var(--dark-blue);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 2rem;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 4rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .timeline-item::before {
+    left: 1.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-padding {
+    padding: 60px 0;
+  }
 }

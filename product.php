@@ -10,16 +10,41 @@ $header->includeHeader('Numina | Product', './', 'product.php');
 
 <!-- Product -->
 <main class="product-us">
-    <section class="px-lg-5 px-md-3 pe-0">
-        <div class="container-fluid row justify-content-evenly flex-lg-row flex-column-reverse align-items-center">
+    <section class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs-12">
+                    <h2>Products</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.php"><i class="fa-solid fa-house"></i> Home</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angle-right"></i> Products
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-lg-5 px-md-3 mt-5 pe-0">
+        <div class="container row justify-content-evenly flex-lg-row flex-column-reverse align-items-center">
 
             <div class="col-lg-6 pe-lg-5 my-2" data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <h2 class="display-4 top-title"> Our Pharma Products </h2>
 
-                <p class="fs-4 fw-normal">
+                <p class=" fw-normal">
                     Expert Care, Quality Medicines for Health Needs…. Because You Deserve The Best!!
+                </p>
+                <p class="productDescription">
+                    Text will be comming soon...Text will be comming soon...Text will be comming soon...
+                    Text will be comming soon...Text will be comming soon...Text will be comming soon...
+                    Text will be comming soon...Text will be comming soon...Text will be comming soon...
+                    Text will be comming soon...Text will be comming soon...Text will be comming soon...
+                    Text will be comming soon...Text will be comming soon...Text will be comming soon...
+                    Text will be comming soon...Text will be comming soon...Text will be comming soon...
                 </p>
 
                 <div>
@@ -28,74 +53,118 @@ $header->includeHeader('Numina | Product', './', 'product.php');
                 </div>
             </div>
             <div class="col-lg-6 my-2" data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <div class="pro-img">
                     <img src="public/images/product/pharma_product.jpg" alt="our product image">
                 </div>
             </div>
-            
+
         </div>
     </section>
 
     <section>
-        <div class="container mx-auto p-3 text-center my-5" data-aos="fade-up"
+        <div class="container mx-auto p-3 my-5" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
-            <h1 class="fs-1 top-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> Addressing Global
-                Health Challenges </h1>
-            <p class="fs-5 fw-light" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> In an era marked by
-                major global health challenges and fast technological
-                advancements in medical science, we have a unique opportunity to make a meaningful difference for
-                patients and society. We are focusing on improving our efforts in therapeutic areas with the highest
-                unmet needs, maximizing our impact on those who require it most.
-            </p>
-        </div>
-    </section>
-
-    <section>
-        <div class="container-fluid dosage-form my-5 p-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h1 class="text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> Our Dosage Forms-
-                Formulated For You </h1>
-
-            <div class="container mx-auto row justify-content-evenly my-3" data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom">
-                <div class="dosage bg-white rounded-5 col-lg-3 text-center p-3 m-2" data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom">
-                    <div class="img mx-auto">
-                        <img src="public/images/product/tablet.jpg" class="rounded-5" alt="">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <div class="pro-img">
+                        <img src="public/images/product/globalHealthImage.jpg" alt="our product image">
                     </div>
-                    <h1 class="top-title fs-1"> Tablets </h1>
-                    <p class="fs-5"> Easy to take pills for various health conditions
-                    </p>
                 </div>
-                <div class="dosage bg-white rounded-5 col-lg-3 text-center p-3 m-2" data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom">
-                    <div class="img mx-auto">
-                        <img src="public/images/product/capsule.jpg" class="rounded-5" alt="">
-                    </div>
-                    <h1 class="top-title fs-1"> Capsules </h1>
-                    <p class="fs-5">Fast-working capsules for effective treatment
-                    </p>
-                </div>
-                <div class="dosage bg-white rounded-5 col-lg-3 text-center p-3 m-2" data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom">
-                    <div class="img mx-auto">
-                        <img src="public/images/product/syrup.jpg" class="rounded-5" alt="">
-                    </div>
-                    <h1 class="top-title fs-1"> Syrups </h1>
-                    <p class="fs-5"> Liquid medicine ideal for children and the elderly
+                <div class="col-lg-6">
+                    <h1 class=" top-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> Addressing Global
+                        Health Challenges </h1>
+                    <p class="productDescription fw-light" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> In an era marked by
+                        major global health challenges and fast technological
+                        advancements in medical science, we have a unique opportunity to make a meaningful difference for
+                        patients and society. We are focusing on improving our efforts in therapeutic areas with the highest
+                        unmet needs, maximizing our impact on those who require it most.
                     </p>
                 </div>
             </div>
 
+
         </div>
     </section>
+ <section class="pharmaceutical-showcase">
+        <div class="container-fluid px-4">
+            <div class="text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
+                <h1 class="section-heading display-4">
+                    Our Dosage Forms - Formulated For You
+                </h1>
+            </div>
 
-    <section>
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <!-- Tablets Card -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="medication-card">
+                            <div class="card-content">
+                                <div class="product-image-wrapper">
+                                    <img src="public/images/product/tablet.jpg" 
+                                         class="product-image" alt="Tablet medications">
+                                    <div class="icon-overlay">
+                                        <i class="fas fa-pills"></i>
+                                    </div>
+                                </div>
+                                <h2 class="medicine-title">Tablets</h2>
+                                <p class="product-description">
+                                    Easy to take pills for various health conditions, designed for optimal absorption and patient convenience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Capsules Card -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="medication-card">
+                            <div class="card-content">
+                                <div class="product-image-wrapper">
+                                    <img src="public/images/product/capsule.jpg" 
+                                         class="product-image" alt="Capsule medications">
+                                    <div class="icon-overlay">
+                                        <i class="fas fa-capsules"></i>
+                                    </div>
+                                </div>
+                                <h2 class="medicine-title">Capsules</h2>
+                                <p class="product-description">
+                                    Fast-working capsules for effective treatment, ensuring precise dosage and improved bioavailability.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Syrups Card -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="medication-card">
+                            <div class="card-content">
+                                <div class="product-image-wrapper">
+                                    <img src="public/images/product/syrup.jpg" 
+                                         class="product-image" alt="Syrup medications">
+                                    <div class="icon-overlay">
+                                        <i class="fas fa-prescription-bottle-alt"></i>
+                                    </div>
+                                </div>
+                                <h2 class="medicine-title">Syrups</h2>
+                                <p class="product-description">
+                                    Liquid medicine ideal for children and the elderly, with pleasant taste and easy administration.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ </section>
+
+    <section class="productMainDiv">
         <div class="our-products container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h1 class="fs-1 top-title text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> Our
                 Therapeutic Products </h1>
-            <p class="fs-5 fw-light text-center my-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <p class=" description fw-light text-center my-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 Numina Pharmaceuticals offers a diverse portfolio comprised of
                 therapeutic drugs specially used for chronic and severe ailments. We are producing generics, OTC
                 (Over-The-Counter), specialty products, ARVs and APIs for Indian as well as global markets. Our
@@ -359,8 +428,16 @@ $header->includeHeader('Numina | Product', './', 'product.php');
             </div>
         </div>
     </section>
+     
 </main>
 <!-- Product end -->
-
+<!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Partner With Us</h2>
+            <p class="cta-text">Join us in our mission to create positive change in global healthcare and build a healthier tomorrow for communities worldwide.</p>
+            <a href="contact_us.php" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
 <!-- footer link in php -->
 <?php include('footer.php'); ?>

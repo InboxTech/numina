@@ -10,7 +10,7 @@ class header
         $investortActive='' ;
         $businesstActive='' ;
         $capablitisetActive='' ;
-
+        $sustaniabilityActive='';
         if ($url == "about.php") {
             $aboutActive = 'active';
         } else if ($url == "product.php") {
@@ -22,6 +22,9 @@ class header
         } 
         else if ($url == "capablitise.php") {
             $capablitisetActive = 'active';
+        } 
+        else if ($url == "sustaniability.php") {
+            $sustaniabilityActive = 'active';
         } 
         else if ($url == "business.php") {
             $businesstActive = 'active';
@@ -78,7 +81,7 @@ class header
                                             <a href="investor.php" class="nav-link '.$investortActive. '  "> Investors </a>
                                         </li>
                                          <li class="nav-item">
-                                            <a href="#" class="nav-link  "> Sustainability </a>
+                                            <a href="sustaniability.php" class="nav-link  '.$sustaniabilityActive.' "> Sustainability </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="product.php" class="nav-link  postion-relative ' . $productActive . '" id="pro-submenu">
