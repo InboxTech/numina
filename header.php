@@ -11,6 +11,7 @@ class header
         $businesstActive='' ;
         $capablitisetActive='' ;
         $sustaniabilityActive='';
+        $mediaActive='';
         if ($url == "about.php") {
             $aboutActive = 'active';
         } else if ($url == "product.php") {
@@ -28,6 +29,8 @@ class header
         } 
         else if ($url == "business.php") {
             $businesstActive = 'active';
+        } else if ($url == "media.php") {
+            $mediaActive = 'active';
         } 
          else if ($url == "career.php") {
             $careerActive = 'active';
@@ -90,7 +93,7 @@ class header
                                             </a>
                                         </li>
                                          <li class="nav-item">
-                                            <a href="#" class="nav-link  "> Media  </a>
+                                            <a href="media.php" class="nav-link '.$mediaActive.' " > Media  </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="contact_us.php" class="nav-link  ' . $careerActive . '"> Career </a>

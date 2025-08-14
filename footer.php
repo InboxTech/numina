@@ -169,13 +169,13 @@
                         <a href="javascript:void(0);" class="text-decoration-none">Digital sustainability</a>
                     </li>
                     <li class="list-group-item border-0 listItemBottom">
-                        <a href="javascript:void(0);" class="text-decoration-none ">Terms of use</a>
+                        <a href="Terms.php" class="text-decoration-none ">Terms of use</a>
                     </li>
                     <li class="list-group-item border-0 listItemBottom ">
                         <a href="javascript:void(0);" class="text-decoration-none ">Cookie policy</a>
                     </li>
                     <li class="list-group-item border-0 listItemBottom ">
-                        <a href="javascript:void(0);" class="text-decoration-none ">Privacy notice</a>
+                        <a href="privacy.php" class="text-decoration-none ">Privacy notice</a>
                     </li>
                     <!-- <li class="list-group-item border-0 mb-3">
                     <a href="javascript:void(0);" class="text-decoration-none link-dark">Sitemap</a>
