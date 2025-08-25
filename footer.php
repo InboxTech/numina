@@ -4,7 +4,7 @@
             <div class="footerMainDiv">
             <div class="row justify-content-between">
                 <div class="col-lg-3 col-md-6 my-3">
-                    <div class="logo mb-3">
+                    <div class="logo ">
                         <a class="navbar-brand logo" href="index.php"><img src="public/images/header/numinaLogo.jpeg"
                                 class="w-100 h-inherit" alt="" /></a>
                     </div>

@@ -96,7 +96,7 @@ class header
                                             <a href="media.php" class="nav-link '.$mediaActive.' " > Media  </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="contact_us.php" class="nav-link  ' . $careerActive . '"> Career </a>
+                                            <a href="career.php" class="nav-link  ' . $careerActive . '"> Career </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="contact_us.php" class="nav-link  ' . $contactActive . '"> Contact </a>
